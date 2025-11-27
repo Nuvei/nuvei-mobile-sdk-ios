@@ -5,6 +5,421 @@
     "printedName": "PayService",
     "children": [
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayService",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseTextHandler",
+        "printedName": "BaseTextHandler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shouldNotify",
+            "printedName": "shouldNotify",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvp",
+            "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvp",
+            "moduleName": "PayService",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvg",
+                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvg",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvs",
+                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvs",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvM",
+                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvM",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isNumberOnly",
+            "printedName": "isNumberOnly",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvp",
+            "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvp",
+            "moduleName": "PayService",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvg",
+                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvg",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvs",
+                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvs",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvM",
+                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvM",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxLength",
+            "printedName": "maxLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvp",
+            "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvp",
+            "moduleName": "PayService",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvg",
+                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvg",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvs",
+                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvs",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvM",
+                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvM",
+                "moduleName": "PayService",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
+                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10PayService15BaseTextHandlerP",
+        "mangledName": "$s10PayService15BaseTextHandlerP",
+        "moduleName": "PayService",
+        "genericSig": "<τ_0_0 : UIKit.UITextFieldDelegate>",
+        "sugared_genericSig": "<Self : UIKit.UITextFieldDelegate>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayService",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModelUtils",
+        "printedName": "ModelUtils",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isFutureDate",
+            "printedName": "isFutureDate(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService10ModelUtilsC12isFutureDateySbSi_SitFZ",
+            "mangledName": "$s10PayService10ModelUtilsC12isFutureDateySbSi_SitFZ",
+            "moduleName": "PayService",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10PayService10ModelUtilsC",
+        "mangledName": "$s10PayService10ModelUtilsC",
+        "moduleName": "PayService",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CardType",
         "printedName": "CardType",
@@ -1286,19 +1701,32 @@
           },
           {
             "kind": "Function",
-            "name": "parseDate",
-            "printedName": "parseDate(rawValue:)",
+            "name": "parseCardNumber",
+            "printedName": "parseCardNumber(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "(number: Swift.String, type: PayService.CardType)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Tuple",
+                    "printedName": "(number: Swift.String, type: PayService.CardType)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardType",
+                        "printedName": "PayService.CardType",
+                        "usr": "s:10PayService8CardTypeO"
+                      }
+                    ]
                   }
                 ],
                 "usr": "s:Sq"
@@ -1311,8 +1739,62 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PayService15CreditCardUtilsC9parseDate8rawValueSSSgSS_tF",
-            "mangledName": "$s10PayService15CreditCardUtilsC9parseDate8rawValueSSSgSS_tF",
+            "usr": "s:10PayService15CreditCardUtilsC05parseD6Number8rawValueSS6number_AA0D4TypeO4typetSgSS_tF",
+            "mangledName": "$s10PayService15CreditCardUtilsC05parseD6Number8rawValueSS6number_AA0D4TypeO4typetSgSS_tF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "parseDate",
+            "printedName": "parseDate(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(full: Swift.String, month: Swift.Int, year: Swift.Int)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(full: Swift.String, month: Swift.Int, year: Swift.Int)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService15CreditCardUtilsC9parseDate8rawValueSS4full_Si5monthSi4yeartSgSS_tF",
+            "mangledName": "$s10PayService15CreditCardUtilsC9parseDate8rawValueSS4full_Si5monthSi4yeartSgSS_tF",
             "moduleName": "PayService",
             "declAttributes": [
               "AccessControl"
@@ -2814,31 +3296,37 @@
           },
           {
             "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(apmField:)",
+            "name": "setCustomization",
+            "printedName": "setCustomization(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "LabeledTextField",
-                "printedName": "PayService.LabeledTextField",
-                "usr": "c:@M@PayService@objc(cs)LabeledTextField"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Field",
-                "printedName": "PayService.NVAPMsOutput.Field",
-                "usr": "s:10PayService12NVAPMsOutputV5FieldV"
+                "name": "Optional",
+                "printedName": "Core.NuveiUICustomization?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NuveiUICustomization",
+                    "printedName": "Core.NuveiUICustomization",
+                    "usr": "s:4Core20NuveiUICustomizationC"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PayService16LabeledTextFieldC9configure03apmE0AcA12NVAPMsOutputV0E0V_tF",
-            "mangledName": "$s10PayService16LabeledTextFieldC9configure03apmE0AcA12NVAPMsOutputV0E0V_tF",
+            "usr": "s:10PayService16LabeledTextFieldC16setCustomizationyy4Core20NuveiUICustomizationCSgF",
+            "mangledName": "$s10PayService16LabeledTextFieldC16setCustomizationyy4Core20NuveiUICustomizationCSgF",
             "moduleName": "PayService",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
-              "AccessControl",
-              "DiscardableResult"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5680,10 +6168,10 @@
             "mangledName": "$s10PayService19NVCardDetailsOutputV3binSSSgvp",
             "moduleName": "PayService",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5712,6 +6200,56 @@
                 "moduleName": "PayService",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV3binSSSgvs",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV3binSSSgvs",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV3binSSSgvM",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV3binSSSgvM",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -5740,10 +6278,10 @@
             "mangledName": "$s10PayService19NVCardDetailsOutputV11last4DigitsSSSgvp",
             "moduleName": "PayService",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5772,6 +6310,56 @@
                 "moduleName": "PayService",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV11last4DigitsSSSgvs",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV11last4DigitsSSSgvs",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV11last4DigitsSSSgvM",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV11last4DigitsSSSgvM",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -5783,27 +6371,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSSSgvp",
-            "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSSSgvp",
+            "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvp",
+            "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvp",
             "moduleName": "PayService",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5814,24 +6402,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Int?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSSSgvg",
-                "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSSSgvg",
+                "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvg",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvg",
                 "moduleName": "PayService",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvs",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvs",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvM",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV10ccExpMonthSiSgvM",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -5843,27 +6481,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSSSgvp",
-            "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSSSgvp",
+            "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSiSgvp",
+            "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSiSgvp",
             "moduleName": "PayService",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5874,24 +6512,74 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Int?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSSSgvg",
-                "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSSSgvg",
+                "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSiSgvg",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSiSgvg",
                 "moduleName": "PayService",
                 "implicit": true,
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSiSgvs",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSiSgvs",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV9ccExpYearSiSgvM",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV9ccExpYearSiSgvM",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -5949,6 +6637,66 @@
                 "declKind": "Accessor",
                 "usr": "s:10PayService19NVCardDetailsOutputV11cardProductSSSgvg",
                 "mangledName": "$s10PayService19NVCardDetailsOutputV11cardProductSSSgvg",
+                "moduleName": "PayService",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isNotReloadableCard",
+            "printedName": "isNotReloadableCard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayService19NVCardDetailsOutputV19isNotReloadableCardSbSgvp",
+            "mangledName": "$s10PayService19NVCardDetailsOutputV19isNotReloadableCardSbSgvp",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService19NVCardDetailsOutputV19isNotReloadableCardSbSgvg",
+                "mangledName": "$s10PayService19NVCardDetailsOutputV19isNotReloadableCardSbSgvg",
                 "moduleName": "PayService",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8871,7 +9619,7 @@
           {
             "kind": "Function",
             "name": "parseCreditCardInfo",
-            "printedName": "parseCreditCardInfo(input:hasFocus:ignoreEmpty:transactionDetails:shouldGetCardDetails:completion:)",
+            "printedName": "parseCreditCardInfo(input:hasFocus:ignoreEmpty:transactionDetails:shouldGetCardDetails:hasCreditCardBlockedError:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8912,6 +9660,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -8978,8 +9733,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PayService24CreditCardFieldViewModelC05parsecD4Info5input8hasFocus11ignoreEmpty18transactionDetails09shouldGetdP010completionyAA0cD5InputC_S2b4Core019CheckoutTransactionP0VSgSbyAA06NVCardP6OutputVSg_AM9NVFailureOSgtcSgtF",
-            "mangledName": "$s10PayService24CreditCardFieldViewModelC05parsecD4Info5input8hasFocus11ignoreEmpty18transactionDetails09shouldGetdP010completionyAA0cD5InputC_S2b4Core019CheckoutTransactionP0VSgSbyAA06NVCardP6OutputVSg_AM9NVFailureOSgtcSgtF",
+            "usr": "s:10PayService24CreditCardFieldViewModelC05parsecD4Info5input8hasFocus11ignoreEmpty18transactionDetails09shouldGetdP00kcD12BlockedError10completionyAA0cD5InputC_S2b4Core019CheckoutTransactionP0VSgS2byAA06NVCardP6OutputVSg_AN9NVFailureOSgtcSgtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC05parsecD4Info5input8hasFocus11ignoreEmpty18transactionDetails09shouldGetdP00kcD12BlockedError10completionyAA0cD5InputC_S2b4Core019CheckoutTransactionP0VSgS2byAA06NVCardP6OutputVSg_AN9NVFailureOSgtcSgtF",
             "moduleName": "PayService",
             "declAttributes": [
               "AccessControl"
@@ -9164,388 +9919,10 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PayService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BaseTextHandler",
-        "printedName": "BaseTextHandler",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shouldNotify",
-            "printedName": "shouldNotify",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvp",
-            "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvp",
-            "moduleName": "PayService",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvg",
-                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvg",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvs",
-                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvs",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12shouldNotifySbvM",
-                "mangledName": "$s10PayService15BaseTextHandlerP12shouldNotifySbvM",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isNumberOnly",
-            "printedName": "isNumberOnly",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvp",
-            "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvp",
-            "moduleName": "PayService",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvg",
-                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvg",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvs",
-                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvs",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP12isNumberOnlySbvM",
-                "mangledName": "$s10PayService15BaseTextHandlerP12isNumberOnlySbvM",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "maxLength",
-            "printedName": "maxLength",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvp",
-            "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvp",
-            "moduleName": "PayService",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvg",
-                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvg",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvs",
-                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvs",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PayService15BaseTextHandlerP9maxLengthSiSgvM",
-                "mangledName": "$s10PayService15BaseTextHandlerP9maxLengthSiSgvM",
-                "moduleName": "PayService",
-                "genericSig": "<τ_0_0 where τ_0_0 : PayService.BaseTextHandler>",
-                "sugared_genericSig": "<Self where Self : PayService.BaseTextHandler>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:10PayService15BaseTextHandlerP",
-        "mangledName": "$s10PayService15BaseTextHandlerP",
-        "moduleName": "PayService",
-        "genericSig": "<τ_0_0 : UIKit.UITextFieldDelegate>",
-        "sugared_genericSig": "<Self : UIKit.UITextFieldDelegate>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PayService",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "MobileSDKInternal",
         "printedName": "MobileSDKInternal",
         "children": [
-          {
-            "kind": "Function",
-            "name": "updateLogOutput",
-            "printedName": "updateLogOutput(add:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core17MobileSDKInternalC10PayServiceE15updateLogOutput3addySS_tFZ",
-            "mangledName": "$s4Core17MobileSDKInternalC10PayServiceE15updateLogOutput3addySS_tFZ",
-            "moduleName": "PayService",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
           {
             "kind": "Function",
             "name": "tokenizeCard",
@@ -9899,43 +10276,6 @@
                 "mangledName": "$sSH"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "setup",
-            "printedName": "setup(environment:customization:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "Core.NuveiSimplyConnect.Environment",
-                "hasDefaultArg": true,
-                "usr": "s:4Core18NuveiSimplyConnectC11EnvironmentO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NuveiUICustomization",
-                "printedName": "Core.NuveiUICustomization",
-                "hasDefaultArg": true,
-                "usr": "s:4Core20NuveiUICustomizationC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC10PayServiceE5setup11environment13customizationyAC11EnvironmentO_AA0B15UICustomizationCtFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC10PayServiceE5setup11environment13customizationyAC11EnvironmentO_AA0B15UICustomizationCtFZ",
-            "moduleName": "PayService",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -10699,184 +11039,191 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/MobileSDKInternal.swift",
       "kind": "BooleanLiteral",
-      "offset": 5395,
+      "offset": 5305,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 468,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 671,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 705,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 737,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 1556,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 1625,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "StringLiteral",
       "offset": 1663,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 1701,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 804,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 879,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 922,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/Extensions.swift",
       "kind": "BooleanLiteral",
       "offset": 495,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 710,
+      "offset": 707,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 714,
+      "offset": 711,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1269,
+      "offset": 1266,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7161,
+      "offset": 7597,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7202,
+      "offset": 7638,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
       "offset": 629,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
       "offset": 654,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
       "offset": 709,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "BooleanLiteral",
       "offset": 817,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 852,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 879,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 969,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1010,
       "length": 5,
       "value": "false"
     }

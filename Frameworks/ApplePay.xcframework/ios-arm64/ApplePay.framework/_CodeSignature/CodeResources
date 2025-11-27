@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CWgkZB/zVJeyZ3tK8Vo15XKpkwk=
+		p6MBYDbuTsZOMNJxK3lVrA3+xR4=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lWB+Q4YmVMymFaOXdC0zDbMsR2I=
+		sS5ZWtRSm8c037mYlT4aEIk0ZGc=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		7ubYcS6ueympTatUZdN2L704R50=
+		du/IP0PmzS+5n4VT7765qFM0BNQ=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7ubYcS6ueympTatUZdN2L704R50=
+		du/IP0PmzS+5n4VT7765qFM0BNQ=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		oRf9siD9uTKITiYBKDuyU68UfmU=
+		kcOSaAPlnwZ8uJqDCKa/QVERjac=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,14 +50,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MtA08MbAoF8SCcdfzMlZ6Vh/yWckb8YIBXaZYjqMueA=
+			g3NSeoPiQngRFh8BeZxkGZrw5FhA3OmklIcXm/NrKfA=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4cApBfTVNrobgUQUO8aj34pun7W34ujRqbtvYOl5OQI=
+			QefO/WAEZGtRXJmjDEQ4Q9plvXsi1H4pHXCN0NnYIyY=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4cApBfTVNrobgUQUO8aj34pun7W34ujRqbtvYOl5OQI=
+			QefO/WAEZGtRXJmjDEQ4Q9plvXsi1H4pHXCN0NnYIyY=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSN3NfiO0iCv0MyQ9xYwsnCVxVnSO+/xaJ08x5LAquo=
+			EN2MYggLQIakFfhzt4v/tyaunPeK8sBRn5niA3tCCrM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -27,16 +27,16 @@ extension SimplyConnect.CheckoutViewController : PassKit.PKPaymentAuthorizationV
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
 }
-public struct Installment {
-  public init(options: [SimplyConnect.InstallmentOption], isNationalIdRequired: Swift.Bool, countryCode: Swift.String)
+extension Core.NuveiSimplyConnect {
+  public static func tokenize(input: Core.NVInput, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
+  public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ())
+  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?) throws
 }
 public struct InstallmentOption {
   public init(type: SimplyConnect.InstallmentType, periods: [Swift.Int])
 }
-extension Core.NuveiSimplyConnect {
-  public static func tokenize(input: Core.NVInput, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
-  public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ())
-  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?)
+public struct Installment {
+  public init(options: [SimplyConnect.InstallmentOption], isNationalIdRequired: Swift.Bool, countryCode: Swift.String)
 }
 public enum InstallmentType : Swift.Int {
   case SINGLE_PAYMENT

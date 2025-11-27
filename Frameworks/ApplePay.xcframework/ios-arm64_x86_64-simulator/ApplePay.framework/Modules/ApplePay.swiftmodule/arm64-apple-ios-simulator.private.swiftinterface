@@ -12,7 +12,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ApplePayButton : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public init(uiOwner: UIKit.UIViewController, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], auth3dSupported: Swift.Bool, forceWebChallenge: Swift.Bool = true, delegate: any ApplePay.ApplePayDelegate)
+  @_Concurrency.MainActor @preconcurrency public init(uiOwner: UIKit.UIViewController, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], auth3dSupported: Swift.Bool, forceWebChallenge: Swift.Bool = true, delegate: any ApplePay.ApplePayDelegate) throws
   @objc deinit
 }
 extension ApplePay.ApplePayButton : PassKit.PKPaymentAuthorizationViewControllerDelegate {

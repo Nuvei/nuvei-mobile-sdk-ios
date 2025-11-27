@@ -22,7 +22,7 @@ extension Core.NVCardDetails {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NuveiCreditCardField : Fields.NuveiField {
   public typealias ValidationCompletion = (Swift.String?, [Core.InputError]?) -> ()
   public typealias TokenizationCompletion = (Swift.String?, (any Swift.Error)?) -> ()
-  @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool) -> ())?
+  @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool, _ ccExpMonth: Swift.Int?, _ ccExpYear: Swift.Int?) -> ())?
   @_Concurrency.MainActor @preconcurrency public var onInputValidated: (([Core.InputError]?) -> ())?
   @_Concurrency.MainActor @preconcurrency public var onCardDetailsUpdated: ((_ cardDetails: PayService.NVCardDetailsOutput?, _ error: Core.NVFailure?) -> ())?
   @objc deinit

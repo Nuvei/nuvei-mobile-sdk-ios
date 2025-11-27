@@ -19,6 +19,64 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public class NVOutput {
+  public enum NVOutputResult : Swift.String {
+    case approved, declined, cancelled, error
+    public static func from(_ internalResult: Core.NVOutput.NVOutputInternalResult?) -> Core.NVOutput.NVOutputResult
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum NVOutputInternalResult : Swift.String {
+    case approved, declined, redirect, cancelled, error
+    public static func from(_ raw: Swift.String?, checkSuccess: Swift.Bool = false) -> Core.NVOutput.NVOutputInternalResult
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  final public let result: Core.NVOutput.NVOutputResult
+  final public let userPaymentOptionId: Swift.String?
+  final public let ccCardNumber: Swift.String?
+  final public let bin: Swift.String?
+  final public let last4Digits: Swift.String?
+  final public let ccExpMonth: Swift.String?
+  final public let ccExpYear: Swift.String?
+  final public let transactionId: Swift.String?
+  final public let threeDReason: Swift.String?
+  final public let threeDReasonId: Swift.String?
+  final public let challengeCancelReasonId: Swift.String?
+  final public let challengeCancelReason: Swift.String?
+  final public let isLiabilityOnIssuer: Swift.Bool?
+  final public let challengePreferenceReason: Swift.String?
+  final public let errorCode: Swift.Int?
+  final public let errorDescription: Swift.String?
+  final public let rawResult: [Swift.String : Any]?
+  public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
+  public static func create(isCreatePayment: Swift.Bool, result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil) -> Core.NVOutput
+  public static func create(from failure: Core.NVFailure?, isCreatePayment: Swift.Bool) -> Core.NVOutput
+  @objc deinit
+}
+open class NuveiUICustomization {
+  public init(logo: UIKit.UIImage? = nil, toolbarCustomization: Core.NuveiToolbarCustomization = NuveiToolbarCustomization(), textBoxCustomization: Core.NuveiTextBoxCustomization = NuveiTextBoxCustomization(), errorLabelCustomization: Core.NuveiLabelCustomization = NuveiLabelCustomization(textFont: .systemFont(ofSize: 12), textColor: .sdkColor("Checkout/Red") ?? .red), tableViewCustomization: Core.NuveiTableViewCustomization = NuveiTableViewCustomization())
+  public func setButtonCustomization(_ buttonCustomization: Core.NuveiButtonCustomization, for buttonType: Core.NuveiButtonType)
+  public func buttonCustomization(for buttonType: Core.NuveiButtonType) -> Core.NuveiButtonCustomization
+  public static var defaultCheckoutToolbarColor: UIKit.UIColor? {
+    get
+  }
+  public static var defaultCheckoutToolbarLogo: UIKit.UIImage? {
+    get
+  }
+  public func getLogo() -> UIKit.UIImage?
+  public func getToolbarCustomization() -> Core.NuveiToolbarCustomization
+  public func getTextBoxCustomization() -> Core.NuveiTextBoxCustomization
+  public func getErrorLabelCustomization() -> Core.NuveiLabelCustomization
+  public func getTableViewCustomization() -> Core.NuveiTableViewCustomization
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class NuveiSimplyConnect {
   public enum Environment {
     case production, integration
@@ -35,23 +93,79 @@ import _SwiftConcurrencyShims
   public static var fieldsI18n: Core.FieldsI18n?
   public static var customization: Core.NuveiUICustomization?
   public static var isProcessing: Swift.Bool
-  public static func setup(environment: Core.NuveiSimplyConnect.Environment = .production)
+  public static func setup(environment: Core.NuveiSimplyConnect.Environment = .production, customization: Core.NuveiUICustomization = NuveiUICustomization())
   public static func getEnvBaseUrl() -> Swift.String
   public static func createPayment(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> ())
   public static func internalCreatePayment(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, source: Core.SourceApplication, callback: @escaping (Core.NVCreatePaymentOutput) -> ())
   public static func validateInput(forceWebChallenge: Swift.Bool, isCreatePayment: Swift.Bool, callback: @escaping (Core.NVOutput) -> ()) -> Swift.Bool
   @objc deinit
 }
-public func generateECKeyPair(curveType: JOSESwift.ECCurveType) throws -> JOSESwift.ECKeyPair
-public func nonReleasePrint(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
-public struct NVUPOCreatePaymentInput : Swift.Encodable {
-  public init(sessionToken: Swift.String, merchantSiteId: Swift.String, merchantId: Swift.String, currencyCode: Swift.String?, userTokenId: Swift.String?, clientUniqueId: Swift.String?, userDetails: Core.NVUserDetails?, paymentOption: Core.NVPaymentOption?, sourceApplication: Swift.String, billingAddress: Core.NVBillingAddress? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+public var kBaseURL: Swift.String {
+  get
 }
-public class NuveiTextBoxCustomization : Core.NuveiBaseCustomization {
-  public var backgroundColor: UIKit.UIColor
-  public var borderColor: UIKit.UIColor
-  public init(backgroundColor: UIKit.UIColor = .white, textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), textColor: UIKit.UIColor = .black, borderColor: UIKit.UIColor = .black, cornerRadius: Swift.Int = 0, borderWidth: Swift.Int = 1)
+public var kBaseTermURL: Swift.String {
+  get
+}
+public enum Service {
+  case initPayment(body: [Swift.String : Any])
+  case clientAuthorize3d(body: [Swift.String : Any])
+  case clientPayment(body: [Swift.String : Any])
+  case verify3d(body: [Swift.String : Any])
+  case getUPOs(body: [Swift.String : Any])
+  case getAPMs(body: [Swift.String : Any])
+  case paymentStatus(body: [Swift.String : Any])
+  case deleteUPO(body: [Swift.String : Any])
+  case tokenizeCard(body: [Swift.String : Any])
+  case getCardDetails(body: [Swift.String : Any])
+  public static func setSourceApplication(_ sourceApplication: Core.SourceApplication)
+}
+public enum SourceApplication {
+  case direct
+  case fields
+  case checkout
+  public var serverValue: Swift.String {
+    get
+  }
+  public static func == (a: Core.SourceApplication, b: Core.SourceApplication) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Swift.Encodable {
+  public var dictionary: [Swift.String : Any]? {
+    get
+  }
+}
+extension UIKit.UIImage {
+  public static func sdkImage(_ name: Swift.String?) -> UIKit.UIImage?
+}
+extension Swift.Dictionary where Key == Swift.String, Value == Any {
+  public func addingCommonParams() -> [Swift.String : Any]
+  public func adding(_ value: Any?, for key: Swift.String) -> [Swift.String : Any]
+  public func transactionResultValue() -> Core.NVOutput.NVOutputInternalResult
+  public func resultAndErrorValues(checkSuccess: Swift.Bool = false) -> (result: Core.NVOutput.NVOutputInternalResult, errorCode: Swift.Int?, errorDescription: Swift.String?)
+  public func asGenericOutput() -> Core.NVOutput?
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func fillParent(insets: UIKit.UIEdgeInsets = .zero)
+  @_Concurrency.MainActor @preconcurrency public func fillParentHorizontally(leftMargin: CoreFoundation.CGFloat = 0, rightMargin: CoreFoundation.CGFloat = 0)
+}
+extension UIKit.UIColor {
+  public static func sdkColor(_ name: Swift.String) -> UIKit.UIColor?
+  public static var nuveiDefaultColor: UIKit.UIColor
+}
+public enum CoreResources {
+  public static var bundle: Foundation.Bundle {
+    get
+  }
+}
+extension Swift.Dictionary {
+  public func parseResponse<T>() -> T? where T : Swift.Decodable
+  public static func keyPathKeys(forKeyPath: Swift.String) -> [Key]?
+}
+@objc @_inheritsConvenienceInitializers public class JWEHelper : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   @objc deinit
 }
 @available(*, deprecated, message: "Use `NVInput` instead")
@@ -68,8 +182,8 @@ public struct NVInput : Swift.Encodable, Swift.Decodable {
   public let merchantSiteId: Swift.String
   public let applePayMerchantId: Swift.String
   public let applePayMerchantName: Swift.String
-  public let currency: Swift.String
-  public let amount: Swift.String
+  public let currency: Swift.String?
+  public let amount: Swift.String?
   public let paymentOption: Core.NVPaymentOption
   public let userTokenId: Swift.String?
   public let clientUniqueId: Swift.String?
@@ -84,7 +198,7 @@ public struct NVInput : Swift.Encodable, Swift.Decodable {
   public let timeout: Swift.Int
   public let requestTimeout: Swift.Int
   public let addendums: Core.Addendums?
-  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, applePayMerchantName: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, paymentOption: Core.NVPaymentOption, userTokenId: Swift.String? = nil, clientUniqueId: Swift.String? = nil, clientRequestId: Swift.String? = nil, customData: Swift.String? = nil, billingAddress: Core.NVBillingAddress? = nil, shippingAddress: Core.NVShippingAddress? = nil, userDetails: Core.NVUserDetails? = nil, merchantDetails: Core.NVMerchantDetails? = nil, countryCode: Swift.String? = nil, dynamicDescriptor: Core.NVDynamicDescriptor? = nil, timeout: Swift.Int = 10, requestTimeout: Swift.Int = 40, addendums: Core.Addendums? = nil)
+  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, applePayMerchantName: Swift.String, merchantSiteId: Swift.String, currency: Swift.String? = nil, amount: Swift.String? = nil, paymentOption: Core.NVPaymentOption, userTokenId: Swift.String? = nil, clientUniqueId: Swift.String? = nil, clientRequestId: Swift.String? = nil, customData: Swift.String? = nil, billingAddress: Core.NVBillingAddress? = nil, shippingAddress: Core.NVShippingAddress? = nil, userDetails: Core.NVUserDetails? = nil, merchantDetails: Core.NVMerchantDetails? = nil, countryCode: Swift.String? = nil, dynamicDescriptor: Core.NVDynamicDescriptor? = nil, timeout: Swift.Int = 10, requestTimeout: Swift.Int = 40, addendums: Core.Addendums? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -149,72 +263,16 @@ public enum InputError : Swift.Int, Swift.Codable {
     get
   }
 }
-public enum NuveiButtonType {
-  case submit
-  case `continue`
-  case next
-  case cancel
-  case resend
-  case close
-  public var string: Swift.String {
-    get
-  }
-  public static func == (a: Core.NuveiButtonType, b: Core.NuveiButtonType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public class NuveiButtonCustomization : Core.NuveiBaseCustomization {
-  public var backgroundColor: UIKit.UIColor
-  public init(textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 17), textColor: UIKit.UIColor = .black, backgroundColor: UIKit.UIColor = .white, cornerRadius: Swift.Int = 0)
-  @objc deinit
-}
 public protocol JWEEncryptor {
   func encrypt(plaintext: Foundation.Data, key: any JOSESwift.JWK, header: any Core.JSONWebEncryptionHeader, options: [Swift.String : Any]) throws -> (header: any Core.JSONWebEncryptionHeader, encryptedKey: Foundation.Data, iv: Foundation.Data, ciphertext: Foundation.Data, tag: Foundation.Data)
   func decrypt(key: any JOSESwift.JWK, header: any Core.JSONWebEncryptionHeader, encryptedKey: Foundation.Data, iv: Foundation.Data, ciphertext: Foundation.Data, tag: Foundation.Data, aad: Foundation.Data) throws -> Foundation.Data
 }
-public class NVBillingAddress : Swift.Encodable, Swift.Decodable {
-  final public let firstName: Swift.String?
-  final public let lastName: Swift.String?
-  final public let country: Swift.String?
-  final public let state: Swift.String?
-  final public let county: Swift.String?
-  final public let city: Swift.String?
-  final public let address: Swift.String?
-  final public let addressLine2: Swift.String?
-  final public let addressLine3: Swift.String?
-  final public let zip: Swift.String?
-  final public let addressMatch: Swift.String?
-  final public let email: Swift.String?
-  final public let phone: Swift.String?
-  final public let cell: Swift.String?
-  final public let homePhone: Swift.String?
-  final public let workPhone: Swift.String?
-  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, country: Swift.String? = nil, state: Swift.String? = nil, county: Swift.String? = nil, city: Swift.String? = nil, address: Swift.String? = nil, addressLine2: Swift.String? = nil, addressLine3: Swift.String? = nil, zip: Swift.String? = nil, addressMatch: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, cell: Swift.String? = nil, homePhone: Swift.String? = nil, workPhone: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+public class Authenticate3dToInitPaymentMapper : Core.Mapper {
+  public init()
+  public func map(_ source: Core.NVInput) -> [Swift.String : Any]
+  public typealias Destination = [Swift.String : Any]
+  public typealias Source = Core.NVInput
   @objc deinit
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public class NVShippingAddress : Swift.Encodable, Swift.Decodable {
-  final public let firstName: Swift.String?
-  final public let lastName: Swift.String?
-  final public let country: Swift.String?
-  final public let state: Swift.String?
-  final public let county: Swift.String?
-  final public let city: Swift.String?
-  final public let address: Swift.String?
-  final public let addressLine2: Swift.String?
-  final public let addressLine3: Swift.String?
-  final public let zip: Swift.String?
-  final public let addressMatch: Swift.String?
-  final public let email: Swift.String?
-  final public let phone: Swift.String?
-  final public let cell: Swift.String?
-  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, country: Swift.String? = nil, state: Swift.String? = nil, county: Swift.String? = nil, city: Swift.String? = nil, address: Swift.String? = nil, addressLine2: Swift.String? = nil, addressLine3: Swift.String? = nil, zip: Swift.String? = nil, addressMatch: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, cell: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct NVError {
   public struct Code {
@@ -228,6 +286,7 @@ public struct NVError {
     public static let missingTransactionId: Swift.Int
     public static let missingThreeD: Swift.Int
     public static let notSetup: Swift.Int
+    public static let missingCurrencyOrAmount: Swift.Int
     public static let general3dError: Swift.Int
   }
   public struct Description {
@@ -241,98 +300,15 @@ public struct NVError {
     public static let missingTransactionId: Swift.String
     public static let missingThreeD: Swift.String
     public static let notSetup: Swift.String
+    public static let missingCurrencyOrAmount: Swift.String
     public static let forceWebChallenge: Swift.String
     public static let general3dError: Swift.String
   }
 }
-public class Authenticate3dToInitPaymentMapper : Core.Mapper {
-  public init()
-  public func map(_ source: Core.NVInput) -> [Swift.String : Any]
-  public typealias Destination = [Swift.String : Any]
-  public typealias Source = Core.NVInput
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers public class JWEHelper : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
-public protocol JSONWebEncryptionHeader {
-  var alg: Swift.String { get }
-  var enc: Swift.String { get }
-  var epk: JOSESwift.ECPublicKey? { get }
-  var apu: Swift.String? { get }
-  var apv: Swift.String? { get }
-  subscript(index: Swift.String) -> Any? { get }
-  func jsonSerializedData() -> Foundation.Data
-  func allParameters() -> [Swift.String : Any]
-}
-public struct EcdhEsJweHeader : Core.JSONWebEncryptionHeader {
-  public init(alg: Swift.String, enc: Swift.String)
-  public init(parameters: [Swift.String : Any]) throws
-  public init(jsonData: Foundation.Data) throws
-  public init(b64uData: Foundation.Data) throws
-  public init(cloneFrom: any Core.JSONWebEncryptionHeader) throws
-  public func jsonSerializedData() -> Foundation.Data
-  public func allParameters() -> [Swift.String : Any]
-}
-extension Core.EcdhEsJweHeader {
-  public var alg: Swift.String {
-    get
-    set
-  }
-  public var enc: Swift.String {
-    get
-    set
-  }
-  public var epk: JOSESwift.ECPublicKey? {
-    get
-    set
-  }
-  public var apu: Swift.String? {
-    get
-    set
-  }
-  public var apv: Swift.String? {
-    get
-    set
-  }
-}
-extension Core.EcdhEsJweHeader {
-  public subscript(index: Swift.String) -> Any? {
-    get
-    set
-  }
-}
-public class FieldsI18n {
-  final public let cardHolderNameTitle: Swift.String?
-  final public let cardHolderNamePlaceholder: Swift.String?
-  final public let cardNumberTitle: Swift.String?
-  final public let cardNumberPlaceholder: Swift.String?
-  final public let expirationDateTitle: Swift.String?
-  final public let expirationDatePlaceholder: Swift.String?
-  final public let cvvTitle: Swift.String?
-  final public let cvvPlaceholder: Swift.String?
-  final public let errors: [Core.InputError : Swift.String]
-  public init(cardHolderNameTitle: Swift.String? = nil, cardHolderNamePlaceholder: Swift.String? = nil, cardNumberTitle: Swift.String? = nil, cardNumberPlaceholder: Swift.String? = nil, expirationDateTitle: Swift.String? = nil, expirationDatePlaceholder: Swift.String? = nil, cvvTitle: Swift.String? = nil, cvvPlaceholder: Swift.String? = nil, errors: [Core.InputError : Swift.String] = [:])
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class CompletionEvent {
-  @objc deinit
-}
-open class NuveiUICustomization {
-  public init(logo: UIKit.UIImage? = nil, toolbarCustomization: Core.NuveiToolbarCustomization = NuveiToolbarCustomization(), labelCustomization: Core.NuveiLabelCustomization = NuveiLabelCustomization(), textBoxCustomization: Core.NuveiTextBoxCustomization = NuveiTextBoxCustomization())
-  public func setButtonCustomization(_ buttonCustomization: Core.NuveiButtonCustomization, for buttonType: Core.NuveiButtonType)
-  public func buttonCustomization(for buttonType: Core.NuveiButtonType) -> Core.NuveiButtonCustomization
-  public static var defaultCheckoutToolbarColor: UIKit.UIColor? {
-    get
-  }
-  public static var defaultCheckoutToolbarLogo: UIKit.UIImage? {
-    get
-  }
-  public func getLogo() -> UIKit.UIImage?
-  public func getToolbarCustomization() -> Core.NuveiToolbarCustomization
-  public func getLabelCustomization() -> Core.NuveiLabelCustomization
-  public func getTextBoxCustomization() -> Core.NuveiTextBoxCustomization
+public class NuveiToolbarCustomization : Core.NuveiBaseCustomization {
+  public var backgroundColor: UIKit.UIColor
+  public var headerText: Swift.String
+  public init(headerText: Swift.String = "SECURE CHECKOUT", textFont: UIKit.UIFont = UIFont.boldSystemFont(ofSize: 22), textColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .nuveiDefaultColor)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MobileSDKInternal {
@@ -352,181 +328,71 @@ open class NuveiUICustomization {
   public func closeTransaction()
   @objc deinit
 }
-extension Swift.Encodable {
-  public var dictionary: [Swift.String : Any]? {
-    get
-  }
+@_hasMissingDesignatedInitializers public class API {
+  public static var timeOutInterval: Swift.Double
+  public static func request(_ service: Core.Service, callback: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void) throws
+  @objc deinit
 }
-extension UIKit.UIImage {
-  public static func sdkImage(_ name: Swift.String?) -> UIKit.UIImage?
+public struct DeviceDetails {
+  public static func collectDeviceDetails() -> Core.DeviceDetails
+  public func asRequestParameters() -> [Swift.String : Any]
 }
-extension Swift.Dictionary where Key == Swift.String, Value == Any {
-  public func addingCommonParams() -> [Swift.String : Any]
-  public func adding(_ value: Any?, for key: Swift.String) -> [Swift.String : Any]
-  public func transactionResultValue() -> Core.NVOutput.NVOutputInternalResult
-  public func resultAndErrorValues(checkSuccess: Swift.Bool = false) -> (result: Core.NVOutput.NVOutputInternalResult, errorCode: Swift.Int?, errorDescription: Swift.String?)
-  public func asGenericOutput() -> Core.NVOutput?
-}
-extension UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public func fillParent(insets: UIKit.UIEdgeInsets = .zero)
-  @_Concurrency.MainActor @preconcurrency public func fillParentHorizontally(leftMargin: CoreFoundation.CGFloat = 0, rightMargin: CoreFoundation.CGFloat = 0)
-}
-extension UIKit.UIColor {
-  public static func sdkColor(_ name: Swift.String) -> UIKit.UIColor?
-  public static var nuveiDefaultColor: UIKit.UIColor
-}
-public enum CoreResources {
-  public static var bundle: Foundation.Bundle {
-    get
-  }
-}
-extension Swift.Dictionary {
-  public func parseResponse<T>() -> T? where T : Swift.Decodable
-  public static func keyPathKeys(forKeyPath: Swift.String) -> [Key]?
-}
-@available(*, deprecated, message: "Use `NVPaymentOption` instead")
-public typealias PaymentOption = Core.NVPaymentOption
-@available(*, deprecated, message: "Use `NVCardDetails` instead")
-public typealias CardDetails = Core.NVCardDetails
-public struct NVPaymentOption : Swift.Encodable, Swift.Decodable {
-  public let userPaymentOptionId: Swift.String?
-  public let paymentMethod: Swift.String?
-  public let card: Core.NVCardDetails?
-  public let savePm: Swift.Bool?
-  public let alternativePaymentMethod: Core.NVPaymentOption.AlternativePaymentMethod?
-  public init(paymentMethod: Swift.String? = nil, userPaymentOptionId: Swift.String? = nil, card: Core.NVCardDetails? = nil, saveMethod: Swift.Bool? = nil, alternativePaymentMethod: Core.NVPaymentOption.AlternativePaymentMethod? = nil) throws
-  public struct AlternativePaymentMethod : Swift.Encodable, Swift.Decodable {
-    public let paymentMethod: Swift.String?
-    public let fields: [Swift.String : Swift.String]?
-    public init(paymentMethod: Swift.String?, fields: [Swift.String : Swift.String]?)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
+public struct Addendums : Swift.Codable {
+  public init(nationalId: Swift.String?, installmentType: Swift.Int?, numberOfInstallments: Swift.Int?)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct NVCardDetails : Swift.Encodable, Swift.Decodable {
-  public let cardNumber: Swift.String?
-  public let cardHolderName: Swift.String?
-  public let CVV: Swift.String?
-  public let expirationMonth: Swift.String?
-  public let expirationYear: Swift.String?
-  public let externalToken: Core.NVCardDetails.ExternalToken?
-  public let ccTempToken: Swift.String?
-  public init(cvv: Swift.String? = nil)
-  public init(cardNumber: Swift.String? = nil, cardHolderName: Swift.String? = nil, cvv: Swift.String? = nil, expirationMonth: Swift.String?, expirationYear: Swift.String?, externalToken: Core.NVCardDetails.ExternalToken? = nil, ccTempToken: Swift.String? = nil)
-  public struct ExternalToken : Swift.Encodable, Swift.Decodable {
-    public let externalTokenProvider: Swift.String
-    public let mobileToken: Swift.String
-    public init(externalTokenProvider: Swift.String, mobileToken: Swift.String)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public enum ECDHEESError : Swift.Error {
+  case unknownOrUnsupportedAlgorithm(reason: Swift.String)
+  case unknownOrUnsupportedCompressionAlgorithm(reason: Swift.String)
+  case invalidJWK(reason: Swift.String)
+  case invalidKeyDerivationSize
+  case invalidKeySize
+  case invalidEncryptionIVSize
+  case invalidHeaderParameter(reason: Swift.String)
+  case invalidJsonData
+  case invalidBase64URLEncoded
+  case invalidCompactSerializedData
+  case deriveKeyFail(reason: Swift.String)
+  case wrapKeyFail
+  case unwrapKeyFail
+  case compressionFailed
+  case decompressionFailed
+  case decryptFail(reason: Swift.String)
 }
-public class NuveiLabelCustomization : Core.NuveiBaseCustomization {
-  public init(textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), textColor: UIKit.UIColor = .black, headingTextFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), headingTextColor: UIKit.UIColor = .white)
+public protocol JSONWebEncryption {
+  var header: any Core.JSONWebEncryptionHeader { get }
+  var encryptedKey: Foundation.Data { get }
+  var initializationVector: Foundation.Data { get }
+  var ciphertext: Foundation.Data { get }
+  var authenticationTag: Foundation.Data { get }
+  var compactSerializedString: Swift.String { get }
+  var compactSerializedData: Foundation.Data { get }
+  var additionalAuthenticatedData: Foundation.Data { get }
+  func decrypt(key: any JOSESwift.JWK) throws -> Foundation.Data
+}
+public protocol JSONWebEncryptionHeader {
+  var alg: Swift.String { get }
+  var enc: Swift.String { get }
+  var epk: JOSESwift.ECPublicKey? { get }
+  var apu: Swift.String? { get }
+  var apv: Swift.String? { get }
+  subscript(index: Swift.String) -> Any? { get }
+  func jsonSerializedData() -> Foundation.Data
+  func allParameters() -> [Swift.String : Any]
+}
+public class FieldsI18n {
+  final public let cardHolderNameTitle: Swift.String?
+  final public let cardHolderNamePlaceholder: Swift.String?
+  final public let cardNumberTitle: Swift.String?
+  final public let cardNumberPlaceholder: Swift.String?
+  final public let expirationDateTitle: Swift.String?
+  final public let expirationDatePlaceholder: Swift.String?
+  final public let cvvTitle: Swift.String?
+  final public let cvvPlaceholder: Swift.String?
+  final public let errors: [Core.InputError : Swift.String]
+  public init(cardHolderNameTitle: Swift.String? = nil, cardHolderNamePlaceholder: Swift.String? = nil, cardNumberTitle: Swift.String? = nil, cardNumberPlaceholder: Swift.String? = nil, expirationDateTitle: Swift.String? = nil, expirationDatePlaceholder: Swift.String? = nil, cvvTitle: Swift.String? = nil, cvvPlaceholder: Swift.String? = nil, errors: [Core.InputError : Swift.String] = [:])
   @objc deinit
-}
-public struct CheckoutTransactionDetails : Swift.Codable {
-  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, applePayMerchantName: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, userTokenId: Swift.String?, clientUniqueId: Swift.String?, clientRequestId: Swift.String?, customData: Swift.String?, billingAddress: Core.NVBillingAddress?, shippingAddress: Core.NVShippingAddress?, userDetails: Core.NVUserDetails?, merchantDetails: Core.NVMerchantDetails?, dynamicDescriptor: Core.NVDynamicDescriptor?, paymentOption: Core.NVPaymentOption?, countryCode: Swift.String?, forceWebChallenge: Swift.Bool)
-  public static func transactionDetails(from object: Core.NVInput, additionalParams: [Swift.String : Any]?, forceWebChallenge: Swift.Bool) -> Core.CheckoutTransactionDetails
-  public func getSessionToken() -> Swift.String
-  public func getMerchantId() -> Swift.String
-  public func getApplePayMerchantId() -> Swift.String
-  public func getApplePayMerchantName() -> Swift.String
-  public func getMerchantSiteId() -> Swift.String
-  public func getCurrency() -> Swift.String
-  public func getAmount() -> Swift.String
-  public func getUserTokenId() -> Swift.String?
-  public func getClientUniqueId() -> Swift.String?
-  public func getClientRequestId() -> Swift.String?
-  public func getCustomData() -> Swift.String?
-  public func getBillingAddress() -> Core.NVBillingAddress?
-  public func getShippingAddress() -> Core.NVShippingAddress?
-  public func getUserDetails() -> Core.NVUserDetails?
-  public func getMerchantDetails() -> Core.NVMerchantDetails?
-  public func getDynamicDescriptor() -> Core.NVDynamicDescriptor?
-  public func getPaymentOption() -> Core.NVPaymentOption?
-  public func getCountryCode() -> Swift.String?
-  public func getForceWebChallenge() -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum NVFailure : Swift.Error {
-  case unknown, invalidInput([Core.InputError]), notSetup, `internal`(Swift.Int, Swift.String, [Swift.String : Any]?)
-  public static func defaultInternal(rawResult: [Swift.String : Any]? = nil) -> Core.NVFailure
-  public var code: Swift.Int {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-  public var raw: [Swift.String : Any]? {
-    get
-  }
-  public var transactionId: Swift.String? {
-    get
-  }
-}
-extension JOSESwift.ECCurveType {
-  public var bitLength: Swift.Int {
-    get
-  }
-}
-extension JOSESwift.ECPrivateKey {
-  public func getPrivate() -> JOSESwift.ECPrivateKey
-}
-extension JOSESwift.JWK {
-  public func dictionarized() -> [Swift.String : Swift.String]
-  public init(dictionary: [Swift.String : Any]) throws
-}
-extension JOSESwift.ECPrivateKey {
-  public func getPublic() -> JOSESwift.ECPublicKey
-  public func isCorrespondWith(_ key: JOSESwift.ECPublicKey) -> Swift.Bool
-}
-public class NuveiBaseCustomization {
-  public var textFont: UIKit.UIFont
-  public var textColor: UIKit.UIColor
-  public init(textFont: UIKit.UIFont, textColor: UIKit.UIColor)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class NVUtils {
-  public static let shared: Core.NVUtils
-  public func simCountryCode() -> Swift.String?
-  public func setup(additionalParams: [Swift.String : Any]? = nil)
-  public func getLocale() -> Swift.String
-  @objc deinit
-}
-@available(*, deprecated, message: "Use `NVAuthenticate3dOutput` instead")
-public typealias Authenticate3dOutput = Core.NVAuthenticate3dOutput
-public class NVAuthenticate3dOutput : Core.NVOutput {
-  final public let cavv: Swift.String?
-  final public let eci: Swift.String?
-  final public let xid: Swift.String?
-  final public let dsTransID: Swift.String?
-  final public let ccTempToken: Swift.String?
-  public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, cavv: Swift.String? = nil, eci: Swift.String? = nil, xid: Swift.String? = nil, dsTransID: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, ccTempToken: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
-  @objc deinit
-}
-public struct EcdhEsJwe : Core.JSONWebEncryption {
-  public let header: any Core.JSONWebEncryptionHeader
-  public let encryptedKey: Foundation.Data
-  public let initializationVector: Foundation.Data
-  public var ciphertext: Foundation.Data
-  public var authenticationTag: Foundation.Data
-  public var additionalAuthenticatedData: Foundation.Data
-  public var compactSerializedString: Swift.String {
-    get
-  }
-  public var compactSerializedData: Foundation.Data {
-    get
-  }
-  public func decrypt(key: any JOSESwift.JWK) throws -> Foundation.Data
-  public init(plaintext: Foundation.Data, pubKey: JOSESwift.ECPublicKey, headerDic: [Swift.String : Any] = [:], options: [Swift.String : Any] = [:]) throws
-  public init(plaintext: Foundation.Data, pubKey: JOSESwift.ECPublicKey, header: any Core.JSONWebEncryptionHeader, options: [Swift.String : Any] = [:]) throws
-  public init(compactSerializedData: Foundation.Data) throws
 }
 public struct NetworkConstants {
   public static let sessionToken: Swift.String
@@ -673,42 +539,32 @@ public struct NetworkConstants {
     }
   }
 }
-public var kBaseURL: Swift.String {
-  get
+public class NuveiTextBoxCustomization : Core.NuveiBaseCustomization {
+  public var headingTextColor: UIKit.UIColor
+  public var headingTextFont: UIKit.UIFont
+  public var placeholderTextColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var borderColor: UIKit.UIColor
+  public var cornerRadius: Swift.Int
+  public var borderWidth: Swift.Int
+  public init(headingTextFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), headingTextColor: UIKit.UIColor = .black, backgroundColor: UIKit.UIColor = .white, textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), textColor: UIKit.UIColor = .black, placeholderTextColor: UIKit.UIColor = .black, borderColor: UIKit.UIColor = .black, cornerRadius: Swift.Int = 0, borderWidth: Swift.Int = 1)
+  @objc deinit
 }
-public var kBaseTermURL: Swift.String {
-  get
-}
-public enum Service {
-  case initPayment(body: [Swift.String : Any])
-  case clientAuthorize3d(body: [Swift.String : Any])
-  case clientPayment(body: [Swift.String : Any])
-  case verify3d(body: [Swift.String : Any])
-  case getUPOs(body: [Swift.String : Any])
-  case getAPMs(body: [Swift.String : Any])
-  case paymentStatus(body: [Swift.String : Any])
-  case deleteUPO(body: [Swift.String : Any])
-  case tokenizeCard(body: [Swift.String : Any])
-  case getCardDetails(body: [Swift.String : Any])
-  public static func setSourceApplication(_ sourceApplication: Core.SourceApplication)
-}
-public enum SourceApplication {
-  case direct
-  case fields
-  case checkout
-  public var serverValue: Swift.String {
+public enum NVFailure : Swift.Error {
+  case unknown, invalidInput([Core.InputError]), notSetup, `internal`(Swift.Int, Swift.String, [Swift.String : Any]?)
+  public static func defaultInternal(rawResult: [Swift.String : Any]? = nil) -> Core.NVFailure
+  public var code: Swift.Int {
     get
   }
-  public static func == (a: Core.SourceApplication, b: Core.SourceApplication) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public var description: Swift.String {
     get
   }
-}
-public struct Addendums : Swift.Codable {
-  public init(nationalId: Swift.String?, installmentType: Swift.Int?, numberOfInstallments: Swift.Int?)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public var raw: [Swift.String : Any]? {
+    get
+  }
+  public var transactionId: Swift.String? {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class ConfigParameters {
   public static let DIRECTORY_SERVER_GROUP: Swift.String
@@ -719,6 +575,51 @@ public struct Addendums : Swift.Codable {
   public static let DIRECTORY_SERVER_ALG_EC: Swift.String
   public static let DIRECTORY_SERVER_ROOT_CA_KEY: Swift.String
   public static let DIRECTORY_SERVER_ROOT_CA_ALG_KEY: Swift.String
+  @objc deinit
+}
+public struct EcdhEsJweHeader : Core.JSONWebEncryptionHeader {
+  public init(alg: Swift.String, enc: Swift.String)
+  public init(parameters: [Swift.String : Any]) throws
+  public init(jsonData: Foundation.Data) throws
+  public init(b64uData: Foundation.Data) throws
+  public init(cloneFrom: any Core.JSONWebEncryptionHeader) throws
+  public func jsonSerializedData() -> Foundation.Data
+  public func allParameters() -> [Swift.String : Any]
+}
+extension Core.EcdhEsJweHeader {
+  public var alg: Swift.String {
+    get
+    set
+  }
+  public var enc: Swift.String {
+    get
+    set
+  }
+  public var epk: JOSESwift.ECPublicKey? {
+    get
+    set
+  }
+  public var apu: Swift.String? {
+    get
+    set
+  }
+  public var apv: Swift.String? {
+    get
+    set
+  }
+}
+extension Core.EcdhEsJweHeader {
+  public subscript(index: Swift.String) -> Any? {
+    get
+    set
+  }
+}
+public class NuveiFieldCustomization : Core.NuveiUICustomization {
+  final public let backgroundColor: UIKit.UIColor
+  final public let borderColor: UIKit.UIColor
+  final public let cornerRadius: Swift.Int
+  final public let borderWidth: Swift.Int
+  public init(logo: UIKit.UIImage? = nil, toolbarCustomization: Core.NuveiToolbarCustomization = NuveiToolbarCustomization(), textBoxCustomization: Core.NuveiTextBoxCustomization = NuveiTextBoxCustomization(), errorLabelCustomization: Core.NuveiLabelCustomization = NuveiLabelCustomization(textColor: .red), backgroundColor: UIKit.UIColor = .white, borderColor: UIKit.UIColor = .black, cornerRadius: Swift.Int = 0, borderWidth: Swift.Int = 1)
   @objc deinit
 }
 public class CheckoutI18n {
@@ -740,8 +641,223 @@ public class CheckoutI18n {
   final public let personalIdPlaceholder: Swift.String?
   final public let saveDetailsText: Swift.String?
   final public let payButtonTitle: Swift.String?
+  final public let apmDictionary: [Swift.String : [Swift.String : Swift.String]]?
   final public let errors: [Core.InputError : Swift.String]
-  public init(cardHolderNameTitle: Swift.String? = nil, cardHolderNamePlaceholder: Swift.String? = nil, cardNumberTitle: Swift.String? = nil, cardNumberPlaceholder: Swift.String? = nil, expirationDateTitle: Swift.String? = nil, expirationDatePlaceholder: Swift.String? = nil, cvvTitle: Swift.String? = nil, cvvPlaceholder: Swift.String? = nil, installmentsProgramTitle: Swift.String? = nil, singlePaymentText: Swift.String? = nil, deferredWithInterestText: Swift.String? = nil, deferredWithoutInterestText: Swift.String? = nil, deferredWithoutInterestAndGraceText: Swift.String? = nil, numberOfInstallmentsTitle: Swift.String? = nil, personalIdTitle: Swift.String? = nil, personalIdPlaceholder: Swift.String? = nil, saveDetailsText: Swift.String? = nil, payButtonTitle: Swift.String? = nil, errors: [Core.InputError : Swift.String] = [:])
+  public init(cardHolderNameTitle: Swift.String? = nil, cardHolderNamePlaceholder: Swift.String? = nil, cardNumberTitle: Swift.String? = nil, cardNumberPlaceholder: Swift.String? = nil, expirationDateTitle: Swift.String? = nil, expirationDatePlaceholder: Swift.String? = nil, cvvTitle: Swift.String? = nil, cvvPlaceholder: Swift.String? = nil, installmentsProgramTitle: Swift.String? = nil, singlePaymentText: Swift.String? = nil, deferredWithInterestText: Swift.String? = nil, deferredWithoutInterestText: Swift.String? = nil, deferredWithoutInterestAndGraceText: Swift.String? = nil, numberOfInstallmentsTitle: Swift.String? = nil, personalIdTitle: Swift.String? = nil, personalIdPlaceholder: Swift.String? = nil, saveDetailsText: Swift.String? = nil, payButtonTitle: Swift.String? = nil, apmDictionary: [Swift.String : [Swift.String : Swift.String]]? = nil, errors: [Core.InputError : Swift.String] = [:])
+  @objc deinit
+}
+public struct Constants {
+  public static let error: Swift.String
+  public static let supportedMessageVersions: [Swift.String]
+}
+public class NuveiTableViewCustomization : Core.NuveiBaseCustomization {
+  public var sectionTitleFont: UIKit.UIFont
+  public var sectionTitleColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var cellBackgroundColor: UIKit.UIColor
+  public init(sectionTitleFont: UIKit.UIFont = UIFont.boldSystemFont(ofSize: 13), sectionTitleColor: UIKit.UIColor = .sdkColor("Checkout/Header/Title") ?? .secondaryLabel, backgroundColor: UIKit.UIColor = .sdkColor("Checkout/Background") ?? .systemGray, cellBackgroundColor: UIKit.UIColor = .sdkColor("Checkout/ListWhite") ?? .white, textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), textColor: UIKit.UIColor = .black)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class NVCreatePaymentOutput : Core.NVOutput {
+  override public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+public struct NVUPOCreatePaymentInput : Swift.Encodable {
+  public init(sessionToken: Swift.String, merchantSiteId: Swift.String, merchantId: Swift.String, currencyCode: Swift.String?, userTokenId: Swift.String?, clientUniqueId: Swift.String?, userDetails: Core.NVUserDetails?, paymentOption: Core.NVPaymentOption?, sourceApplication: Swift.String, billingAddress: Core.NVBillingAddress? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public protocol Mapper {
+  associatedtype Source
+  associatedtype Destination
+  func map(_ source: Self.Source) -> Self.Destination
+}
+public struct EcdhEsJwe : Core.JSONWebEncryption {
+  public let header: any Core.JSONWebEncryptionHeader
+  public let encryptedKey: Foundation.Data
+  public let initializationVector: Foundation.Data
+  public var ciphertext: Foundation.Data
+  public var authenticationTag: Foundation.Data
+  public var additionalAuthenticatedData: Foundation.Data
+  public var compactSerializedString: Swift.String {
+    get
+  }
+  public var compactSerializedData: Foundation.Data {
+    get
+  }
+  public func decrypt(key: any JOSESwift.JWK) throws -> Foundation.Data
+  public init(plaintext: Foundation.Data, pubKey: JOSESwift.ECPublicKey, headerDic: [Swift.String : Any] = [:], options: [Swift.String : Any] = [:]) throws
+  public init(plaintext: Foundation.Data, pubKey: JOSESwift.ECPublicKey, header: any Core.JSONWebEncryptionHeader, options: [Swift.String : Any] = [:]) throws
+  public init(compactSerializedData: Foundation.Data) throws
+}
+@_hasMissingDesignatedInitializers public class CompletionEvent {
+  @objc deinit
+}
+public enum NuveiButtonType {
+  case submit
+  case `continue`
+  case next
+  case cancel
+  case resend
+  case close
+  case pay
+  case checkbox
+  public var string: Swift.String {
+    get
+  }
+  public static func == (a: Core.NuveiButtonType, b: Core.NuveiButtonType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class NuveiButtonCustomization : Core.NuveiBaseCustomization {
+  public var backgroundColor: UIKit.UIColor
+  public var cornerRadius: CoreFoundation.CGFloat
+  public init(textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 17), textColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .sdkColor("Checkout/Purple") ?? .black, cornerRadius: CoreFoundation.CGFloat = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class NuveiLabelCustomization : Core.NuveiBaseCustomization {
+  override public init(textFont: UIKit.UIFont = UIFont.systemFont(ofSize: 14), textColor: UIKit.UIColor = .black)
+  @objc deinit
+}
+public struct CheckoutTransactionDetails : Swift.Codable {
+  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, applePayMerchantName: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, userTokenId: Swift.String?, clientUniqueId: Swift.String?, clientRequestId: Swift.String?, customData: Swift.String?, billingAddress: Core.NVBillingAddress?, shippingAddress: Core.NVShippingAddress?, userDetails: Core.NVUserDetails?, merchantDetails: Core.NVMerchantDetails?, dynamicDescriptor: Core.NVDynamicDescriptor?, paymentOption: Core.NVPaymentOption?, countryCode: Swift.String?, forceWebChallenge: Swift.Bool)
+  public static func transactionDetails(from object: Core.NVInput, additionalParams: [Swift.String : Any]?, forceWebChallenge: Swift.Bool) -> Core.CheckoutTransactionDetails?
+  public func getSessionToken() -> Swift.String
+  public func getMerchantId() -> Swift.String
+  public func getApplePayMerchantId() -> Swift.String
+  public func getApplePayMerchantName() -> Swift.String
+  public func getMerchantSiteId() -> Swift.String
+  public func getCurrency() -> Swift.String
+  public func getAmount() -> Swift.String
+  public func getUserTokenId() -> Swift.String?
+  public func getClientUniqueId() -> Swift.String?
+  public func getClientRequestId() -> Swift.String?
+  public func getCustomData() -> Swift.String?
+  public func getBillingAddress() -> Core.NVBillingAddress?
+  public func getShippingAddress() -> Core.NVShippingAddress?
+  public func getUserDetails() -> Core.NVUserDetails?
+  public func getMerchantDetails() -> Core.NVMerchantDetails?
+  public func getDynamicDescriptor() -> Core.NVDynamicDescriptor?
+  public func getPaymentOption() -> Core.NVPaymentOption?
+  public func getCountryCode() -> Swift.String?
+  public func getForceWebChallenge() -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class Transaction {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NVUtils {
+  public static let shared: Core.NVUtils
+  public func simCountryCode() -> Swift.String?
+  public func setup(additionalParams: [Swift.String : Any]? = nil)
+  public func getLocale() -> Swift.String
+  @objc deinit
+}
+public class NVBillingAddress : Swift.Encodable, Swift.Decodable {
+  final public let firstName: Swift.String?
+  final public let lastName: Swift.String?
+  final public let country: Swift.String?
+  final public let state: Swift.String?
+  final public let county: Swift.String?
+  final public let city: Swift.String?
+  final public let address: Swift.String?
+  final public let addressLine2: Swift.String?
+  final public let addressLine3: Swift.String?
+  final public let zip: Swift.String?
+  final public let addressMatch: Swift.String?
+  final public let email: Swift.String?
+  final public let phone: Swift.String?
+  final public let cell: Swift.String?
+  final public let homePhone: Swift.String?
+  final public let workPhone: Swift.String?
+  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, country: Swift.String? = nil, state: Swift.String? = nil, county: Swift.String? = nil, city: Swift.String? = nil, address: Swift.String? = nil, addressLine2: Swift.String? = nil, addressLine3: Swift.String? = nil, zip: Swift.String? = nil, addressMatch: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, cell: Swift.String? = nil, homePhone: Swift.String? = nil, workPhone: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class NVShippingAddress : Swift.Encodable, Swift.Decodable {
+  final public let firstName: Swift.String?
+  final public let lastName: Swift.String?
+  final public let country: Swift.String?
+  final public let state: Swift.String?
+  final public let county: Swift.String?
+  final public let city: Swift.String?
+  final public let address: Swift.String?
+  final public let addressLine2: Swift.String?
+  final public let addressLine3: Swift.String?
+  final public let zip: Swift.String?
+  final public let addressMatch: Swift.String?
+  final public let email: Swift.String?
+  final public let phone: Swift.String?
+  final public let cell: Swift.String?
+  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, country: Swift.String? = nil, state: Swift.String? = nil, county: Swift.String? = nil, city: Swift.String? = nil, address: Swift.String? = nil, addressLine2: Swift.String? = nil, addressLine3: Swift.String? = nil, zip: Swift.String? = nil, addressMatch: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, cell: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+extension JOSESwift.ECCurveType {
+  public var bitLength: Swift.Int {
+    get
+  }
+}
+extension JOSESwift.ECPrivateKey {
+  public func getPrivate() -> JOSESwift.ECPrivateKey
+}
+extension JOSESwift.JWK {
+  public func dictionarized() -> [Swift.String : Swift.String]
+  public init(dictionary: [Swift.String : Any]) throws
+}
+extension JOSESwift.ECPrivateKey {
+  public func getPublic() -> JOSESwift.ECPublicKey
+  public func isCorrespondWith(_ key: JOSESwift.ECPublicKey) -> Swift.Bool
+}
+@available(*, deprecated, message: "Use `NVPaymentOption` instead")
+public typealias PaymentOption = Core.NVPaymentOption
+@available(*, deprecated, message: "Use `NVCardDetails` instead")
+public typealias CardDetails = Core.NVCardDetails
+public struct NVPaymentOption : Swift.Encodable, Swift.Decodable {
+  public let userPaymentOptionId: Swift.String?
+  public let paymentMethod: Swift.String?
+  public let card: Core.NVCardDetails?
+  public let savePm: Swift.Bool?
+  public let alternativePaymentMethod: Core.NVPaymentOption.AlternativePaymentMethod?
+  public init(paymentMethod: Swift.String? = nil, userPaymentOptionId: Swift.String? = nil, card: Core.NVCardDetails? = nil, saveMethod: Swift.Bool? = nil, alternativePaymentMethod: Core.NVPaymentOption.AlternativePaymentMethod? = nil) throws
+  public struct AlternativePaymentMethod : Swift.Encodable, Swift.Decodable {
+    public let paymentMethod: Swift.String?
+    public let fields: [Swift.String : Swift.String]?
+    public init(paymentMethod: Swift.String?, fields: [Swift.String : Swift.String]?)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NVCardDetails : Swift.Encodable, Swift.Decodable {
+  public let cardNumber: Swift.String?
+  public let cardHolderName: Swift.String?
+  public let CVV: Swift.String?
+  public let expirationMonth: Swift.String?
+  public let expirationYear: Swift.String?
+  public let externalToken: Core.NVCardDetails.ExternalToken?
+  public let ccTempToken: Swift.String?
+  public init(cvv: Swift.String? = nil)
+  public init(cardNumber: Swift.String? = nil, cardHolderName: Swift.String? = nil, cvv: Swift.String? = nil, expirationMonth: Swift.String?, expirationYear: Swift.String?, externalToken: Core.NVCardDetails.ExternalToken? = nil, ccTempToken: Swift.String? = nil)
+  public struct ExternalToken : Swift.Encodable, Swift.Decodable {
+    public let externalTokenProvider: Swift.String
+    public let mobileToken: Swift.String
+    public init(externalTokenProvider: Swift.String, mobileToken: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class NuveiBaseCustomization {
+  public var textFont: UIKit.UIFont
+  public var textColor: UIKit.UIColor
+  public init(textFont: UIKit.UIFont, textColor: UIKit.UIColor)
   @objc deinit
 }
 public protocol NVUIOwner {
@@ -754,129 +870,31 @@ extension UIKit.UIViewController : Core.NVUIOwner {
 extension UIKit.UIApplication : Core.NVUIOwner {
   @_Concurrency.MainActor @preconcurrency public func getNVUIOwnerViewController() -> UIKit.UIViewController
 }
-public class NuveiToolbarCustomization : Core.NuveiBaseCustomization {
-  public var backgroundColor: UIKit.UIColor
-  public var headerText: Swift.String
-  public init(headerText: Swift.String = "SECURE CHECKOUT", textFont: UIKit.UIFont = UIFont.boldSystemFont(ofSize: 22), textColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .nuveiDefaultColor)
+public func generateECKeyPair(curveType: JOSESwift.ECCurveType) throws -> JOSESwift.ECKeyPair
+public func nonReleasePrint(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n")
+@available(*, deprecated, message: "Use `NVAuthenticate3dOutput` instead")
+public typealias Authenticate3dOutput = Core.NVAuthenticate3dOutput
+public class NVAuthenticate3dOutput : Core.NVOutput {
+  final public let cavv: Swift.String?
+  final public let eci: Swift.String?
+  final public let xid: Swift.String?
+  final public let dsTransID: Swift.String?
+  final public let ccTempToken: Swift.String?
+  public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, cavv: Swift.String? = nil, eci: Swift.String? = nil, xid: Swift.String? = nil, dsTransID: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, ccTempToken: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
   @objc deinit
 }
-public protocol JSONWebEncryption {
-  var header: any Core.JSONWebEncryptionHeader { get }
-  var encryptedKey: Foundation.Data { get }
-  var initializationVector: Foundation.Data { get }
-  var ciphertext: Foundation.Data { get }
-  var authenticationTag: Foundation.Data { get }
-  var compactSerializedString: Swift.String { get }
-  var compactSerializedData: Foundation.Data { get }
-  var additionalAuthenticatedData: Foundation.Data { get }
-  func decrypt(key: any JOSESwift.JWK) throws -> Foundation.Data
-}
-public struct DeviceDetails {
-  public static func collectDeviceDetails() -> Core.DeviceDetails
-  public func asRequestParameters() -> [Swift.String : Any]
-}
-public class NVOutput {
-  public enum NVOutputResult : Swift.String {
-    case approved, declined, cancelled, error
-    public static func from(_ internalResult: Core.NVOutput.NVOutputInternalResult?) -> Core.NVOutput.NVOutputResult
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum NVOutputInternalResult : Swift.String {
-    case approved, declined, redirect, cancelled, error
-    public static func from(_ raw: Swift.String?, checkSuccess: Swift.Bool = false) -> Core.NVOutput.NVOutputInternalResult
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  final public let result: Core.NVOutput.NVOutputResult
-  final public let userPaymentOptionId: Swift.String?
-  final public let ccCardNumber: Swift.String?
-  final public let bin: Swift.String?
-  final public let last4Digits: Swift.String?
-  final public let ccExpMonth: Swift.String?
-  final public let ccExpYear: Swift.String?
-  final public let transactionId: Swift.String?
-  final public let threeDReason: Swift.String?
-  final public let threeDReasonId: Swift.String?
-  final public let challengeCancelReasonId: Swift.String?
-  final public let challengeCancelReason: Swift.String?
-  final public let isLiabilityOnIssuer: Swift.Bool?
-  final public let challengePreferenceReason: Swift.String?
-  final public let errorCode: Swift.Int?
-  final public let errorDescription: Swift.String?
-  final public let rawResult: [Swift.String : Any]?
-  public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
-  public static func create(isCreatePayment: Swift.Bool, result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil) -> Core.NVOutput
-  public static func create(from failure: Core.NVFailure?, isCreatePayment: Swift.Bool) -> Core.NVOutput
-  @objc deinit
-}
-public enum ECDHEESError : Swift.Error {
-  case unknownOrUnsupportedAlgorithm(reason: Swift.String)
-  case unknownOrUnsupportedCompressionAlgorithm(reason: Swift.String)
-  case invalidJWK(reason: Swift.String)
-  case invalidKeyDerivationSize
-  case invalidKeySize
-  case invalidEncryptionIVSize
-  case invalidHeaderParameter(reason: Swift.String)
-  case invalidJsonData
-  case invalidBase64URLEncoded
-  case invalidCompactSerializedData
-  case deriveKeyFail(reason: Swift.String)
-  case wrapKeyFail
-  case unwrapKeyFail
-  case compressionFailed
-  case decompressionFailed
-  case decryptFail(reason: Swift.String)
-}
-public class NuveiFieldCustomization : Core.NuveiUICustomization {
-  final public let backgroundColor: UIKit.UIColor
-  final public let borderColor: UIKit.UIColor
-  final public let cornerRadius: Swift.Int
-  final public let borderWidth: Swift.Int
-  final public let errorLabelCustomization: Core.NuveiLabelCustomization
-  final public let placeholderCustomization: Core.NuveiTextBoxCustomization
-  public init(logo: UIKit.UIImage? = nil, toolbarCustomization: Core.NuveiToolbarCustomization = NuveiToolbarCustomization(), labelCustomization: Core.NuveiLabelCustomization = NuveiLabelCustomization(), textBoxCustomization: Core.NuveiTextBoxCustomization = NuveiTextBoxCustomization(), errorLabelCustomization: Core.NuveiLabelCustomization = NuveiLabelCustomization(textColor: .red), placeholderCustomization: Core.NuveiTextBoxCustomization = NuveiTextBoxCustomization(), backgroundColor: UIKit.UIColor = .white, borderColor: UIKit.UIColor = .black, cornerRadius: Swift.Int = 0, borderWidth: Swift.Int = 1)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers public class NVCreatePaymentOutput : Core.NVOutput {
-  override public init(result: Core.NVOutput.NVOutputResult, userPaymentOptionId: Swift.String? = nil, ccCardNumber: Swift.String? = nil, bin: Swift.String? = nil, last4Digits: Swift.String? = nil, ccExpMonth: Swift.String? = nil, ccExpYear: Swift.String? = nil, transactionId: Swift.String? = nil, threeDReasonId: Swift.String? = nil, threeDReason: Swift.String? = nil, challengePreferenceReason: Swift.String? = nil, isLiabilityOnIssuer: Swift.Bool? = nil, challengeCancelReasonId: Swift.String? = nil, challengeCancelReason: Swift.String? = nil, errorCode: Swift.Int? = nil, errorDescription: Swift.String? = nil, rawResult: [Swift.String : Any]? = nil)
-  @objc deinit
-}
-public protocol Mapper {
-  associatedtype Source
-  associatedtype Destination
-  func map(_ source: Self.Source) -> Self.Destination
-}
-@_hasMissingDesignatedInitializers public class Transaction {
-  @objc deinit
-}
-public struct Constants {
-  public static let error: Swift.String
-  public static let supportedMessageVersions: [Swift.String]
-}
-@_hasMissingDesignatedInitializers public class API {
-  public static var timeOutInterval: Swift.Double
-  public static func request(_ service: Core.Service, callback: @escaping ([Swift.String : Any]?, (any Swift.Error)?) -> Swift.Void) throws
-  @objc deinit
-}
-extension Core.NuveiSimplyConnect.Environment : Swift.Equatable {}
-extension Core.NuveiSimplyConnect.Environment : Swift.Hashable {}
-extension Core.InputError : Swift.Equatable {}
-extension Core.InputError : Swift.Hashable {}
-extension Core.InputError : Swift.RawRepresentable {}
-extension Core.NuveiButtonType : Swift.Equatable {}
-extension Core.NuveiButtonType : Swift.Hashable {}
-extension Core.SourceApplication : Swift.Equatable {}
-extension Core.SourceApplication : Swift.Hashable {}
 extension Core.NVOutput.NVOutputResult : Swift.Equatable {}
 extension Core.NVOutput.NVOutputResult : Swift.Hashable {}
 extension Core.NVOutput.NVOutputResult : Swift.RawRepresentable {}
 extension Core.NVOutput.NVOutputInternalResult : Swift.Equatable {}
 extension Core.NVOutput.NVOutputInternalResult : Swift.Hashable {}
 extension Core.NVOutput.NVOutputInternalResult : Swift.RawRepresentable {}
+extension Core.NuveiSimplyConnect.Environment : Swift.Equatable {}
+extension Core.NuveiSimplyConnect.Environment : Swift.Hashable {}
+extension Core.SourceApplication : Swift.Equatable {}
+extension Core.SourceApplication : Swift.Hashable {}
+extension Core.InputError : Swift.Equatable {}
+extension Core.InputError : Swift.Hashable {}
+extension Core.InputError : Swift.RawRepresentable {}
+extension Core.NuveiButtonType : Swift.Equatable {}
+extension Core.NuveiButtonType : Swift.Hashable {}

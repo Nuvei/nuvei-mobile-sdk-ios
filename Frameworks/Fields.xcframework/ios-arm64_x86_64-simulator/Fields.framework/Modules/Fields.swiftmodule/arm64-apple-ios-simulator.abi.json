@@ -68,12 +68,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
+                "printedName": "((Swift.Bool, Swift.Int?, Swift.Int?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
+                    "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -82,9 +82,44 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -93,8 +128,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvp",
-            "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvp",
+            "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvp",
+            "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvp",
             "moduleName": "Fields",
             "declAttributes": [
               "HasInitialValue",
@@ -113,12 +148,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
+                    "printedName": "((Swift.Bool, Swift.Int?, Swift.Int?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
+                        "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -127,9 +162,44 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -138,8 +208,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvg",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvg",
+                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvg",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvg",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "get"
@@ -157,12 +227,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
+                    "printedName": "((Swift.Bool, Swift.Int?, Swift.Int?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
+                        "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -171,9 +241,44 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, Swift.Int?, Swift.Int?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.Int?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int",
+                                    "printedName": "Swift.Int",
+                                    "usr": "s:Si"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -182,8 +287,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvs",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvs",
+                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvs",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvs",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "set"
@@ -200,8 +305,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvM",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySbcSgvM",
+                "usr": "s:6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvM",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC14onInputUpdatedySb_SiSgAEtcSgvM",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2441,296 +2546,296 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 12,
       "value": "\"F000000000\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 72,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr\/O0BfXWngO9OJDBsqdR5U2h28\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 399,
       "length": 74,
       "value": "\"jrX6Y+LlblTBaYeT2tW7+ca3YzTFXA8duVUwdlWxl3JZCOOeL1feVP6g0TNOHVCkCnirVDLk\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 74,
       "value": "\"cozod4aSkNvx+929aDr1ithqhruf0skBc2sMZGBBCNpso6XGzyAf2uZ2+9DvXoKIUYgcr7PQ\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 74,
       "value": "\"mL2Y0awyQN7KCRcusaotYNz2mOPrL\/hAv6hTexkNrQKzFcPwCuc6kN6aNjD+p2CJ51\/5p02S\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 666,
       "length": 74,
       "value": "\"NS70nPOmwmg63j6f3n7xVykQ56kNc1l5B5xOpeHJmqk3+hyF1dF\/47rQmMFicN41QSvZ5AZJ\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/MobileSDKInternal.swift",
       "kind": "StringLiteral",
       "offset": 755,
       "length": 36,
       "value": "\"KgWlIn2VQROMkEHkF9ZBRLx1nFTwIDAQAB\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 736,
+      "offset": 775,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 945,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1048,
+      "offset": 1087,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1373,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1510,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1770,
+      "offset": 1809,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1911,
+      "offset": 1950,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2176,
+      "offset": 2215,
       "length": 5,
       "value": "\"CVV\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2334,
       "length": 5,
       "value": "\"123\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2355,
+      "offset": 2394,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "IntegerLiteral",
-      "offset": 2410,
+      "offset": 2449,
       "length": 1,
-      "value": "3"
+      "value": "4"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2655,
+      "offset": 2694,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
-      "kind": "FloatLiteral",
-      "offset": 2851,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
       "offset": 2890,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 3048,
+      "offset": 2929,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "kind": "FloatLiteral",
+      "offset": 3087,
       "length": 4,
       "value": "0.45"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 6123,
+      "offset": 6162,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 7051,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
-      "kind": "BooleanLiteral",
       "offset": 7090,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7129,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 11157,
+      "offset": 11193,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 538,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 565,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
       "offset": 722,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 988,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 1009,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
       "offset": 1106,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 1774,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 1795,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
       "offset": 1892,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
       "offset": 2658,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
       "offset": 2790,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
       "offset": 2844,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiFields.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "BooleanLiteral",
       "offset": 198,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiFields.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "Dictionary",
-      "offset": 1441,
+      "offset": 1407,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/Fields\/Fields\/NuveiFields.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 1474,
+      "offset": 1440,
       "length": 4,
       "value": "true"
     }

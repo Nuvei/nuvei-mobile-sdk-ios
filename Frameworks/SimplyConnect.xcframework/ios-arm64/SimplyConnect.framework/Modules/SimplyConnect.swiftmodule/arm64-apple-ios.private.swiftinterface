@@ -12,6 +12,20 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct InstallmentOption {
+  public init(type: SimplyConnect.InstallmentType, periods: [Swift.Int])
+}
+public enum InstallmentType : Swift.Int {
+  case SINGLE_PAYMENT
+  case DEFERRED_WITH_INTEREST
+  case DEFERRED_WITHOUT_INTEREST
+  case DEFERRED_WITHOUT_INTEREST_AND_GRACE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CheckoutViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @objc get
@@ -30,24 +44,10 @@ extension SimplyConnect.CheckoutViewController : PassKit.PKPaymentAuthorizationV
 extension Core.NuveiSimplyConnect {
   public static func tokenize(input: Core.NVInput, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
   public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ())
-  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?)
+  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?) throws
 }
 public struct Installment {
   public init(options: [SimplyConnect.InstallmentOption], isNationalIdRequired: Swift.Bool, countryCode: Swift.String)
-}
-public struct InstallmentOption {
-  public init(type: SimplyConnect.InstallmentType, periods: [Swift.Int])
-}
-public enum InstallmentType : Swift.Int {
-  case SINGLE_PAYMENT
-  case DEFERRED_WITH_INTEREST
-  case DEFERRED_WITHOUT_INTEREST
-  case DEFERRED_WITHOUT_INTEREST_AND_GRACE
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 extension SimplyConnect.InstallmentType : Swift.Equatable {}
 extension SimplyConnect.InstallmentType : Swift.Hashable {}

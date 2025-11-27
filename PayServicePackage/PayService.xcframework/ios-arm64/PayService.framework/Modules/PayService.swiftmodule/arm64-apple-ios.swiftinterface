@@ -11,6 +11,15 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
+  var shouldNotify: Swift.Bool { get set }
+  var isNumberOnly: Swift.Bool { get set }
+  var maxLength: Swift.Int? { get set }
+}
+@_hasMissingDesignatedInitializers public class ModelUtils {
+  public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
+  @objc deinit
+}
 public enum CardType : Swift.String, Swift.CaseIterable {
   case amex
   case visa
@@ -45,7 +54,6 @@ public enum CardType : Swift.String, Swift.CaseIterable {
   }
 }
 extension Core.MobileSDKInternal {
-  public static func updateLogOutput(add addition: Swift.String)
   public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
 }
 extension Core.NuveiSimplyConnect {
@@ -60,7 +68,6 @@ extension Core.NuveiSimplyConnect {
   }
   public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
   public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
-  public static func setup(environment: Core.NuveiSimplyConnect.Environment = .production, customization: Core.NuveiUICustomization = NuveiUICustomization())
   public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
@@ -72,8 +79,10 @@ extension Core.NuveiSimplyConnect {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CreditCardUtils {
+  public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
   public static let shared: PayService.CreditCardUtils
-  public func parseDate(rawValue: Swift.String) -> Swift.String?
+  public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
+  public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
@@ -111,8 +120,7 @@ extension Swift.String {
   @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
   @discardableResult
   @_Concurrency.MainActor @preconcurrency public func configure(customization: Core.NuveiFieldCustomization? = nil) -> PayService.LabeledTextField
-  @discardableResult
-  @_Concurrency.MainActor @preconcurrency public func configure(apmField: PayService.NVAPMsOutput.Field) -> PayService.LabeledTextField
+  @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PersonalIDValidator {
@@ -176,11 +184,12 @@ public struct NVCardDetailsOutput : Swift.Codable {
   public let clientRequestId: Swift.String?
   public let issuerBankName: Swift.String?
   public let clientUniqueId: Swift.String?
-  public let bin: Swift.String?
-  public let last4Digits: Swift.String?
-  public let ccExpMonth: Swift.String?
-  public let ccExpYear: Swift.String?
+  public var bin: Swift.String?
+  public var last4Digits: Swift.String?
+  public var ccExpMonth: Swift.Int?
+  public var ccExpYear: Swift.Int?
   public let cardProduct: Swift.String?
+  public let isNotReloadableCard: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -235,15 +244,10 @@ public protocol InputIndexable {
 public class CreditCardFieldViewModel {
   public static func modelForRN() -> PayService.CreditCardFieldViewModel
   public init(_ source: Core.SourceApplication)
-  public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
+  public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, hasCreditCardBlockedError: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
   public func createPayment(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
   public func tokenize(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
   @objc deinit
-}
-public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
-  var shouldNotify: Swift.Bool { get set }
-  var isNumberOnly: Swift.Bool { get set }
-  var maxLength: Swift.Int? { get set }
 }
 extension PayService.CardType : Swift.Equatable {}
 extension PayService.CardType : Swift.Hashable {}

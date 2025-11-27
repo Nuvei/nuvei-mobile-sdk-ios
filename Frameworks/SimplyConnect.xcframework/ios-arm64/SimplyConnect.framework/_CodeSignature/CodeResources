@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NifSzsBMjFTmHH1fwxw+PpYxBVA=
+		nTucrcGUQq7dDPUz9MIczc+o07s=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2nFvEql2m7IvkW+F/+hDV31Avmo=
+		fkBCnjboTtQO+EAccdxuk5aoV5k=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		k4inBZwoYiIoqLbZhSNOOsBU+UY=
+		2l/ZAWi4Ot1oyGrHJxmdwJw2AV0=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		k4inBZwoYiIoqLbZhSNOOsBU+UY=
+		2l/ZAWi4Ot1oyGrHJxmdwJw2AV0=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RNvISmvr4551WIKoxfEP98LArxc=
+		Jt6Cqd4tn6rx/+xjwO8KySUWhUI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,14 +50,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/VX5vXjONoQTItLki74gSs695Ll91RnWAUrgOIYyX2I=
+			Lq1nuXPdQq20AqwIWW4/Mk6PoV2tTcyfZOaIXaybSvE=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			09/2j0pGQFYLhWfWKe1Qmbj7bCBJI45+cKsiQOXMV3E=
+			jkC0Ta3dVJDnY5LQBtNUvlLprzjOFdIMdeTMnDWCN84=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			09/2j0pGQFYLhWfWKe1Qmbj7bCBJI45+cKsiQOXMV3E=
+			jkC0Ta3dVJDnY5LQBtNUvlLprzjOFdIMdeTMnDWCN84=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D4wuOUXP5M4126c87VLicPaEBvlhgV+FuTrurFKLYMo=
+			tPI8A09kkRWOoCbOBfRgX8v7kE0MTyYz3xyP0C2PGwA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

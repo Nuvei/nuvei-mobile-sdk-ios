@@ -6,6 +6,420 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstallmentOption",
+        "printedName": "InstallmentOption",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:periods:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentOption",
+                "printedName": "SimplyConnect.InstallmentOption",
+                "usr": "s:13SimplyConnect17InstallmentOptionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentType",
+                "printedName": "SimplyConnect.InstallmentType",
+                "usr": "s:13SimplyConnect15InstallmentTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
+            "mangledName": "$s13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
+            "moduleName": "SimplyConnect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13SimplyConnect17InstallmentOptionV",
+        "mangledName": "$s13SimplyConnect17InstallmentOptionV",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstallmentType",
+        "printedName": "InstallmentType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SINGLE_PAYMENT",
+            "printedName": "SINGLE_PAYMENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITH_INTEREST",
+            "printedName": "DEFERRED_WITH_INTEREST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITHOUT_INTEREST",
+            "printedName": "DEFERRED_WITHOUT_INTEREST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
+            "printedName": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SimplyConnect.InstallmentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "SimplyConnect",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivp",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivp",
+            "moduleName": "SimplyConnect",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivg",
+                "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivg",
+                "moduleName": "SimplyConnect",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13SimplyConnect15InstallmentTypeO",
+        "mangledName": "$s13SimplyConnect15InstallmentTypeO",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayService",
+        "printedName": "PayService",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "PayService",
+        "printedName": "PayService",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SimplyConnect"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -673,771 +1087,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InstallmentOption",
-        "printedName": "InstallmentOption",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(type:periods:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InstallmentOption",
-                "printedName": "SimplyConnect.InstallmentOption",
-                "usr": "s:13SimplyConnect17InstallmentOptionV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InstallmentType",
-                "printedName": "SimplyConnect.InstallmentType",
-                "usr": "s:13SimplyConnect15InstallmentTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
-            "mangledName": "$s13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
-            "moduleName": "SimplyConnect",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13SimplyConnect17InstallmentOptionV",
-        "mangledName": "$s13SimplyConnect17InstallmentOptionV",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InstallmentType",
-        "printedName": "InstallmentType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "SINGLE_PAYMENT",
-            "printedName": "SINGLE_PAYMENT",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITH_INTEREST",
-            "printedName": "DEFERRED_WITH_INTEREST",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITHOUT_INTEREST",
-            "printedName": "DEFERRED_WITHOUT_INTEREST",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
-            "printedName": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SimplyConnect.InstallmentType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
-            "moduleName": "SimplyConnect",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivp",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivp",
-            "moduleName": "SimplyConnect",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivg",
-                "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivg",
-                "moduleName": "SimplyConnect",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13SimplyConnect15InstallmentTypeO",
-        "mangledName": "$s13SimplyConnect15InstallmentTypeO",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PayService",
-        "printedName": "PayService",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect"
-      },
-      {
-        "kind": "Import",
-        "name": "PayService",
-        "printedName": "PayService",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SimplyConnect"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NuveiSimplyConnect",
-        "printedName": "NuveiSimplyConnect",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "tokenize",
-            "printedName": "tokenize(input:callback:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVInput",
-                "printedName": "Core.NVInput",
-                "usr": "s:4Core7NVInputV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String?, Core.NVFailure?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String?, Core.NVFailure?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Core.NVFailure?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NVFailure",
-                            "printedName": "Core.NVFailure",
-                            "usr": "s:4Core9NVFailureO"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8tokenize5input8callbackyAA7NVInputV_ySSSg_AA9NVFailureOSgtctFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8tokenize5input8callbackyAA7NVInputV_ySSSg_AA9NVFailureOSgtctFZ",
-            "moduleName": "SimplyConnect",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authenticate3d",
-            "printedName": "authenticate3d(uiOwner:input:additionalParams:forceWebChallenge:callback:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVUIOwner",
-                "printedName": "any Core.NVUIOwner",
-                "usr": "s:4Core9NVUIOwnerP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVInput",
-                "printedName": "Core.NVInput",
-                "usr": "s:4Core7NVInputV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Core.NVAuthenticate3dOutput) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NVAuthenticate3dOutput",
-                    "printedName": "Core.NVAuthenticate3dOutput",
-                    "usr": "s:4Core22NVAuthenticate3dOutputC"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC0cD0E14authenticate3d7uiOwner5input16additionalParams17forceWebChallenge8callbackyAA9NVUIOwner_p_AA7NVInputVSDySSypGSbyAA22NVAuthenticate3dOutputCctFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E14authenticate3d7uiOwner5input16additionalParams17forceWebChallenge8callbackyAA9NVUIOwner_p_AA7NVInputVSDySSypGSbyAA22NVAuthenticate3dOutputCctFZ",
-            "moduleName": "SimplyConnect",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "checkout",
-            "printedName": "checkout(uiOwner:authenticate3dInput:additionalParams:installment:i18n:forceWebChallenge:callback:declineFallbackDecision:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVUIOwner",
-                "printedName": "any Core.NVUIOwner",
-                "usr": "s:4Core9NVUIOwnerP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVInput",
-                "printedName": "Core.NVInput",
-                "usr": "s:4Core7NVInputV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SimplyConnect.Installment?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Installment",
-                    "printedName": "SimplyConnect.Installment",
-                    "usr": "s:13SimplyConnect11InstallmentV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Core.CheckoutI18n?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CheckoutI18n",
-                    "printedName": "Core.CheckoutI18n",
-                    "usr": "s:4Core12CheckoutI18nC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Core.NVCreatePaymentOutput) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NVCreatePaymentOutput",
-                    "printedName": "Core.NVCreatePaymentOutput",
-                    "usr": "s:4Core21NVCreatePaymentOutputC"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Core.NVCreatePaymentOutput, UIKit.UIViewController, (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ())",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NVCreatePaymentOutput",
-                            "printedName": "Core.NVCreatePaymentOutput",
-                            "usr": "s:4Core21NVCreatePaymentOutputC"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIViewController",
-                            "printedName": "UIKit.UIViewController",
-                            "usr": "c:objc(cs)UIViewController"
-                          },
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "(Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "CheckoutCompletionAction",
-                                "printedName": "Core.NuveiSimplyConnect.CheckoutCompletionAction",
-                                "usr": "s:4Core18NuveiSimplyConnectC10PayServiceE24CheckoutCompletionActionO"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAY_So16UIViewControllerCyAC10PayServiceE0X16CompletionActionOctcSgtFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAY_So16UIViewControllerCyAC10PayServiceE0X16CompletionActionOctcSgtFZ",
-            "moduleName": "SimplyConnect",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:4Core18NuveiSimplyConnectC",
-        "mangledName": "$s4Core18NuveiSimplyConnectC",
-        "moduleName": "Core",
-        "isExternal": true,
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Int",
         "printedName": "Int",
@@ -1859,661 +1508,1013 @@
             "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NuveiSimplyConnect",
+        "printedName": "NuveiSimplyConnect",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "tokenize",
+            "printedName": "tokenize(input:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVInput",
+                "printedName": "Core.NVInput",
+                "usr": "s:4Core7NVInputV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Core.NVFailure?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Core.NVFailure?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Core.NVFailure?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NVFailure",
+                            "printedName": "Core.NVFailure",
+                            "usr": "s:4Core9NVFailureO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8tokenize5input8callbackyAA7NVInputV_ySSSg_AA9NVFailureOSgtctFZ",
+            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8tokenize5input8callbackyAA7NVInputV_ySSSg_AA9NVFailureOSgtctFZ",
+            "moduleName": "SimplyConnect",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate3d",
+            "printedName": "authenticate3d(uiOwner:input:additionalParams:forceWebChallenge:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVUIOwner",
+                "printedName": "any Core.NVUIOwner",
+                "usr": "s:4Core9NVUIOwnerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVInput",
+                "printedName": "Core.NVInput",
+                "usr": "s:4Core7NVInputV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Core.NVAuthenticate3dOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVAuthenticate3dOutput",
+                    "printedName": "Core.NVAuthenticate3dOutput",
+                    "usr": "s:4Core22NVAuthenticate3dOutputC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Core18NuveiSimplyConnectC0cD0E14authenticate3d7uiOwner5input16additionalParams17forceWebChallenge8callbackyAA9NVUIOwner_p_AA7NVInputVSDySSypGSbyAA22NVAuthenticate3dOutputCctFZ",
+            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E14authenticate3d7uiOwner5input16additionalParams17forceWebChallenge8callbackyAA9NVUIOwner_p_AA7NVInputVSDySSypGSbyAA22NVAuthenticate3dOutputCctFZ",
+            "moduleName": "SimplyConnect",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkout",
+            "printedName": "checkout(uiOwner:authenticate3dInput:additionalParams:installment:i18n:forceWebChallenge:callback:declineFallbackDecision:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVUIOwner",
+                "printedName": "any Core.NVUIOwner",
+                "usr": "s:4Core9NVUIOwnerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NVInput",
+                "printedName": "Core.NVInput",
+                "usr": "s:4Core7NVInputV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SimplyConnect.Installment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Installment",
+                    "printedName": "SimplyConnect.Installment",
+                    "usr": "s:13SimplyConnect11InstallmentV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Core.CheckoutI18n?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckoutI18n",
+                    "printedName": "Core.CheckoutI18n",
+                    "usr": "s:4Core12CheckoutI18nC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Core.NVCreatePaymentOutput) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NVCreatePaymentOutput",
+                    "printedName": "Core.NVCreatePaymentOutput",
+                    "usr": "s:4Core21NVCreatePaymentOutputC"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Core.NVCreatePaymentOutput, UIKit.UIViewController, (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ())",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NVCreatePaymentOutput",
+                            "printedName": "Core.NVCreatePaymentOutput",
+                            "usr": "s:4Core21NVCreatePaymentOutputC"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIViewController",
+                            "printedName": "UIKit.UIViewController",
+                            "usr": "c:objc(cs)UIViewController"
+                          },
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CheckoutCompletionAction",
+                                "printedName": "Core.NuveiSimplyConnect.CheckoutCompletionAction",
+                                "usr": "s:4Core18NuveiSimplyConnectC10PayServiceE24CheckoutCompletionActionO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAY_So16UIViewControllerCyAC10PayServiceE0X16CompletionActionOctcSgtKFZ",
+            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAY_So16UIViewControllerCyAC10PayServiceE0X16CompletionActionOctcSgtKFZ",
+            "moduleName": "SimplyConnect",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:4Core18NuveiSimplyConnectC",
+        "mangledName": "$s4Core18NuveiSimplyConnectC",
+        "moduleName": "Core",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 613,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3665,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3939,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "Array",
-      "offset": 350,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "StringLiteral",
-      "offset": 516,
-      "length": 8,
-      "value": "\"Select\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "StringLiteral",
-      "offset": 747,
-      "length": 7,
-      "value": "\"Title\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "IntegerLiteral",
-      "offset": 790,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "BooleanLiteral",
-      "offset": 863,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1071,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 727,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 741,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 753,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 766,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1484,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1509,
-      "length": 2,
-      "value": "62"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
-      "kind": "StringLiteral",
-      "offset": 1556,
-      "length": 16,
-      "value": "\"Checkout\/Close\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 617,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 813,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 852,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1010,
-      "length": 4,
-      "value": "0.45"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "Array",
-      "offset": 1344,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1784,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 22479,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 22760,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23491,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23790,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23806,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 23862,
-      "length": 20,
-      "value": "\"Checkout\/ListWhite\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23920,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24318,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 24372,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24430,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24443,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24455,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24469,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24876,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24907,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24939,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24972,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24997,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 25184,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 25237,
-      "length": 19,
-      "value": "\"Checkout\/Checkbox\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 25322,
-      "length": 26,
-      "value": "\"Checkout\/CheckboxChecked\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 25451,
-      "length": 32,
-      "value": "\"Save my details for future use\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 25521,
-      "length": 20,
-      "value": "\"Checkout\/LightGrey\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 25584,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 25628,
-      "length": 15,
-      "value": "\"Checkout\/Lock\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 25907,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 26004,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26319,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26472,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26498,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 26555,
-      "length": 17,
-      "value": "\"Checkout\/Delete\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 26983,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27179,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "Array",
-      "offset": 27284,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 31355,
-      "length": 17,
-      "value": "\"Cardholder Name\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 31499,
-      "length": 12,
-      "value": "\"John Smith\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 31759,
-      "length": 13,
-      "value": "\"Card Number\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 31898,
-      "length": 21,
-      "value": "\"1234-5678-1234-5678\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 32171,
-      "length": 13,
-      "value": "\"Expiry Date\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 32314,
-      "length": 7,
-      "value": "\"12\/23\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 32553,
-      "length": 5,
-      "value": "\"CVV\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 32674,
-      "length": 5,
-      "value": "\"123\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 32734,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 32789,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 33283,
-      "length": 13,
-      "value": "\"Personal ID\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 33392,
-      "length": 13,
-      "value": "\"Personal ID\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 33433,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42754,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44095,
-      "length": 13,
-      "value": "\"Personal ID\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44204,
-      "length": 13,
-      "value": "\"Personal ID\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 44245,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44465,
-      "length": 13,
-      "value": "\"Expiry Date\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44608,
-      "length": 7,
-      "value": "\"12\/23\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44847,
-      "length": 5,
-      "value": "\"CVV\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 44968,
-      "length": 5,
-      "value": "\"123\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 45028,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 45083,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 63750,
-      "length": 48,
-      "value": "\"https:\/\/devmobile.sccdev-qa.com\/autoclose.html\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 63839,
-      "length": 74,
-      "value": "\"https:\/\/cdn.safecharge.com\/safecharge_resources\/v1\/websdk\/autoclose.html\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "Dictionary",
-      "offset": 449,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 482,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "Dictionary",
-      "offset": 852,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 885,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "Dictionary",
-      "offset": 1703,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1794,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
       "kind": "IntegerLiteral",
       "offset": 158,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
       "kind": "IntegerLiteral",
       "offset": 166,
       "length": 22,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
       "kind": "IntegerLiteral",
       "offset": 195,
       "length": 25,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
       "kind": "IntegerLiteral",
       "offset": 227,
       "length": 35,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/Data\/UPOCardInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/Data\/UPOCardInput.swift",
       "kind": "BooleanLiteral",
-      "offset": 857,
+      "offset": 902,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3665,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3939,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "Array",
+      "offset": 352,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 8,
+      "value": "\"Select\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
+      "length": 7,
+      "value": "\"Title\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "IntegerLiteral",
+      "offset": 978,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1051,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1259,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 727,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 741,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 753,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 766,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1484,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1509,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/HeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 1556,
+      "length": 16,
+      "value": "\"Checkout\/Close\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 617,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 813,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 852,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1010,
+      "length": 4,
+      "value": "0.45"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "Array",
+      "offset": 1344,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1784,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22778,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23059,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23790,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24089,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24105,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 24240,
+      "length": 20,
+      "value": "\"Checkout\/ListWhite\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24298,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24696,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24750,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24808,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24821,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24833,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24847,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25254,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25285,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25317,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25350,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25375,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25562,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 25662,
+      "length": 19,
+      "value": "\"Checkout\/Checkbox\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 25747,
+      "length": 23,
+      "value": "\"checkmark.square.fill\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 26031,
+      "length": 32,
+      "value": "\"Save my details for future use\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 26178,
+      "length": 20,
+      "value": "\"Checkout\/LightGrey\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26323,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 26367,
+      "length": 15,
+      "value": "\"Checkout\/Lock\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26646,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26743,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27058,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27211,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27237,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 27294,
+      "length": 17,
+      "value": "\"Checkout\/Delete\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27722,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27918,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "Array",
+      "offset": 28023,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 32637,
+      "length": 17,
+      "value": "\"Cardholder Name\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 32781,
+      "length": 12,
+      "value": "\"John Smith\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33041,
+      "length": 13,
+      "value": "\"Card Number\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33180,
+      "length": 21,
+      "value": "\"1234-5678-1234-5678\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33453,
+      "length": 13,
+      "value": "\"Expiry Date\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33596,
+      "length": 7,
+      "value": "\"12\/23\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33835,
+      "length": 5,
+      "value": "\"CVV\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 33956,
+      "length": 5,
+      "value": "\"123\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34016,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 34071,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34565,
+      "length": 13,
+      "value": "\"Personal ID\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 34674,
+      "length": 13,
+      "value": "\"Personal ID\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 34715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 44014,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 45355,
+      "length": 13,
+      "value": "\"Personal ID\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 45464,
+      "length": 13,
+      "value": "\"Personal ID\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 45505,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 45725,
+      "length": 13,
+      "value": "\"Expiry Date\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 45868,
+      "length": 7,
+      "value": "\"12\/23\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 46107,
+      "length": 5,
+      "value": "\"CVV\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 46228,
+      "length": 5,
+      "value": "\"123\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 46288,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 46343,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 66866,
+      "length": 48,
+      "value": "\"https:\/\/devmobile.sccdev-qa.com\/autoclose.html\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 66955,
+      "length": 74,
+      "value": "\"https:\/\/cdn.safecharge.com\/safecharge_resources\/v1\/websdk\/autoclose.html\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "Dictionary",
+      "offset": 449,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 482,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "Dictionary",
+      "offset": 852,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 885,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "Dictionary",
+      "offset": 1703,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Utils\/CoreExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1794,
+      "length": 4,
+      "value": "true"
     }
   ]
 }

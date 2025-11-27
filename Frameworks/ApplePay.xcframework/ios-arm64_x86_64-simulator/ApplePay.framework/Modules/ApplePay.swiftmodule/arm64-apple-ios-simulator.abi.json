@@ -132,14 +132,15 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptcfc",
-            "mangledName": "$s8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptcfc",
+            "usr": "s:8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptKcfc",
+            "mangledName": "$s8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptKcfc",
             "moduleName": "ApplePay",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
+            "throwing": true,
             "init_kind": "Designated"
           },
           {
@@ -400,42 +401,42 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "BooleanLiteral",
       "offset": 391,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 27,
       "value": "\"Checkout\/Methods\/ApplePay\""
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "IntegerLiteral",
       "offset": 587,
       "length": 2,
       "value": "56"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "IntegerLiteral",
       "offset": 590,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "Dictionary",
       "offset": 948,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/NuveiPackageSource\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1002,
       "length": 4,

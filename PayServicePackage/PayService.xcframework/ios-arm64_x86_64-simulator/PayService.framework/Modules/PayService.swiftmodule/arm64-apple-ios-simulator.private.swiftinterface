@@ -11,6 +11,140 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct NVAPMsOutput : Swift.Decodable {
+  public let paymentMethods: [PayService.NVAPMsOutput.APM]
+  public struct APM : Swift.Decodable {
+    public let paymentMethod: Swift.String
+    public let paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption]
+    public let logoURL: Swift.String?
+    public let fields: [PayService.NVAPMsOutput.Field]
+    public init(paymentMethod: Swift.String, paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption], logoURL: Swift.String?, fields: [PayService.NVAPMsOutput.Field])
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Field : Swift.Decodable {
+    public let name: Swift.String
+    public let type: Swift.String
+    public let caption: [PayService.NVAPMsOutput.Caption]
+    public let listValues: [PayService.NVAPMsOutput.ListValue]?
+    public init(name: Swift.String, type: Swift.String, caption: [PayService.NVAPMsOutput.Caption], listValues: [PayService.NVAPMsOutput.ListValue]?)
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Caption : Swift.Decodable {
+    public let language: Swift.String
+    public let message: Swift.String
+    public init(language: Swift.String, message: Swift.String)
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct ListValue : Swift.Decodable {
+    public let code: Swift.String?
+    public let caption: Swift.String?
+    public init(code: Swift.String?, caption: Swift.String?)
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NVCardDetailsInput : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct NVCardDetailsOutput : Swift.Codable {
+  public let brand: Swift.String?
+  public let secondaryBrand: Swift.String?
+  public let cardType: Swift.String?
+  public let program: Swift.String?
+  public let visaDirectSupport: Swift.String?
+  public let mastercardSendSupport: Swift.String?
+  public let isPrepaid: Swift.Bool?
+  public let issuerCountry: Swift.String?
+  public let currency: Swift.String?
+  public let dccAllowed: Swift.Bool?
+  public let sessionToken: Swift.String?
+  public let internalRequestId: Swift.Int?
+  public let status: Swift.String?
+  public let reason: Swift.String?
+  public let errCode: Swift.Int?
+  public let merchantId: Swift.String?
+  public let merchantSiteId: Swift.String?
+  public let version: Swift.String?
+  public let clientRequestId: Swift.String?
+  public let issuerBankName: Swift.String?
+  public let clientUniqueId: Swift.String?
+  public var bin: Swift.String?
+  public var last4Digits: Swift.String?
+  public var ccExpMonth: Swift.Int?
+  public var ccExpYear: Swift.Int?
+  public let cardProduct: Swift.String?
+  public let isNotReloadableCard: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
+  public var number: Swift.String
+  public var expiry: Swift.String
+  public var cvv: Swift.String
+  public var cardHolderName: Swift.String
+  public var installmentType: Swift.Int?
+  public var numberOfInstallments: Swift.Int?
+  public var isNationalIDRequired: Swift.Bool
+  public var countryCode: Swift.String?
+  public var nationalID: Swift.String?
+  public var shouldSaveCard: Swift.Bool?
+  public var indexPath: Foundation.IndexPath?
+  public var parsedInfo: PayService.CreditCardInput.ParsedInfo
+  public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
+  @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
+    public var errors: [Core.InputError]?
+    public var icon: Swift.String?
+    public var cvvLength: Swift.Int?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct NVUPOsOutput : Swift.Decodable {
+  public let paymentMethods: [PayService.NVUPOsOutput.PaymentMethod]
+  public struct PaymentMethod : Swift.Decodable {
+    public let userPaymentOptionId: Swift.Int
+    public let paymentMethodName: Swift.String
+    public let upoStatus: Swift.String
+    public let upoName: Swift.String
+    public let upoData: PayService.NVUPOsOutput.PaymentMethod.UPOData?
+    public struct UPOData : Swift.Decodable {
+      public let ccCardNumber: Swift.String?
+      public let ccExpMonth: Swift.String?
+      public let ccExpYear: Swift.String?
+      public let brand: Swift.String?
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol InputIndexable {
+  var indexPath: Foundation.IndexPath? { get set }
+}
+public class CreditCardFieldViewModel {
+  public static func modelForRN() -> PayService.CreditCardFieldViewModel
+  public init(_ source: Core.SourceApplication)
+  public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, hasCreditCardBlockedError: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
+  public func createPayment(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
+  public func tokenize(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ModelUtils {
+  public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
+  @objc deinit
+}
+public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
+  var shouldNotify: Swift.Bool { get set }
+  var isNumberOnly: Swift.Bool { get set }
+  var maxLength: Swift.Int? { get set }
+}
+extension Core.MobileSDKInternal {
+  public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
+}
 public enum CardType : Swift.String, Swift.CaseIterable {
   case amex
   case visa
@@ -56,7 +190,6 @@ extension Core.NuveiSimplyConnect {
   }
   public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
   public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
-  public static func setup(environment: Core.NuveiSimplyConnect.Environment = .production, customization: Core.NuveiUICustomization = NuveiUICustomization())
   public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
@@ -68,8 +201,14 @@ extension Core.NuveiSimplyConnect {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class CreditCardUtils {
+  public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
   public static let shared: PayService.CreditCardUtils
-  public func parseDate(rawValue: Swift.String) -> Swift.String?
+  public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
+  public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
+  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
   @objc deinit
 }
 extension Swift.String {
@@ -103,147 +242,12 @@ extension Swift.String {
   @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
   @discardableResult
   @_Concurrency.MainActor @preconcurrency public func configure(customization: Core.NuveiFieldCustomization? = nil) -> PayService.LabeledTextField
-  @discardableResult
-  @_Concurrency.MainActor @preconcurrency public func configure(apmField: PayService.NVAPMsOutput.Field) -> PayService.LabeledTextField
+  @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PersonalIDValidator {
   public static func isValid(number: Swift.String, for countryCode: Swift.String?) -> Swift.Bool
   @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
-  @objc deinit
-}
-public struct NVAPMsOutput : Swift.Decodable {
-  public let paymentMethods: [PayService.NVAPMsOutput.APM]
-  public struct APM : Swift.Decodable {
-    public let paymentMethod: Swift.String
-    public let paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption]
-    public let logoURL: Swift.String?
-    public let fields: [PayService.NVAPMsOutput.Field]
-    public init(paymentMethod: Swift.String, paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption], logoURL: Swift.String?, fields: [PayService.NVAPMsOutput.Field])
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct Field : Swift.Decodable {
-    public let name: Swift.String
-    public let type: Swift.String
-    public let caption: [PayService.NVAPMsOutput.Caption]
-    public let listValues: [PayService.NVAPMsOutput.ListValue]?
-    public init(name: Swift.String, type: Swift.String, caption: [PayService.NVAPMsOutput.Caption], listValues: [PayService.NVAPMsOutput.ListValue]?)
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct Caption : Swift.Decodable {
-    public let language: Swift.String
-    public let message: Swift.String
-    public init(language: Swift.String, message: Swift.String)
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct ListValue : Swift.Decodable {
-    public let code: Swift.String?
-    public let caption: Swift.String?
-    public init(code: Swift.String?, caption: Swift.String?)
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
-  public var number: Swift.String
-  public var expiry: Swift.String
-  public var cvv: Swift.String
-  public var cardHolderName: Swift.String
-  public var installmentType: Swift.Int?
-  public var numberOfInstallments: Swift.Int?
-  public var isNationalIDRequired: Swift.Bool
-  public var countryCode: Swift.String?
-  public var nationalID: Swift.String?
-  public var shouldSaveCard: Swift.Bool?
-  public var indexPath: Foundation.IndexPath?
-  public var parsedInfo: PayService.CreditCardInput.ParsedInfo
-  public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
-  @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
-    public var errors: [Core.InputError]?
-    public var icon: Swift.String?
-    public var cvvLength: Swift.Int?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public struct NVCardDetailsInput : Swift.Encodable {
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct NVCardDetailsOutput : Swift.Codable {
-  public let brand: Swift.String?
-  public let secondaryBrand: Swift.String?
-  public let cardType: Swift.String?
-  public let program: Swift.String?
-  public let visaDirectSupport: Swift.String?
-  public let mastercardSendSupport: Swift.String?
-  public let isPrepaid: Swift.Bool?
-  public let issuerCountry: Swift.String?
-  public let currency: Swift.String?
-  public let dccAllowed: Swift.Bool?
-  public let sessionToken: Swift.String?
-  public let internalRequestId: Swift.Int?
-  public let status: Swift.String?
-  public let reason: Swift.String?
-  public let errCode: Swift.Int?
-  public let merchantId: Swift.String?
-  public let merchantSiteId: Swift.String?
-  public let version: Swift.String?
-  public let clientRequestId: Swift.String?
-  public let issuerBankName: Swift.String?
-  public let clientUniqueId: Swift.String?
-  public let bin: Swift.String?
-  public let last4Digits: Swift.String?
-  public let ccExpMonth: Swift.String?
-  public let ccExpYear: Swift.String?
-  public let cardProduct: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public protocol InputIndexable {
-  var indexPath: Foundation.IndexPath? { get set }
-}
-public struct NVUPOsOutput : Swift.Decodable {
-  public let paymentMethods: [PayService.NVUPOsOutput.PaymentMethod]
-  public struct PaymentMethod : Swift.Decodable {
-    public let userPaymentOptionId: Swift.Int
-    public let paymentMethodName: Swift.String
-    public let upoStatus: Swift.String
-    public let upoName: Swift.String
-    public let upoData: PayService.NVUPOsOutput.PaymentMethod.UPOData?
-    public struct UPOData : Swift.Decodable {
-      public let ccCardNumber: Swift.String?
-      public let ccExpMonth: Swift.String?
-      public let ccExpYear: Swift.String?
-      public let brand: Swift.String?
-      public init(from decoder: any Swift.Decoder) throws
-    }
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public class CreditCardFieldViewModel {
-  public static func modelForRN() -> PayService.CreditCardFieldViewModel
-  public init(_ source: Core.SourceApplication)
-  public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
-  public func createPayment(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
-  public func tokenize(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
-  @objc deinit
-}
-public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
-  var shouldNotify: Swift.Bool { get set }
-  var isNumberOnly: Swift.Bool { get set }
-  var maxLength: Swift.Int? { get set }
-}
-extension Core.MobileSDKInternal {
-  public static func updateLogOutput(add addition: Swift.String)
-  public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
 }
 extension PayService.CardType : Swift.Equatable {}
 extension PayService.CardType : Swift.Hashable {}
