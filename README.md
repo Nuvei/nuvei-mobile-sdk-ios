@@ -10,7 +10,7 @@
 
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. 
 
-Once you have your Swift project set up, adding NuveiSimplyConnectSDK as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`. Then you can choose which module you want to add(one or more). You don't need to import Core and PayService explicitly, they will be added automatically if needed.
+Once you have your Swift project set up, adding **NuveiSimplyConnectSDK** as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`. Then you can choose which module you want to add(one or more). You don't need to import Core and PayService explicitly, they will be added automatically if needed.
 
 ```swift
 dependencies: [
@@ -113,7 +113,8 @@ func sha256(data: Data) -> Data {
 }
 ```
 
-To start payment process first you have to create HTTP request openOrder.do. In the example we use Alamofire but you can use whatevere you want. Check if the response has a session token and in this case proceed with the payment flow you want.
+To start payment process first you have to create HTTP request `openOrder.do`. In the example we use Alamofire but you can use whatevere you want. 
+Check if the response has a session token and in this case proceed with the payment flow you want.
 
 ### ApplePay
 ```swift
@@ -126,7 +127,8 @@ With NuveiSimplyConnect.setup(environment:customization:) you setup the envirome
 ```swift
 let applePayButton = ApplePayButton(uiOwner: {ViewController}, input: {Input}, auth3dSupported: {Auth3dSupported}, forceWebChallenge: {ForceWebChallenge}, delegate: delegate)
 ```
-This creates instance of `ApplePayButton` pointing to its parent viewController. Auth3dSupported tells if the proccess will go through additional 3d authentication which in most case is unnecessary. You should also pass an object confirming to the `ApplePayDelegate` protocol. The `ApplePayDelegate` protocol defines one method `onSubmitResponse(response:)` that is called when the payment proccess finish either successfully or with an error and will give you the result.
+This creates instance of `ApplePayButton` pointing to its parent viewController.
+`Auth3dSupported` tells if the proccess will go through additional 3d authentication which in most case is unnecessary. You should also pass an object confirming to the `ApplePayDelegate` protocol. The `ApplePayDelegate` protocol defines one method `onSubmitResponse(response:)` that is called when the payment proccess finish either successfully or with an error and will give you the result.
 
 ### Fields
 
@@ -139,7 +141,9 @@ NuveiFields.setup(environment: {NuveiSimplyConnect.Environment},customization: c
 ```swift
 // Configure the NuveiFieldCustomization appearance:
 with(NuveiFieldCustomization) {
-    // Text input boxes: labels/headings, placeholders, values, and their borders
+    // ─────────────────────────────────────────────────────────────
+    // Text Input Boxes (labels, placeholders, values, borders)
+    // ─────────────────────────────────────────────────────────────
 	with(textBoxCustomization){ 
         headingTextFont         	= UIFont.boldSystemFont(ofSize: 14)   // font of labels/headings above the input fields
         headingTextColor        	= .black                        	  // color of labels/headings above the input fields
@@ -152,11 +156,17 @@ with(NuveiFieldCustomization) {
         borderWidth                 = 1                                   // border width of each text field
     }
     
-    // Error messages under the inputs
+    // ─────────────────────────────────────────────────────────────
+    // Error Messages Under Each Input
+    // ─────────────────────────────────────────────────────────────
 	with(errorLabelCustomization){
         textFont                	= UIFont.boldSystemFont(ofSize: 12)   // error text font
         textColor                   = .red                    		 	  // error text color
     }
+
+	// ─────────────────────────────────────────────────────────────
+    // Container (NuveiCreditCardField outer appearance)
+    // ─────────────────────────────────────────────────────────────
 	backgroundColor 				= .white   							  // Background for the entire NuveiCreditCardField container
     borderColor     				= .black     						  // Border color around the entire NuveiCreditCardField container
     cornerRadius    				= 0                        			  // Corner radius for the outer container border
@@ -164,6 +174,8 @@ with(NuveiFieldCustomization) {
 }
 
 ```
+
+This creates instance of `NuveiFieldCustomization` with your own customization preferences.
 
 ```swift
 with(FieldsI18N) {
@@ -187,8 +199,6 @@ with(FieldsI18N) {
 }
 ```
 
-This creates instance of `NuveiFieldCustomization` with your own customization preferences.
-
 This creates instance of `FieldsI18n` with your own localized texts. You can initialize it with the properties and text you want to modify.
 
 You should also pass a `CheckoutTransactionDetails` object which you can create from `NVInput` object. If you want to use only `NuveiFields.createPayment` you can skip the transaction details.
@@ -209,11 +219,11 @@ do {
 ```
 This creates instance of `NuveiCreditCardField`.
 
-OnInputUpdated is callback that tells you when a field text is modified and when it loses focus. It also gives you expiration month and year if they are filled.
+`OnInputUpdated` is callback that tells you when a field text is modified and when it loses focus. It also gives you expiration month and year if they are filled.
 
-OnInputValidated is callback that gives you list of error if there is any after validation of a field.
+`OnInputValidated` is callback that gives you list of error if there is any after validation of a field.
 
-OnCardDetailsUpdated is callback that gives you detailed information about the card after the card number is valid. Then based on your requirements you can call `creditCardField.showCardNumberError(message:)` and your error message will be shown under the card number field.
+`OnCardDetailsUpdated` is callback that gives you detailed information about the card after the card number is valid. Then based on your requirements you can call `creditCardField.showCardNumberError(message:)` and your error message will be shown under the card number field.
 
 ---
 
@@ -230,11 +240,13 @@ creditCardField?.createPayment(viewController: {ViewController}) { output in
 	// do something
 }
 ```
-Validate method will validate the card filled in the fields. The closure tells you whether the validation was successful or there was some error.
+`Validate` method will validate the card filled in the fields. The closure tells you whether the validation was successful or there was some error.
 
-Tokenize method will create token with which you can create payment. In the closure you can get the token or handle an error if there is so.
+`Tokenize` method will create token with which you can create payment. In the closure you can get the token or handle an error if there is so.
 
-CreditCardField.createPayment method will create payment with the card that the user have filled in. The callback tells you when the proccess is finished either successfully or with an error. DeclineFallbackDecision tells you when there is an error.
+`CreditCardField.createPayment` method will create payment with the card that the user have filled in. 
+The callback tells you when the proccess is finished either successfully or with an error. 
+`DeclineFallbackDecision` tells you when there is an error.
 
 ---
 
@@ -245,7 +257,7 @@ NuveiFields.createPayment(uiOwner: {ViewController}, input: {Input}) { output in
 }
 ```
 
-NuveiFields.createPayment will create payment with a token. For this method you don't need the fields. You have to pass an object of type `NVInput` in which you have to put the token and optionally the card holder name. The closure tells wheter the payment was successful or there was some error.
+`NuveiFields.createPayment` will create payment with a token. For this method you don't need the fields. You have to pass an object of type `NVInput` in which you have to put the token and optionally the card holder name. The closure tells wheter the payment was successful or there was some error.
 
 ### SimplyConnect 
 ```swift
@@ -257,19 +269,24 @@ NuveiSimplyConnect.setup(environment: {NuveiSimplyConnect.Environment}, customiz
 ```
 This creates instance of `NuveiUICustomization` with your own customization preferences.
 
-With NuveiSimplyConnect.setup(environment:customization:) you setup the enviroment and the customization. You can pass empty customization NuveiUICustomization(). The customization also can be set later but before NuveiSimplyConnect.checkout(...).
+With `NuveiSimplyConnect.setup(environment:customization:)` you setup the enviroment and the customization. You can pass empty customization `NuveiUICustomization()`. The customization also can be set later but before `NuveiSimplyConnect.checkout(...)`.
 
 ```swift
 with(NuveiUICustomization) {
-    // Styles the top app bar of the Checkout screen:
+    // ─────────────────────────────────────────────────────────────
+    // Checkout Toolbar
+    // ─────────────────────────────────────────────────────────────
     logo							= NuveiUICustomization.defaultCheckoutToolbarLogo  // logo shown in the toolbar
+
     with(toolbarCustomization){ 
 		headerText                  = "Checkout"                        // title text (e.g. "Checkout")
 		textFont                	= UIFont.boldSystemFont(ofSize: 22) // toolbar title font.
         textColor                   = .white              				// toolbar title color
         backgroundColor             = .nuveiDefaultColor                // toolbar background
     }
-    // Controls all text fields in the checkout form:
+    // ─────────────────────────────────────────────────────────────
+    // Text Fields
+    // ─────────────────────────────────────────────────────────────
     with(textBoxCustomization){ 
         headingTextFont         	= UIFont.boldSystemFont(ofSize: 14)   // font for section titles above a text input field.
         headingTextColor        	= .black                        	  // color for section titles above a text input field.
@@ -281,12 +298,16 @@ with(NuveiUICustomization) {
         cornerRadius                = 0                                   // radius for rounded text field corners
         borderWidth                 = 1                                   // border thickness
     }
-    // Styles error messages shown under fields:
+    // ─────────────────────────────────────────────────────────────
+    // Error Labels
+    // ─────────────────────────────────────────────────────────────
     with(errorLabelCustomization){
         textFont                	= UIFont.boldSystemFont(ofSize: 12)  // error text font
         textColor                   = .red                    		 	 // error text color
     }
-	// Customization of the SimplyConnect screen
+	// ─────────────────────────────────────────────────────────────
+    // SimplyConnect Table View (Payment Methods Screen)
+    // ─────────────────────────────────────────────────────────────
     with(tableViewCustomization) {
 		sectionTitleFont    = UIFont.boldSystemFont(ofSize: 13)  // Section header title font (e.g. "My payment methods")
 		sectionTitleColor   = .secondaryLabel                    // Section header title color
@@ -295,20 +316,26 @@ with(NuveiUICustomization) {
 		textFont    		= UIFont.systemFont(ofSize: 14)      // Text font for the main text inside each cell (card, APM, etc.)
 		textColor       	= .black     						 // Text color for the main text inside each cell 
     }
-    // Styles for the main payment button:
+    // ─────────────────────────────────────────────────────────────
+    // Pay Button
+    // ─────────────────────────────────────────────────────────────
     with(payButtonCustomization){
         textFont                	= UIFont.systemFont(ofSize: 17) // button label font
         textColor                   = .white                   		// button text color
         backgroundColor             = .sdkColor("Checkout/Purple")  // button background
         cornerRadius                = 0                             // rounded corners for the button
     }
-    //Styles checkbox-like actions (e.g. “Save card”, “Remember my details”):
+    // ─────────────────────────────────────────────────────────────
+    // Checkbox-like Buttons (Save card, Remember details, etc.)
+    // ─────────────────────────────────────────────────────────────
     with(checkboxButtonCustomization){ 
 		textFont                	= UIFont.systemFont(ofSize: 17) // checkbox label font
         textColor                   = .white                   		// checkbox text color
         backgroundColor             = .sdkColor("Checkout/Purple")  // checkbox background
     }
-	//Style for the close button:
+	// ─────────────────────────────────────────────────────────────
+    // Close Button 
+    // ─────────────────────────────────────────────────────────────
     with(checkboxButtonCustomization){ 
         backgroundColor             = .sdkColor("Checkout/Purple")  // close button tint color
     }
@@ -326,9 +353,9 @@ NuveiSimplyConnect.createPayment(uiOwner: {ViewController}, input: {Input}, addi
 	// do something
 }
 ```
-Authenticate3d will authenticate a payment. For uiOwner you have to pass the presenting view controller. For input you must create instance of `NVInput` with the payment data.
-
-CreatePayment will make a payment. For uiOwner you have to pass the presenting view controller. For input you must create instance of `NVInput` with the payment data.
+`Authenticate3d` will authenticate a payment.
+`CreatePayment` will make a payment.
+In each case, for `uiOwner` you have to pass the presenting view controller, and for 'input' you must create instance of `NVInput` with the payment data.
 
 ---
 
@@ -350,7 +377,7 @@ do {
 }
 ```
 
-This creates instance of `Installment` with installment options. You can choose which options you will add. If the option is not `SINGLE_PAYMENT` you have to pass list of periods from which the user can choose. You can choose if the national id is required. It depends on the country code. Country codes that we support national id are AR, BR, CL, PE, CO, MX, PY, UY, IL. It is optional.
+This creates instance of `Installment` with installment options. You can choose which options you will add. If the option is not `SINGLE_PAYMENT` you have to pass list of periods from which the user can choose. You can choose if the national id is required. It depends on the country code. Country codes that we support national id are **AR, BR, CL, PE, CO, MX, PY, UY, IL. It is optional**.
 
 This creates an instance of CheckoutI18n with your localized texts. You can initialize it with the properties and text you want to modify.For alternative payment methods, use the `apmDictionary` parameter. It maps each payment-method identifier to a dictionary of field entries. Within this dictionary, each field key defines the label text, and the corresponding error message is specified by appending `_error` to the same field key. You can find the keys in the documentation. For example:
 
@@ -375,7 +402,12 @@ with(CheckoutI18N) {
     saveDetailsText                     = "Save my details for future use"
     payButtonTitle                      = "Pay"
     
-    apmDictionary						= ["paymentMethodKey": ["field_key": "text for the field", "field_key_error": "error text"]
+    // APM-specific dictionary customizations
+    apmDictionary 						= ["paymentMethodKey":
+											   ["field_key": "text for the field",
+												"field_key_error": "error text"]]
+
+    // Error messages
     errors								= [numberEmpty 		 = "Please fill the credit card number"
 										   creditCardInvalid = "Please enter a valid card number"
 										   expiryEmpty       = "Please fill the expiry date"
@@ -398,4 +430,5 @@ let i18n = CheckoutI18n(apmDictionary: [
 			])
 ```
 
-Checkout will load a screen with saved cards and other payment options so the uiOwner must be the presenting view controller. For input you must create instance of `NVInput` with the payment data. If this input doesn't have amount or currency the method throws an error. The callback tells you when the proccess is finished either successfully or with an error. DeclineFallbackDecision tells you when there is an error.
+Checkout will load a screen with saved cards and other payment options so the `uiOwner` must be the presenting view controller. For input you must create instance of `NVInput` with the payment data. If this input doesn't have amount or currency the method throws an error. The callback tells you when the proccess is finished either successfully or with an error. 
+`DeclineFallbackDecision` tells you when there is an error.
