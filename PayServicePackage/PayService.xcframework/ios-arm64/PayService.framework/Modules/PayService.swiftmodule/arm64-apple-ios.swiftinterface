@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayService
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import Core
 import Foundation
 @_exported import PayService
@@ -11,122 +11,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
-  var shouldNotify: Swift.Bool { get set }
-  var isNumberOnly: Swift.Bool { get set }
-  var maxLength: Swift.Int? { get set }
-}
-@_hasMissingDesignatedInitializers public class ModelUtils {
-  public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
-  @objc deinit
-}
-public enum CardType : Swift.String, Swift.CaseIterable {
-  case amex
-  case visa
-  case masterCard
-  case diners
-  case discover
-  case jcb
-  case elo
-  case hipercard
-  case unionPay
-  case maestro
-  public var lengths: [Swift.Int]? {
-    get
-  }
-  public var regex: Swift.String {
-    get
-  }
-  public var cvvLength: Swift.Int? {
-    get
-  }
-  public var icon: Swift.String? {
-    get
-  }
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [PayService.CardType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [PayService.CardType] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension Core.MobileSDKInternal {
-  public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
-}
-extension Core.NuveiSimplyConnect {
-  public enum CheckoutCompletionAction {
-    case dismiss
-    case backToCheckout
-    public static func == (a: Core.NuveiSimplyConnect.CheckoutCompletionAction, b: Core.NuveiSimplyConnect.CheckoutCompletionAction) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
-  public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
-  public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
-  @_Concurrency.MainActor @preconcurrency public var icon: UIKit.UIImage? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class CreditCardUtils {
-  public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
-  public static let shared: PayService.CreditCardUtils
-  public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
-  public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
-  @objc deinit
-}
-extension Swift.String {
-  public static func localized(_ key: Swift.String) -> Swift.String
-  public var onlyDigits: Swift.String {
-    get
-  }
-}
-@objc @_Concurrency.MainActor @preconcurrency open class LabeledTextField : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency final public let label: UIKit.UILabel
-  @_Concurrency.MainActor @preconcurrency final public let textField: UIKit.UITextField
-  @_Concurrency.MainActor @preconcurrency final public let errorLabel: UIKit.UILabel
-  @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool) -> ())?
-  @_Concurrency.MainActor @preconcurrency public var textHandler: (any PayService.BaseTextHandler)?
-  @_Concurrency.MainActor @preconcurrency public var input: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var error: Swift.String? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var fieldName: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var selectedKey: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var maxLength: Swift.Int? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String, isNumberOnly: Swift.Bool = false, maxLength: Swift.Int? = nil, pickerValues: [(displayValue: Swift.String, key: Swift.String)]? = nil)
-  @_Concurrency.MainActor @preconcurrency public func updateInputAndValidate(_ input: Swift.String?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
-  @discardableResult
-  @_Concurrency.MainActor @preconcurrency public func configure(customization: Core.NuveiFieldCustomization? = nil) -> PayService.LabeledTextField
-  @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class PersonalIDValidator {
-  public static func isValid(number: Swift.String, for countryCode: Swift.String?) -> Swift.Bool
-  @objc deinit
-}
 public struct NVAPMsOutput : Swift.Decodable {
   public let paymentMethods: [PayService.NVAPMsOutput.APM]
   public struct APM : Swift.Decodable {
@@ -134,7 +18,9 @@ public struct NVAPMsOutput : Swift.Decodable {
     public let paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption]
     public let logoURL: Swift.String?
     public let fields: [PayService.NVAPMsOutput.Field]
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(paymentMethod: Swift.String, paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption], logoURL: Swift.String?, fields: [PayService.NVAPMsOutput.Field])
+    #endif
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct Field : Swift.Decodable {
@@ -142,7 +28,9 @@ public struct NVAPMsOutput : Swift.Decodable {
     public let type: Swift.String
     public let caption: [PayService.NVAPMsOutput.Caption]
     public let listValues: [PayService.NVAPMsOutput.ListValue]?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(name: Swift.String, type: Swift.String, caption: [PayService.NVAPMsOutput.Caption], listValues: [PayService.NVAPMsOutput.ListValue]?)
+    #endif
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct Caption : Swift.Decodable {
@@ -154,7 +42,9 @@ public struct NVAPMsOutput : Swift.Decodable {
   public struct ListValue : Swift.Decodable {
     public let code: Swift.String?
     public let caption: Swift.String?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(code: Swift.String?, caption: Swift.String?)
+    #endif
     public init(from decoder: any Swift.Decoder) throws
   }
   public init(from decoder: any Swift.Decoder) throws
@@ -193,32 +83,6 @@ public struct NVCardDetailsOutput : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
-  public var number: Swift.String
-  public var expiry: Swift.String
-  public var cvv: Swift.String
-  public var cardHolderName: Swift.String
-  public var installmentType: Swift.Int?
-  public var numberOfInstallments: Swift.Int?
-  public var isNationalIDRequired: Swift.Bool
-  public var countryCode: Swift.String?
-  public var nationalID: Swift.String?
-  public var shouldSaveCard: Swift.Bool?
-  public var indexPath: Foundation.IndexPath?
-  public var parsedInfo: PayService.CreditCardInput.ParsedInfo
-  public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
-  @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
-    public var errors: [Core.InputError]?
-    public var icon: Swift.String?
-    public var cvvLength: Swift.Int?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 public struct NVUPOsOutput : Swift.Decodable {
   public let paymentMethods: [PayService.NVUPOsOutput.PaymentMethod]
   public struct PaymentMethod : Swift.Decodable {
@@ -238,16 +102,200 @@ public struct NVUPOsOutput : Swift.Decodable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
+  var shouldNotify: Swift.Bool { get set }
+  var isNumberOnly: Swift.Bool { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var maxLength: Swift.Int? { get set }
+  #endif
+}
+public enum CardType : Swift.String, Swift.CaseIterable {
+  case amex
+  case visa
+  case masterCard
+  case diners
+  case discover
+  case jcb
+  case elo
+  case hipercard
+  case unionPay
+  case maestro
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var lengths: [Swift.Int]? {
+    get
+  }
+  #endif
+  public var regex: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var cvvLength: Swift.Int? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var icon: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PayService.CardType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PayService.CardType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Core.NuveiSimplyConnect {
+  public enum CheckoutCompletionAction {
+    case dismiss
+    case backToCheckout
+    public static func == (a: Core.NuveiSimplyConnect.CheckoutCompletionAction, b: Core.NuveiSimplyConnect.CheckoutCompletionAction) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
+  public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
+  #endif
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
+  @_Concurrency.MainActor @preconcurrency public var icon: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CreditCardUtils {
+  public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
+  public static let shared: PayService.CreditCardUtils
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
+  #endif
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
+  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
+  @objc deinit
+}
+extension Swift.String {
+  public static func localized(_ key: Swift.String) -> Swift.String
+  public var onlyDigits: Swift.String {
+    get
+  }
+}
+@objc @_Concurrency.MainActor @preconcurrency open class LabeledTextField : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public let label: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency final public let textField: UIKit.UITextField
+  @_Concurrency.MainActor @preconcurrency final public let errorLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool) -> ())?
+  @_Concurrency.MainActor @preconcurrency public var textHandler: (any PayService.BaseTextHandler)?
+  @_Concurrency.MainActor @preconcurrency public var input: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var error: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var fieldName: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var selectedKey: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var maxLength: Swift.Int? {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String, isNumberOnly: Swift.Bool = false, maxLength: Swift.Int? = nil, pickerValues: [(displayValue: Swift.String, key: Swift.String)]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func updateInputAndValidate(_ input: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency public func configure(customization: Core.NuveiFieldCustomization? = nil) -> PayService.LabeledTextField
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PersonalIDValidator {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func isValid(number: Swift.String, for countryCode: Swift.String?) -> Swift.Bool
+  #endif
+  @objc deinit
+}
+public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
+  public var number: Swift.String
+  public var expiry: Swift.String
+  public var cvv: Swift.String
+  public var cardHolderName: Swift.String
+  public var installmentType: Swift.Int?
+  public var numberOfInstallments: Swift.Int?
+  public var isNationalIDRequired: Swift.Bool
+  public var countryCode: Swift.String?
+  public var nationalID: Swift.String?
+  public var shouldSaveCard: Swift.Bool?
+  public var indexPath: Foundation.IndexPath?
+  public var parsedInfo: PayService.CreditCardInput.ParsedInfo
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
+  #endif
+  @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
+    public var errors: [Core.InputError]?
+    public var icon: Swift.String?
+    public var cvvLength: Swift.Int?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public protocol InputIndexable {
+  #if compiler(>=5.3) && $NonescapableTypes
   var indexPath: Foundation.IndexPath? { get set }
+  #endif
 }
 public class CreditCardFieldViewModel {
   public static func modelForRN() -> PayService.CreditCardFieldViewModel
   public init(_ source: Core.SourceApplication)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, hasCreditCardBlockedError: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createPayment(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func tokenize(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
+  #endif
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ModelUtils {
+  public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
+  @objc deinit
+}
+extension Core.MobileSDKInternal {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
+  #endif
 }
 extension PayService.CardType : Swift.Equatable {}
 extension PayService.CardType : Swift.Hashable {}

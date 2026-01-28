@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uA7u0qYEKxWDUyOdV7u9dljH+4U=
+		H5C1QKW+FfFVGyprPdRTux+8pRI=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sS5ZWtRSm8c037mYlT4aEIk0ZGc=
+		LI9Hf40kLi5Oh+dJD+cghLZtSG0=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		n5sg7g5Ne1rV3RaViLe59lQG30c=
+		0MMkGKNVzBX1cO8oX9nG+ANw05s=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XvDq+B3hHeQNzg7l4/rRtgJvQ7k=
+		5HMLn7XRbh3AVxlA875O7ifrLTw=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n5sg7g5Ne1rV3RaViLe59lQG30c=
+		0MMkGKNVzBX1cO8oX9nG+ANw05s=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gdZjRaOTUGo6GJKFGi4LAM8c84M=
+		KtYSzlIujpHUSFF9lDrRxet64Vo=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sS5ZWtRSm8c037mYlT4aEIk0ZGc=
+		LI9Hf40kLi5Oh+dJD+cghLZtSG0=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OVbvE0tst6YFixhZl28u+cY51Pg=
+		DngjB/DJfqs5H2zI2a/JUtjMtbM=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bQWK8NvhYzw+tiMWeGBLHPEfNQ8=
+		of9RMjxlP/SfC12F6mEvXMQxPmk=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OVbvE0tst6YFixhZl28u+cY51Pg=
+		DngjB/DJfqs5H2zI2a/JUtjMtbM=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sff+QJtd0yKr7KLtJNGJlLX2dUI=
+		KLRdl22x5KPrJAQkfimbCJ9HJI0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g3NSeoPiQngRFh8BeZxkGZrw5FhA3OmklIcXm/NrKfA=
+			8KkD4PG7kzbKck0yKrbBhNDMOX9hM9a4lK0JtGp66hE=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkMgTuVk7Eq1iPtAZS8CZxwzSmZiqpLiu4R172MQ/wg=
+			POSEFlXbOrhVRNj1a8b95f0hwx5NggKMvJIbcZli6RA=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/IjEnvEanWOqHbRO6kT9QYutiYwNYq2aMHWHkIge930=
+			04ZFV9neO8tiuHrZ5SGIq4Slu7/3b4P77eIYd/4H4Ro=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkMgTuVk7Eq1iPtAZS8CZxwzSmZiqpLiu4R172MQ/wg=
+			POSEFlXbOrhVRNj1a8b95f0hwx5NggKMvJIbcZli6RA=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C3RuNhp8eaEjItwqocz8q/c9cOb0H53IpOHOjL+Ueo0=
+			KhTTlO9TxXSdj5T3ooqtN78D1Upn2JxXTH5ZNyrjM8M=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g3NSeoPiQngRFh8BeZxkGZrw5FhA3OmklIcXm/NrKfA=
+			8KkD4PG7kzbKck0yKrbBhNDMOX9hM9a4lK0JtGp66hE=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DA+fYA1d2dttUwzKZXqNqzotnojxmY8wkMbjkcGtkwA=
+			+murzCxeLA/Wgsit0IuudDacwSLrPT4pv6aHwaK3Cig=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0krs2kI6FFoJoUUhlGOEC6fSfYdPMgt+prbB5Bcp6A=
+			1ZCkb8bw/q5pHHGyDC6XyxyGPs/tZ3Gqqdg6/w7xzos=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DA+fYA1d2dttUwzKZXqNqzotnojxmY8wkMbjkcGtkwA=
+			+murzCxeLA/Wgsit0IuudDacwSLrPT4pv6aHwaK3Cig=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8d0/uWVof4/z8lNxNyX8j0O/JS0UrSH17Ni6F1X5QI=
+			DBJsys0O5dSU32Gck5HCQQy8TFVRc543dYz2fhmbpwE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

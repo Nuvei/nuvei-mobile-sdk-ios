@@ -5,6 +5,444 @@
     "printedName": "SimplyConnect",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "Installment",
+        "printedName": "Installment",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(options:isNationalIdRequired:countryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Installment",
+                "printedName": "SimplyConnect.Installment",
+                "usr": "s:13SimplyConnect11InstallmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SimplyConnect.InstallmentOption]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentOption",
+                    "printedName": "SimplyConnect.InstallmentOption",
+                    "usr": "s:13SimplyConnect17InstallmentOptionV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SimplyConnect11InstallmentV7options20isNationalIdRequired11countryCodeACSayAA0C6OptionVG_SbSStcfc",
+            "mangledName": "$s13SimplyConnect11InstallmentV7options20isNationalIdRequired11countryCodeACSayAA0C6OptionVG_SbSStcfc",
+            "moduleName": "SimplyConnect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13SimplyConnect11InstallmentV",
+        "mangledName": "$s13SimplyConnect11InstallmentV",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstallmentOption",
+        "printedName": "InstallmentOption",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:periods:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentOption",
+                "printedName": "SimplyConnect.InstallmentOption",
+                "usr": "s:13SimplyConnect17InstallmentOptionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InstallmentType",
+                "printedName": "SimplyConnect.InstallmentType",
+                "usr": "s:13SimplyConnect15InstallmentTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
+            "mangledName": "$s13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
+            "moduleName": "SimplyConnect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13SimplyConnect17InstallmentOptionV",
+        "mangledName": "$s13SimplyConnect17InstallmentOptionV",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InstallmentType",
+        "printedName": "InstallmentType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SINGLE_PAYMENT",
+            "printedName": "SINGLE_PAYMENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITH_INTEREST",
+            "printedName": "DEFERRED_WITH_INTEREST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITHOUT_INTEREST",
+            "printedName": "DEFERRED_WITHOUT_INTEREST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
+            "printedName": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SimplyConnect.InstallmentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InstallmentType",
+                        "printedName": "SimplyConnect.InstallmentType",
+                        "usr": "s:13SimplyConnect15InstallmentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
+            "moduleName": "SimplyConnect"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SimplyConnect.InstallmentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InstallmentType",
+                    "printedName": "SimplyConnect.InstallmentType",
+                    "usr": "s:13SimplyConnect15InstallmentTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "SimplyConnect",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivp",
+            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivp",
+            "moduleName": "SimplyConnect",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivg",
+                "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivg",
+                "moduleName": "SimplyConnect",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13SimplyConnect15InstallmentTypeO",
+        "mangledName": "$s13SimplyConnect15InstallmentTypeO",
+        "moduleName": "SimplyConnect",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -522,6 +960,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -547,78 +992,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "InstallmentOption",
-        "printedName": "InstallmentOption",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(type:periods:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InstallmentOption",
-                "printedName": "SimplyConnect.InstallmentOption",
-                "usr": "s:13SimplyConnect17InstallmentOptionV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InstallmentType",
-                "printedName": "SimplyConnect.InstallmentType",
-                "usr": "s:13SimplyConnect15InstallmentTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
-            "mangledName": "$s13SimplyConnect17InstallmentOptionV4type7periodsAcA0C4TypeO_SaySiGtcfc",
-            "moduleName": "SimplyConnect",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13SimplyConnect17InstallmentOptionV",
-        "mangledName": "$s13SimplyConnect17InstallmentOptionV",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -629,84 +1002,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "Installment",
-        "printedName": "Installment",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(options:isNationalIdRequired:countryCode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Installment",
-                "printedName": "SimplyConnect.Installment",
-                "usr": "s:13SimplyConnect11InstallmentV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[SimplyConnect.InstallmentOption]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentOption",
-                    "printedName": "SimplyConnect.InstallmentOption",
-                    "usr": "s:13SimplyConnect17InstallmentOptionV"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SimplyConnect11InstallmentV7options20isNationalIdRequired11countryCodeACSayAA0C6OptionVG_SbSStcfc",
-            "mangledName": "$s13SimplyConnect11InstallmentV7options20isNationalIdRequired11countryCodeACSayAA0C6OptionVG_SbSStcfc",
-            "moduleName": "SimplyConnect",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13SimplyConnect11InstallmentV",
-        "mangledName": "$s13SimplyConnect11InstallmentV",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -714,294 +1009,6 @@
         "moduleName": "SimplyConnect",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InstallmentType",
-        "printedName": "InstallmentType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "SINGLE_PAYMENT",
-            "printedName": "SINGLE_PAYMENT",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO14SINGLE_PAYMENTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITH_INTEREST",
-            "printedName": "DEFERRED_WITH_INTEREST",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO22DEFERRED_WITH_INTERESTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITHOUT_INTEREST",
-            "printedName": "DEFERRED_WITHOUT_INTEREST",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO25DEFERRED_WITHOUT_INTERESTyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Var",
-            "name": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
-            "printedName": "DEFERRED_WITHOUT_INTEREST_AND_GRACE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(SimplyConnect.InstallmentType.Type) -> SimplyConnect.InstallmentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "SimplyConnect.InstallmentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InstallmentType",
-                        "printedName": "SimplyConnect.InstallmentType",
-                        "usr": "s:13SimplyConnect15InstallmentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO35DEFERRED_WITHOUT_INTEREST_AND_GRACEyA2CmF",
-            "moduleName": "SimplyConnect"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SimplyConnect.InstallmentType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InstallmentType",
-                    "printedName": "SimplyConnect.InstallmentType",
-                    "usr": "s:13SimplyConnect15InstallmentTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueACSgSi_tcfc",
-            "moduleName": "SimplyConnect",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivp",
-            "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivp",
-            "moduleName": "SimplyConnect",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13SimplyConnect15InstallmentTypeO8rawValueSivg",
-                "mangledName": "$s13SimplyConnect15InstallmentTypeO8rawValueSivg",
-                "moduleName": "SimplyConnect",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13SimplyConnect15InstallmentTypeO",
-        "mangledName": "$s13SimplyConnect15InstallmentTypeO",
-        "moduleName": "SimplyConnect",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
         ]
       },
       {
@@ -1688,6 +1695,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SIMDScalar",
             "printedName": "SIMDScalar",
             "children": [
@@ -1865,6 +1879,34 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 158,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 166,
+      "length": 22,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 195,
+      "length": 25,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 35,
+      "value": "3"
+    },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
       "kind": "Array",
@@ -2461,34 +2503,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 158,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 166,
-      "length": 22,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 195,
-      "length": 25,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/Model\/InstallmentType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 227,
-      "length": 35,
-      "value": "3"
-    },
-    {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/Data\/UPOCardInput.swift",
       "kind": "BooleanLiteral",
       "offset": 902,
@@ -2505,14 +2519,14 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3665,
+      "offset": 3667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3939,
+      "offset": 3941,
       "length": 5,
       "value": "false"
     }

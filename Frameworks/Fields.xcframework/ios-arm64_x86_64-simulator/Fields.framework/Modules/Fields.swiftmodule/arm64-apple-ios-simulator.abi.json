@@ -6,6 +6,40 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Fields",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "JOSESwift",
+        "printedName": "JOSESwift",
+        "declKind": "Import",
+        "moduleName": "Fields"
+      },
+      {
+        "kind": "Import",
+        "name": "PayService",
+        "printedName": "PayService",
+        "declKind": "Import",
+        "moduleName": "Fields"
+      },
+      {
+        "kind": "Import",
+        "name": "PayService",
+        "printedName": "PayService",
+        "declKind": "Import",
+        "moduleName": "Fields",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PayService",
         "printedName": "PayService",
         "declKind": "Import",
@@ -1806,37 +1840,152 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Fields",
-        "declAttributes": [
-          "RawDocComment"
+        "kind": "TypeDecl",
+        "name": "EcdhEsJwe",
+        "printedName": "EcdhEsJwe",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(compactSerializedString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EcdhEsJwe",
+                "printedName": "Core.EcdhEsJwe",
+                "usr": "s:4Core9EcdhEsJweV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Core9EcdhEsJweV6FieldsE23compactSerializedStringACSS_tKcfc",
+            "mangledName": "$s4Core9EcdhEsJweV6FieldsE23compactSerializedStringACSS_tKcfc",
+            "moduleName": "Fields",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4Core9EcdhEsJweV",
+        "mangledName": "$s4Core9EcdhEsJweV",
+        "moduleName": "Core",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "JSONWebEncryption",
+            "printedName": "JSONWebEncryption",
+            "usr": "s:4Core17JSONWebEncryptionP",
+            "mangledName": "$s4Core17JSONWebEncryptionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
-        "kind": "Import",
-        "name": "JOSESwift",
-        "printedName": "JOSESwift",
-        "declKind": "Import",
-        "moduleName": "Fields"
-      },
-      {
-        "kind": "Import",
-        "name": "PayService",
-        "printedName": "PayService",
-        "declKind": "Import",
-        "moduleName": "Fields"
-      },
-      {
-        "kind": "Import",
-        "name": "PayService",
-        "printedName": "PayService",
-        "declKind": "Import",
-        "moduleName": "Fields",
-        "declAttributes": [
-          "RawDocComment"
+        "kind": "TypeDecl",
+        "name": "NVCardDetails",
+        "printedName": "NVCardDetails",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(ccTempToken:cardHolderName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NVCardDetails",
+                "printedName": "Core.NVCardDetails",
+                "usr": "s:4Core13NVCardDetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Core13NVCardDetailsV6FieldsE11ccTempToken14cardHolderNameACSS_SSSgtcfc",
+            "mangledName": "$s4Core13NVCardDetailsV6FieldsE11ccTempToken14cardHolderNameACSS_SSSgtcfc",
+            "moduleName": "Fields",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4Core13NVCardDetailsV",
+        "mangledName": "$s4Core13NVCardDetailsV",
+        "moduleName": "Core",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2389,155 +2538,6 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "EcdhEsJwe",
-        "printedName": "EcdhEsJwe",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(compactSerializedString:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "EcdhEsJwe",
-                "printedName": "Core.EcdhEsJwe",
-                "usr": "s:4Core9EcdhEsJweV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4Core9EcdhEsJweV6FieldsE23compactSerializedStringACSS_tKcfc",
-            "mangledName": "$s4Core9EcdhEsJweV6FieldsE23compactSerializedStringACSS_tKcfc",
-            "moduleName": "Fields",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:4Core9EcdhEsJweV",
-        "mangledName": "$s4Core9EcdhEsJweV",
-        "moduleName": "Core",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "JSONWebEncryption",
-            "printedName": "JSONWebEncryption",
-            "usr": "s:4Core17JSONWebEncryptionP",
-            "mangledName": "$s4Core17JSONWebEncryptionP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NVCardDetails",
-        "printedName": "NVCardDetails",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(ccTempToken:cardHolderName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NVCardDetails",
-                "printedName": "Core.NVCardDetails",
-                "usr": "s:4Core13NVCardDetailsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4Core13NVCardDetailsV6FieldsE11ccTempToken14cardHolderNameACSS_SSSgtcfc",
-            "mangledName": "$s4Core13NVCardDetailsV6FieldsE11ccTempToken14cardHolderNameACSS_SSSgtcfc",
-            "moduleName": "Fields",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:4Core13NVCardDetailsV",
-        "mangledName": "$s4Core13NVCardDetailsV",
-        "moduleName": "Core",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       }

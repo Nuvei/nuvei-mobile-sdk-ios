@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2rHp+B0fh96nOj1Kic20C9AZrLc=
+		6mgdrasgklgeGMqpy08EMFD2+4s=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jDzzcHTx+7hVchYsz5ZDBbrL1+g=
+		nfnS6exNbec1ZX7K24gxOLMB2Zw=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vmi4OpUjar7b2syvZ1UIFmM0OEY=
+		sHNAzbc0kUFSSm4PiTBvm9JvQqQ=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		G62coT0/DNwELn+FoMWqrP7WDvs=
+		zCjqkooid4hDoEPB5Ajf+TcY2M0=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vmi4OpUjar7b2syvZ1UIFmM0OEY=
+		sHNAzbc0kUFSSm4PiTBvm9JvQqQ=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		W2dIbg/7K+Hfzjyfp5l3O/HEPyo=
+		umM8Qrp3t9Hl8LjC9qc+EfKfbAQ=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jDzzcHTx+7hVchYsz5ZDBbrL1+g=
+		nfnS6exNbec1ZX7K24gxOLMB2Zw=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iI0tZDaFX83iUgf74Fxqr4kvX1M=
+		0L1r68jwrInrCAbPk8Atf1Tq/Xs=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ycVC9JjeAB1cNu5dxwCsXrlYmSE=
+		gX7RSMrKo3Ujy019HJAoFkSytRs=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iI0tZDaFX83iUgf74Fxqr4kvX1M=
+		0L1r68jwrInrCAbPk8Atf1Tq/Xs=
 		</data>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TysQNHuMvEAXH2ASAYH7qvGwkC8=
+		CS99ScjToKVBJjqy6ey4VOdnf/0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0pbJLCECC6YMOliWRQ+zuUbOLtfo5jEE1uhwzH3OrbI=
+			iyMPEyU29VH+bbzgeHMw1CSVBp9U76zfyW3kWsEPAjs=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3ohJzFgNxlpmA0DGCL6nmli0LCUmjuqjX4IMmG11bQ=
+			QjuJs719Ev8MLTIoNHMf7Nb3NsA7HsRknDzyRTJ1OQE=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NoyF2FZo5HEY/YCerY0ouv7+EVXmtrAZu8dS8pl5OvQ=
+			tHMaJ8qjhknBiUTOFg1jyC04lD2T97kByRR0NXHQ774=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3ohJzFgNxlpmA0DGCL6nmli0LCUmjuqjX4IMmG11bQ=
+			QjuJs719Ev8MLTIoNHMf7Nb3NsA7HsRknDzyRTJ1OQE=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgstnGCgTQRtgtwBBnm2izmYgNN+MSBli88Aih6ePx0=
+			D32LOVChnphEzz5MpUKYwTwvho8miauSmXK0uUY9GXg=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0pbJLCECC6YMOliWRQ+zuUbOLtfo5jEE1uhwzH3OrbI=
+			iyMPEyU29VH+bbzgeHMw1CSVBp9U76zfyW3kWsEPAjs=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SoQrku4yRtVLeZS6/DYSNDUiRmN1UNJ7DcXnhQmX/44=
+			zNudGM+AtwtQ662zAnwghlmb7Ql+SnXJGIOEmNnyzG4=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OdmTnP7r6Vf6hLfGIHUMOodoYRB2Y20T1YjEpeguAl0=
+			mEnEOnRwLN5ilP0p3VL/MBK4vnappAwud1cG2c5Sr5g=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SoQrku4yRtVLeZS6/DYSNDUiRmN1UNJ7DcXnhQmX/44=
+			zNudGM+AtwtQ662zAnwghlmb7Ql+SnXJGIOEmNnyzG4=
 			</data>
 		</dict>
 		<key>Modules/SimplyConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HBHAS52a4IRsLNpmc2wVfo1MeW5RXxKE5yXrl1Mi9Eo=
+			IJezDcD0fXD3VO2Dg9QeaFPj5NGnx01YqvYoAIpMHK8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p6MBYDbuTsZOMNJxK3lVrA3+xR4=
+		kork87KoM1EKbrLH1QqT3KnN1Lk=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		sS5ZWtRSm8c037mYlT4aEIk0ZGc=
+		LI9Hf40kLi5Oh+dJD+cghLZtSG0=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		du/IP0PmzS+5n4VT7765qFM0BNQ=
+		4yqCgiTNL/i/WOdXSRuYvzpExx4=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		v9cC598Y7QWy5Xits2dNBCoa/0U=
+		B16ph7kOFHT8RG4L+IlhOD2NTHc=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		du/IP0PmzS+5n4VT7765qFM0BNQ=
+		4yqCgiTNL/i/WOdXSRuYvzpExx4=
 		</data>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kcOSaAPlnwZ8uJqDCKa/QVERjac=
+		Dvq6DIQOA4wqVwZRbytJ/DQbeek=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g3NSeoPiQngRFh8BeZxkGZrw5FhA3OmklIcXm/NrKfA=
+			8KkD4PG7kzbKck0yKrbBhNDMOX9hM9a4lK0JtGp66hE=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QefO/WAEZGtRXJmjDEQ4Q9plvXsi1H4pHXCN0NnYIyY=
+			yENfgYV+PoIJr5PoPbT+tz+t5z9iolMlGOfmOMxMaWU=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oP7Y4tfXq+P2IunLlFgQgcsCduC9MVspYk+JFzEhStQ=
+			Gw/QX60jN2SQDvb7u9ocJ5O2NiyRKvGzW+Jefsk4jRg=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QefO/WAEZGtRXJmjDEQ4Q9plvXsi1H4pHXCN0NnYIyY=
+			yENfgYV+PoIJr5PoPbT+tz+t5z9iolMlGOfmOMxMaWU=
 			</data>
 		</dict>
 		<key>Modules/ApplePay.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EN2MYggLQIakFfhzt4v/tyaunPeK8sBRn5niA3tCCrM=
+			SWImsEO/DGJY8k1YAiu5U+MEZ4/j4aZYdPqfZWPhq8I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

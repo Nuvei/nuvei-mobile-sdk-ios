@@ -23,6 +23,60 @@ You can Option+Click on the methods and properties to view documentation.
 
 ## How to use?
 ```swift
+struct DeviceDetails {
+    let deviceType: String?
+    let deviceName: String?
+    let deviceOS: String?
+    let ipAddress: String?
+    
+    init(
+        deviceType: String? = nil,
+        deviceName: String? = nil,
+        deviceOS: String? = nil,
+        ipAddress: String? = nil
+        ) {
+        self.deviceType = deviceType
+        self.deviceName = deviceName
+        self.deviceOS = deviceOS
+        self.ipAddress = ipAddress
+    }
+    
+    public static func collectDeviceDetails() -> DeviceDetails {
+        return DeviceDetails(
+            deviceType: deviceType(),
+            deviceName: deviceName(),
+            deviceOS: UIDevice.current.systemVersion,
+            ipAddress: ipAddress()
+        )
+    }
+    
+    public func asRequestParameters() -> [String: Any] {
+        var result: [String: Any] = [:]
+        
+        if let deviceType = deviceType { result["deviceType"] = deviceType }
+        if let deviceName = deviceName { result["deviceName"] = deviceName }
+        if let deviceOS = deviceOS { result["deviceOS"] = deviceOS }
+        if let ipAddress = ipAddress { result["ipAddress"] = ipAddress }
+        
+        return result
+    }
+    
+    private static func deviceType() -> String {
+        let deviceType: String
+        switch UIDevice.current.userInterfaceIdiom {
+        case .phone:
+            deviceType = "SMARTPHONE"
+        case .pad:
+            deviceType = "TABLET"
+        case .tv:
+            deviceType = "TV"
+        default:
+            deviceType = "UNKNOWN"
+        }
+        return deviceType
+    }
+}
+
 let amount: String
 let currency: String
 let userTokenId: String
@@ -47,6 +101,8 @@ let checksum: String = getCheckSum(
 	secret: secret
 )
 
+let deviceDetails = DeviceDetails.collectDeviceDetails().asRequestParameters()
+
 let parameters: [String: Any] = [
 	"amount": amount,
 	"currency": currency,
@@ -65,7 +121,8 @@ let parameters: [String: Any] = [
 	"billingAddress": [
 		"country": Locale.current.regionCode?.uppercased() ?? "US",
 		"email": userTokenId
-	]
+	],
+	"deviceDetails": deviceDetails
 ]
 
 Alamofire.Session.default
@@ -125,9 +182,9 @@ With NuveiSimplyConnect.setup(environment:customization:) you setup the envirome
 ---
 
 ```swift
-let applePayButton = ApplePayButton(uiOwner: {ViewController}, input: {Input}, auth3dSupported: {Auth3dSupported}, forceWebChallenge: {ForceWebChallenge}, delegate: delegate)
+let applePayButton = try ApplePayButton(uiOwner: {ViewController}, input: {Input}, auth3dSupported: {Auth3dSupported}, forceWebChallenge: {ForceWebChallenge}, delegate: delegate)
 ```
-This creates instance of `ApplePayButton` pointing to its parent viewController.
+This creates instance of `ApplePayButton` pointing to its parent viewController. It will throw an error if in the input are missing currency or amount.
 `Auth3dSupported` tells if the proccess will go through additional 3d authentication which in most case is unnecessary. You should also pass an object confirming to the `ApplePayDelegate` protocol. The `ApplePayDelegate` protocol defines one method `onSubmitResponse(response:)` that is called when the payment proccess finish either successfully or with an error and will give you the result.
 
 ### Fields

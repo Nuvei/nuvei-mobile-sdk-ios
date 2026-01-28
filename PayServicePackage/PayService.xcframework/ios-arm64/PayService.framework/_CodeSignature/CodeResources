@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NGG3QkQdFeDg6+mYeJkqctEBGS8=
+		4g4ZtU8uPmZhCkXLOEd6wqcnBYQ=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		btn4Ww1zpnkRj+6/2zlT3GaxBQU=
+		F7+6u8qHUsPMOPXk9ZNG/QCdKjg=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0gaqqLlMog3IT8yMYsjaK3wcw5w=
+		TK169L5xRa41Xn40JT8vi6/1cRg=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5XDg2hAKBgVBjxpCzT9JqU7nDcU=
+		gMH3tcyjmARkxQyhe2w2PWB9zpA=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0gaqqLlMog3IT8yMYsjaK3wcw5w=
+		TK169L5xRa41Xn40JT8vi6/1cRg=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		FQqKv/o3qpbQbNahDeWHdTR4Lrw=
+		Oh5Zg16alpvcG4IgvJxflnQCisQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vcmek31CTs4M/JcfXx/NR++cFTncmHMaT9UtDZ+s/Ic=
+			fca3HqZXQo7aUgruhuzzMEBgtTKbTpGVAeh66tStfpg=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6/IbEQF453yrWj5eX/qgNHLWkI+NqHrJN6wJrNGHnVQ=
+			ZKZYgY3Ce86SbeqQ12mt2gso1tC5OxTqA4UW9CtSIVI=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			doOoqzMhn0Zeyu05QtERnh5VTQhpB5dkmtPfMsez0/I=
+			YZyVMvv2kNrU0pI/DMinECi5qdmlw1CMFwPA/igIf3E=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6/IbEQF453yrWj5eX/qgNHLWkI+NqHrJN6wJrNGHnVQ=
+			ZKZYgY3Ce86SbeqQ12mt2gso1tC5OxTqA4UW9CtSIVI=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XYJy6Gm+8ulxmolQ6BmGkX8TpK7uNMKvDdPp920+erk=
+			Z5Jkj9l9pI5KJ4DhSYBOpfejwYd3yNiujYUECsaEgRE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
