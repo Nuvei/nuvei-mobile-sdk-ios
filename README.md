@@ -182,17 +182,17 @@ With NuveiSimplyConnect.setup(environment:customization:) you setup the envirome
 ---
 
 ```swift
-let applePayButton = try ApplePayButton(uiOwner: {ViewController}, input: {Input}, auth3dSupported: {Auth3dSupported}, forceWebChallenge: {ForceWebChallenge}, delegate: delegate)
+let applePayButton = try ApplePayButton(uiOwner: {ViewController}, input: {Input}, countryCode: {CountryCode}, auth3dSupported: {Auth3dSupported}, forceWebChallenge: {ForceWebChallenge}, delegate: delegate)
 ```
-This creates instance of `ApplePayButton` pointing to its parent viewController. It will throw an error if in the input are missing currency or amount.
-`Auth3dSupported` tells if the proccess will go through additional 3d authentication which in most case is unnecessary. You should also pass an object confirming to the `ApplePayDelegate` protocol. The `ApplePayDelegate` protocol defines one method `onSubmitResponse(response:)` that is called when the payment proccess finish either successfully or with an error and will give you the result.
+This creates instance of `ApplePayButton` pointing to its parent viewController. It will throw an error if in the input are missing currency, amount, sessionToken, merchantId or merchantSiteId. `Auth3dSupported` tells if the proccess will go through additional 3d authentication which in most case is unnecessary. You should also pass an object confirming to the `ApplePayDelegate` protocol. The `ApplePayDelegate` protocol defines one method `onSubmitResponse(response:)` that is called when the payment proccess finish either successfully or with an error and will give you the result.
 
 ### Fields
 
 ```swift
 let customization = NuveiFieldCustomization()
 let i18n = FieldsI18n()
-NuveiFields.setup(environment: {NuveiSimplyConnect.Environment},customization: customization, i18n: i18n,transactionDetails: transactionDetails)
+var blockCards: [[String]]? = nil
+NuveiFields.setup(environment: {NuveiSimplyConnect.Environment},customization: customization, i18n: i18n, input: input, blockCards: blockCards)
 ```
 
 ```swift
@@ -252,13 +252,21 @@ with(FieldsI18N) {
 								   cvvEmpty          = "Please fill the CVV"
 								   cvvInvalid        = "CVV is invalid"
 								   holderNameEmpty   = "Please fill the card holder name"
-								   holderNameInvalid = "Invalid cardholder name"]
+								   holderNameInvalid = "Invalid cardholder name"
+								   creditCardBlocked = "Your card is blocked"]
 }
 ```
 
 This creates instance of `FieldsI18n` with your own localized texts. You can initialize it with the properties and text you want to modify.
 
-You should also pass a `CheckoutTransactionDetails` object which you can create from `NVInput` object. If you want to use only `NuveiFields.createPayment` you can skip the transaction details.
+```swift
+var blockCards = [["visa","debit","gb"], ["isPrepaid", "mastercard", "isNotReloadable"]]
+}
+```
+
+This creates array of arrays with card details. To block a card it must match at least one array. For example if the card is visa but the issuerCountry is US it won't be blocked. If the card is Visa and debit and gb or the card is prepaid and mastercard and not reladeable it will be blocked.
+
+You should also pass a `NVInput` object. If you want to use only `NuveiFields.createPayment` you can skip the input object.
 
 ---
 
@@ -322,11 +330,11 @@ let customization = NuveiUICustomization(logo: {Your logo},toolbarCustomization:
 customization.setButtonCustomization({NuveiButtonCustomization}, for: .pay)
 customization.setButtonCustomization({NuveiButtonCustomization}, for: .checkbox)
 customization.setButtonCustomization({NuveiButtonCustomization}, for: .close)
-NuveiSimplyConnect.setup(environment: {NuveiSimplyConnect.Environment}, customization: customization)
+NuveiSimplyConnect.setup(environment: {NuveiSimplyConnect.Environment}, customization: customization, blockCards: {[[String]]})
 ```
 This creates instance of `NuveiUICustomization` with your own customization preferences.
 
-With `NuveiSimplyConnect.setup(environment:customization:)` you setup the enviroment and the customization. You can pass empty customization `NuveiUICustomization()`. The customization also can be set later but before `NuveiSimplyConnect.checkout(...)`.
+With `NuveiSimplyConnect.setup(environment:customization:blockCards:)` you setup the enviroment and the customization. You can pass empty customization `NuveiUICustomization()`. The customization also can be set later but before `NuveiSimplyConnect.checkout(...)`. BlockCards is structured as in Fields. It will block card entered in the "payment information card" and in the UPO in the checkout screen. Also it will block a request made by `authenticate3d` and `createPayment`.
 
 ```swift
 with(NuveiUICustomization) {
@@ -380,6 +388,7 @@ with(NuveiUICustomization) {
         textFont                	= UIFont.systemFont(ofSize: 17) // button label font
         textColor                   = .white                   		// button text color
         backgroundColor             = .sdkColor("Checkout/Purple")  // button background
+		disabledBackgroundColor		= .lightGray					// button disabled background
         cornerRadius                = 0                             // rounded corners for the button
     }
     // ─────────────────────────────────────────────────────────────
@@ -420,7 +429,7 @@ In each case, for `uiOwner` you have to pass the presenting view controller, and
 let installment = Installment(options: {Options}, isNationalIdRequired: {IsNationalIdRequired}, countryCode: {CountryCode})
 let i18n = CheckoutI18n()
 do {
-    try NuveiSimplyConnect.checkout(uiOwner: {ViewController}, authenticate3dInput: {Input}, additionalParams: {AdditionalParams}, installment: installment, 	i18n: i18n, forceWebChallenge: {ForceWebChallenge},
+    try NuveiSimplyConnect.checkout(uiOwner: {ViewController}, authenticate3dInput: {Input}, countryCode: {CountryCode}, additionalParams: {AdditionalParams}, installment: installment, i18n: i18n, forceWebChallenge: {ForceWebChallenge},
 		callback: { output in
 			// do something
 		},

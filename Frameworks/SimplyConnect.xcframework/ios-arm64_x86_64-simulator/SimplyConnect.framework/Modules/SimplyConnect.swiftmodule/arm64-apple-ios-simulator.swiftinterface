@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SimplyConnect
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+@_exported import Core
 import Foundation
 import PassKit
 @_exported import PayService
@@ -31,30 +32,16 @@ public enum InstallmentType : Swift.Int {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CheckoutViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(transactionDetails: Core.CheckoutTransactionDetails, installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n?)
-  #endif
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @objc deinit
-}
-extension SimplyConnect.CheckoutViewController : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-}
-extension SimplyConnect.CheckoutViewController : PassKit.PKPaymentAuthorizationViewControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
-}
 extension Core.NuveiSimplyConnect {
+  public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ()) throws
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func tokenize(input: Core.NVInput, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
+  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, countryCode: Swift.String, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?) throws
   #endif
-  public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ())
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?) throws
+  public static func payButton(enable: Swift.Bool, message: Swift.String? = nil, uiOwner: any Core.NVUIOwner)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getCardDetails(uiOwner: any Core.NVUIOwner, callback: @escaping (Core.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)
   #endif
 }
 extension SimplyConnect.InstallmentType : Swift.Equatable {}

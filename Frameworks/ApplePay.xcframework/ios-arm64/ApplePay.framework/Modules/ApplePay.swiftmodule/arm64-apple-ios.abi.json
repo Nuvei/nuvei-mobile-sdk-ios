@@ -17,6 +17,16 @@
       },
       {
         "kind": "Import",
+        "name": "Core",
+        "printedName": "Core",
+        "declKind": "Import",
+        "moduleName": "ApplePay",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -47,7 +57,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uiOwner:input:additionalParams:auth3dSupported:forceWebChallenge:delegate:)",
+            "printedName": "init(uiOwner:input:countryCode:additionalParams:auth3dSupported:forceWebChallenge:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -66,6 +76,12 @@
                 "name": "NVInput",
                 "printedName": "Core.NVInput",
                 "usr": "s:4Core7NVInputV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -108,8 +124,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptKcfc",
-            "mangledName": "$s8ApplePay0aB6ButtonC7uiOwner5input16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSDySSypGS2bAA0aB8Delegate_ptKcfc",
+            "usr": "s:8ApplePay0aB6ButtonC7uiOwner5input11countryCode16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSSSDySSypGS2bAA0aB8Delegate_ptKcfc",
+            "mangledName": "$s8ApplePay0aB6ButtonC7uiOwner5input11countryCode16additionalParams15auth3dSupported17forceWebChallenge8delegateACSo16UIViewControllerC_4Core7NVInputVSSSDySSypGS2bAA0aB8Delegate_ptKcfc",
             "moduleName": "ApplePay",
             "declAttributes": [
               "Preconcurrency",
@@ -379,6 +395,7 @@
         "declKind": "Import",
         "moduleName": "ApplePay",
         "declAttributes": [
+          "SPIAccessControl",
           "RawDocComment"
         ]
       },
@@ -410,42 +427,42 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 391,
+      "offset": 424,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 468,
       "length": 27,
       "value": "\"Checkout\/Methods\/ApplePay\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 587,
+      "offset": 620,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 590,
+      "offset": 623,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "Dictionary",
-      "offset": 948,
+      "offset": 1002,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/ApplePay\/ApplePay\/ApplePayButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1002,
+      "offset": 1056,
       "length": 4,
       "value": "true"
     }

@@ -3,7 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ApplePay
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import ApplePay
-@_exported import Core
+@_exported @_spi(NuveiInternal) import Core
 import Foundation
 import PassKit
 import Swift
@@ -12,7 +12,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ApplePayButton : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public init(uiOwner: UIKit.UIViewController, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], auth3dSupported: Swift.Bool, forceWebChallenge: Swift.Bool = true, delegate: any ApplePay.ApplePayDelegate) throws
+  @_Concurrency.MainActor @preconcurrency public init(uiOwner: UIKit.UIViewController, input: Core.NVInput, countryCode: Swift.String, additionalParams: [Swift.String : Any] = [:], auth3dSupported: Swift.Bool, forceWebChallenge: Swift.Bool = true, delegate: any ApplePay.ApplePayDelegate) throws
   @objc deinit
 }
 extension ApplePay.ApplePayButton : PassKit.PKPaymentAuthorizationViewControllerDelegate {

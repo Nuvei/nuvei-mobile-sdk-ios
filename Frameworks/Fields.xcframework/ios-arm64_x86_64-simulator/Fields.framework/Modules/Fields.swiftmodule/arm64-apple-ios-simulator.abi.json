@@ -26,7 +26,10 @@
         "name": "PayService",
         "printedName": "PayService",
         "declKind": "Import",
-        "moduleName": "Fields"
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -37,6 +40,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Core",
+        "printedName": "Core",
+        "declKind": "Import",
+        "moduleName": "Fields"
       },
       {
         "kind": "Import",
@@ -77,7 +87,20 @@
         "name": "PayService",
         "printedName": "PayService",
         "declKind": "Import",
-        "moduleName": "Fields"
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Core",
+        "printedName": "Core",
+        "declKind": "Import",
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -551,12 +574,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                    "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -566,18 +589,18 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?)",
+                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "PayService.NVCardDetailsOutput?",
+                            "printedName": "Core.NVCardDetailsOutput?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "NVCardDetailsOutput",
-                                "printedName": "PayService.NVCardDetailsOutput",
-                                "usr": "s:10PayService19NVCardDetailsOutputV"
+                                "printedName": "Core.NVCardDetailsOutput",
+                                "usr": "s:4Core19NVCardDetailsOutputV"
                               }
                             ],
                             "usr": "s:Sq"
@@ -605,8 +628,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvp",
-            "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvp",
+            "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvp",
+            "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvp",
             "moduleName": "Fields",
             "declAttributes": [
               "HasInitialValue",
@@ -625,12 +648,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                    "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -640,18 +663,18 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?)",
+                            "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "PayService.NVCardDetailsOutput?",
+                                "printedName": "Core.NVCardDetailsOutput?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "NVCardDetailsOutput",
-                                    "printedName": "PayService.NVCardDetailsOutput",
-                                    "usr": "s:10PayService19NVCardDetailsOutputV"
+                                    "printedName": "Core.NVCardDetailsOutput",
+                                    "usr": "s:4Core19NVCardDetailsOutputV"
                                   }
                                 ],
                                 "usr": "s:Sq"
@@ -679,8 +702,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvg",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvg",
+                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvg",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvg",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "get"
@@ -698,12 +721,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                    "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -713,18 +736,18 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(PayService.NVCardDetailsOutput?, Core.NVFailure?)",
+                            "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "PayService.NVCardDetailsOutput?",
+                                "printedName": "Core.NVCardDetailsOutput?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "NVCardDetailsOutput",
-                                    "printedName": "PayService.NVCardDetailsOutput",
-                                    "usr": "s:10PayService19NVCardDetailsOutputV"
+                                    "printedName": "Core.NVCardDetailsOutput",
+                                    "usr": "s:4Core19NVCardDetailsOutputV"
                                   }
                                 ],
                                 "usr": "s:Sq"
@@ -752,8 +775,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvs",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvs",
+                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvs",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvs",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "set"
@@ -770,8 +793,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvM",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy10PayService06NVCardG6OutputVSg_4Core9NVFailureOSgtcSgvM",
+                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvM",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvM",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1259,6 +1282,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Core",
+        "printedName": "Core",
+        "declKind": "Import",
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NuveiField",
         "printedName": "NuveiField",
@@ -1353,7 +1386,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(customization:transactionDetails:)",
+            "printedName": "init(customization:input:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1370,21 +1403,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Core.CheckoutTransactionDetails?",
+                "printedName": "Core.NVInput?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CheckoutTransactionDetails",
-                    "printedName": "Core.CheckoutTransactionDetails",
-                    "usr": "s:4Core26CheckoutTransactionDetailsV"
+                    "name": "NVInput",
+                    "printedName": "Core.NVInput",
+                    "usr": "s:4Core7NVInputV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6Fields10NuveiFieldC13customization18transactionDetailsAC4Core0bC13CustomizationC_AF019CheckoutTransactionF0VSgtcfc",
-            "mangledName": "$s6Fields10NuveiFieldC13customization18transactionDetailsAC4Core0bC13CustomizationC_AF019CheckoutTransactionF0VSgtcfc",
+            "usr": "s:6Fields10NuveiFieldC13customization5inputAC4Core0bC13CustomizationC_AF7NVInputVSgtcfc",
+            "mangledName": "$s6Fields10NuveiFieldC13customization5inputAC4Core0bC13CustomizationC_AF7NVInputVSgtcfc",
             "moduleName": "Fields",
             "declAttributes": [
               "Preconcurrency",
@@ -1514,7 +1547,20 @@
         "name": "PayService",
         "printedName": "PayService",
         "declKind": "Import",
-        "moduleName": "Fields"
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Core",
+        "printedName": "Core",
+        "declKind": "Import",
+        "moduleName": "Fields",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1648,7 +1694,7 @@
           {
             "kind": "Function",
             "name": "setup",
-            "printedName": "setup(environment:customization:i18n:transactionDetails:)",
+            "printedName": "setup(environment:customization:i18n:input:blockCards:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1686,27 +1732,58 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Core.CheckoutTransactionDetails?",
+                "printedName": "Core.NVInput?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CheckoutTransactionDetails",
-                    "printedName": "Core.CheckoutTransactionDetails",
-                    "usr": "s:4Core26CheckoutTransactionDetailsV"
+                    "name": "NVInput",
+                    "printedName": "Core.NVInput",
+                    "usr": "s:4Core7NVInputV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6Fields05NuveiA0C5setup11environment13customization4i18n18transactionDetailsy4Core0B13SimplyConnectC11EnvironmentO_AI0B18FieldCustomizationCAI0A4I18nCSgAI019CheckoutTransactionH0VSgtFZ",
-            "mangledName": "$s6Fields05NuveiA0C5setup11environment13customization4i18n18transactionDetailsy4Core0B13SimplyConnectC11EnvironmentO_AI0B18FieldCustomizationCAI0A4I18nCSgAI019CheckoutTransactionH0VSgtFZ",
+            "usr": "s:6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCardsy4Core0B13SimplyConnectC11EnvironmentO_AJ0B18FieldCustomizationCAJ0A4I18nCSgAJ7NVInputVSgSaySaySSGGSgtKFZ",
+            "mangledName": "$s6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCardsy4Core0B13SimplyConnectC11EnvironmentO_AJ0B18FieldCustomizationCAJ0A4I18nCSgAJ7NVInputVSgSaySaySSGGSgtKFZ",
             "moduleName": "Fields",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -1803,14 +1880,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6Fields05NuveiA0C13createPayment7uiOwner5input16additionalParams17forceWebChallenge8callbacky4Core9NVUIOwner_p_AJ7NVInputVSDySSypGSbyAJ08NVCreateD6OutputCctFZ",
-            "mangledName": "$s6Fields05NuveiA0C13createPayment7uiOwner5input16additionalParams17forceWebChallenge8callbacky4Core9NVUIOwner_p_AJ7NVInputVSDySSypGSbyAJ08NVCreateD6OutputCctFZ",
+            "usr": "s:6Fields05NuveiA0C13createPayment7uiOwner5input16additionalParams17forceWebChallenge8callbacky4Core9NVUIOwner_p_AJ7NVInputVSDySSypGSbyAJ08NVCreateD6OutputCctKFZ",
+            "mangledName": "$s6Fields05NuveiA0C13createPayment7uiOwner5input16additionalParams17forceWebChallenge8callbacky4Core9NVUIOwner_p_AJ7NVInputVSDySSypGSbyAJ08NVCreateD6OutputCctKFZ",
             "moduleName": "Fields",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -1871,6 +1949,9 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           }
@@ -1879,6 +1960,12 @@
         "usr": "s:4Core9EcdhEsJweV",
         "mangledName": "$s4Core9EcdhEsJweV",
         "moduleName": "Core",
+        "declAttributes": [
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "NuveiInternal"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -2597,245 +2684,245 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 775,
+      "offset": 829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 945,
+      "offset": 999,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1087,
+      "offset": 1141,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1427,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1510,
+      "offset": 1564,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 1863,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 2004,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2215,
+      "offset": 2269,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2334,
+      "offset": 2388,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2394,
+      "offset": 2448,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "IntegerLiteral",
-      "offset": 2449,
+      "offset": 2503,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2694,
+      "offset": 2748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2890,
+      "offset": 2944,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2929,
+      "offset": 2983,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 3087,
+      "offset": 3141,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 6162,
+      "offset": 6163,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 7090,
+      "offset": 7060,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7129,
+      "offset": 7099,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 11193,
+      "offset": 11168,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 548,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 538,
+      "offset": 571,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 565,
+      "offset": 598,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 722,
+      "offset": 755,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 988,
+      "offset": 1021,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1009,
+      "offset": 1042,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1106,
+      "offset": 1139,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1774,
+      "offset": 1807,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1795,
+      "offset": 1828,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1892,
+      "offset": 1925,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2658,
+      "offset": 2659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 2790,
+      "offset": 2791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2844,
+      "offset": 2845,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 198,
+      "offset": 246,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "Dictionary",
-      "offset": 1407,
+      "offset": 1619,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 1440,
+      "offset": 1652,
       "length": 4,
       "value": "true"
     }

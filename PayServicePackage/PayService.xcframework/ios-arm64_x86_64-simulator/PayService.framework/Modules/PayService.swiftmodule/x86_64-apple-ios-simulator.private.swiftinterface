@@ -2,7 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayService
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
-@_exported import Core
+@_exported @_spi(NuveiInternal) import Core
 import Foundation
 @_exported import PayService
 import Swift
@@ -11,81 +11,49 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct NVAPMsOutput : Swift.Decodable {
-  public let paymentMethods: [PayService.NVAPMsOutput.APM]
-  public struct APM : Swift.Decodable {
-    public let paymentMethod: Swift.String
-    public let paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption]
-    public let logoURL: Swift.String?
-    public let fields: [PayService.NVAPMsOutput.Field]
+@_spi(NuveiInternal) public struct NVAPMsOutput : Swift.Decodable {
+  @_spi(NuveiInternal) public let paymentMethods: [PayService.NVAPMsOutput.APM]
+  @_spi(NuveiInternal) public struct APM : Swift.Decodable, PayService.NVOutputProtocol {
+    @_spi(NuveiInternal) public let paymentMethod: Swift.String
+    @_spi(NuveiInternal) public let paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption]
+    @_spi(NuveiInternal) public let logoURL: Swift.String?
+    @_spi(NuveiInternal) public let fields: [PayService.NVAPMsOutput.Field]
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(paymentMethod: Swift.String, paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption], logoURL: Swift.String?, fields: [PayService.NVAPMsOutput.Field])
+    @_spi(NuveiInternal) public init(paymentMethod: Swift.String, paymentMethodDisplayName: [PayService.NVAPMsOutput.Caption], logoURL: Swift.String?, fields: [PayService.NVAPMsOutput.Field])
     #endif
-    public init(from decoder: any Swift.Decoder) throws
+    @_spi(NuveiInternal) public init(from decoder: any Swift.Decoder) throws
   }
-  public struct Field : Swift.Decodable {
-    public let name: Swift.String
-    public let type: Swift.String
-    public let caption: [PayService.NVAPMsOutput.Caption]
-    public let listValues: [PayService.NVAPMsOutput.ListValue]?
+  @_spi(NuveiInternal) public struct Field : Swift.Decodable {
+    @_spi(NuveiInternal) public let name: Swift.String
+    @_spi(NuveiInternal) public let type: Swift.String
+    @_spi(NuveiInternal) public let caption: [PayService.NVAPMsOutput.Caption]
+    @_spi(NuveiInternal) public let listValues: [PayService.NVAPMsOutput.ListValue]?
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(name: Swift.String, type: Swift.String, caption: [PayService.NVAPMsOutput.Caption], listValues: [PayService.NVAPMsOutput.ListValue]?)
+    @_spi(NuveiInternal) public init(name: Swift.String, type: Swift.String, caption: [PayService.NVAPMsOutput.Caption], listValues: [PayService.NVAPMsOutput.ListValue]?)
     #endif
-    public init(from decoder: any Swift.Decoder) throws
+    @_spi(NuveiInternal) public init(from decoder: any Swift.Decoder) throws
   }
-  public struct Caption : Swift.Decodable {
-    public let language: Swift.String
-    public let message: Swift.String
-    public init(language: Swift.String, message: Swift.String)
-    public init(from decoder: any Swift.Decoder) throws
+  @_spi(NuveiInternal) public struct Caption : Swift.Decodable {
+    @_spi(NuveiInternal) public let language: Swift.String
+    @_spi(NuveiInternal) public let message: Swift.String
+    @_spi(NuveiInternal) public init(language: Swift.String, message: Swift.String)
+    @_spi(NuveiInternal) public init(from decoder: any Swift.Decoder) throws
   }
-  public struct ListValue : Swift.Decodable {
-    public let code: Swift.String?
-    public let caption: Swift.String?
+  @_spi(NuveiInternal) public struct ListValue : Swift.Decodable {
+    @_spi(NuveiInternal) public let code: Swift.String?
+    @_spi(NuveiInternal) public let caption: Swift.String?
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(code: Swift.String?, caption: Swift.String?)
+    @_spi(NuveiInternal) public init(code: Swift.String?, caption: Swift.String?)
     #endif
-    public init(from decoder: any Swift.Decoder) throws
+    @_spi(NuveiInternal) public init(from decoder: any Swift.Decoder) throws
   }
-  public init(from decoder: any Swift.Decoder) throws
+  @_spi(NuveiInternal) public init(from decoder: any Swift.Decoder) throws
 }
-public struct NVCardDetailsInput : Swift.Encodable {
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct NVCardDetailsOutput : Swift.Codable {
-  public let brand: Swift.String?
-  public let secondaryBrand: Swift.String?
-  public let cardType: Swift.String?
-  public let program: Swift.String?
-  public let visaDirectSupport: Swift.String?
-  public let mastercardSendSupport: Swift.String?
-  public let isPrepaid: Swift.Bool?
-  public let issuerCountry: Swift.String?
-  public let currency: Swift.String?
-  public let dccAllowed: Swift.Bool?
-  public let sessionToken: Swift.String?
-  public let internalRequestId: Swift.Int?
-  public let status: Swift.String?
-  public let reason: Swift.String?
-  public let errCode: Swift.Int?
-  public let merchantId: Swift.String?
-  public let merchantSiteId: Swift.String?
-  public let version: Swift.String?
-  public let clientRequestId: Swift.String?
-  public let issuerBankName: Swift.String?
-  public let clientUniqueId: Swift.String?
-  public var bin: Swift.String?
-  public var last4Digits: Swift.String?
-  public var ccExpMonth: Swift.Int?
-  public var ccExpYear: Swift.Int?
-  public let cardProduct: Swift.String?
-  public let isNotReloadableCard: Swift.Bool?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public protocol NVOutputProtocol {
 }
 public struct NVUPOsOutput : Swift.Decodable {
   public let paymentMethods: [PayService.NVUPOsOutput.PaymentMethod]
-  public struct PaymentMethod : Swift.Decodable {
+  public struct PaymentMethod : Swift.Decodable, PayService.NVOutputProtocol {
     public let userPaymentOptionId: Swift.Int
     public let paymentMethodName: Swift.String
     public let upoStatus: Swift.String
@@ -102,52 +70,52 @@ public struct NVUPOsOutput : Swift.Decodable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
-  var shouldNotify: Swift.Bool { get set }
-  var isNumberOnly: Swift.Bool { get set }
+@_spi(NuveiInternal) public protocol BaseTextHandler : UIKit.UITextFieldDelegate {
+  @_spi(NuveiInternal) var shouldNotify: Swift.Bool { get set }
+  @_spi(NuveiInternal) var isNumberOnly: Swift.Bool { get set }
   #if compiler(>=5.3) && $NonescapableTypes
-  var maxLength: Swift.Int? { get set }
+  @_spi(NuveiInternal) var maxLength: Swift.Int? { get set }
   #endif
 }
-public enum CardType : Swift.String, Swift.CaseIterable {
-  case amex
-  case visa
-  case masterCard
-  case diners
-  case discover
-  case jcb
-  case elo
-  case hipercard
-  case unionPay
-  case maestro
+@_spi(NuveiInternal) public enum CardType : Swift.String, Swift.CaseIterable {
+  @_spi(NuveiInternal) case amex
+  @_spi(NuveiInternal) case visa
+  @_spi(NuveiInternal) case masterCard
+  @_spi(NuveiInternal) case diners
+  @_spi(NuveiInternal) case discover
+  @_spi(NuveiInternal) case jcb
+  @_spi(NuveiInternal) case elo
+  @_spi(NuveiInternal) case hipercard
+  @_spi(NuveiInternal) case unionPay
+  @_spi(NuveiInternal) case maestro
   #if compiler(>=5.3) && $NonescapableTypes
-  public var lengths: [Swift.Int]? {
-    get
+  @_spi(NuveiInternal) public var lengths: [Swift.Int]? {
+    @_spi(NuveiInternal) get
   }
   #endif
-  public var regex: Swift.String {
-    get
+  @_spi(NuveiInternal) public var regex: Swift.String {
+    @_spi(NuveiInternal) get
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  public var cvvLength: Swift.Int? {
-    get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var icon: Swift.String? {
-    get
+  @_spi(NuveiInternal) public var cvvLength: Swift.Int? {
+    @_spi(NuveiInternal) get
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias AllCases = [PayService.CardType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [PayService.CardType] {
-    get
+  @_spi(NuveiInternal) public var icon: Swift.String? {
+    @_spi(NuveiInternal) get
   }
-  public var rawValue: Swift.String {
-    get
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(NuveiInternal) public init?(rawValue: Swift.String)
+  #endif
+  @_spi(NuveiInternal) public typealias AllCases = [PayService.CardType]
+  @_spi(NuveiInternal) public typealias RawValue = Swift.String
+  @_spi(NuveiInternal) nonisolated public static var allCases: [PayService.CardType] {
+    @_spi(NuveiInternal) get
+  }
+  @_spi(NuveiInternal) public var rawValue: Swift.String {
+    @_spi(NuveiInternal) get
   }
 }
 extension Core.NuveiSimplyConnect {
@@ -163,142 +131,151 @@ extension Core.NuveiSimplyConnect {
   public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
   public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
+  @_spi(NuveiInternal) public static func internalTokenize(input: Core.NVInput, source: Core.SourceApplication, callback: @escaping (Swift.String?, Core.NVFailure?) -> ())
   #endif
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
-  @_Concurrency.MainActor @preconcurrency public var icon: UIKit.UIImage? {
-    get
-    set
+@_spi(NuveiInternal) @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CreditCardTextField : PayService.LabeledTextField {
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var icon: UIKit.UIImage? {
+    @_spi(NuveiInternal) get
+    @_spi(NuveiInternal) set
   }
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
-  @objc deinit
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
+  @_spi(NuveiInternal) @objc deinit
 }
-@_hasMissingDesignatedInitializers public class CreditCardUtils {
-  public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
-  public static let shared: PayService.CreditCardUtils
+@_spi(NuveiInternal) @_hasMissingDesignatedInitializers public class CreditCardUtils {
+  @_spi(NuveiInternal) public typealias ParsedCard = (number: Swift.String, type: PayService.CardType)
+  @_spi(NuveiInternal) public static let shared: PayService.CreditCardUtils
   #if compiler(>=5.3) && $NonescapableTypes
-  public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
+  @_spi(NuveiInternal) public func parseCardNumber(rawValue: Swift.String) -> PayService.CreditCardUtils.ParsedCard?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
+  @_spi(NuveiInternal) public func parseDate(rawValue: Swift.String) -> (full: Swift.String, month: Swift.Int, year: Swift.Int)?
   #endif
-  @objc deinit
+  @_spi(NuveiInternal) @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
-  @objc deinit
+@_spi(NuveiInternal) @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ExpiryDateTextField : PayService.LabeledTextField {
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String)
+  @_spi(NuveiInternal) @objc deinit
 }
 extension Swift.String {
-  public static func localized(_ key: Swift.String) -> Swift.String
-  public var onlyDigits: Swift.String {
-    get
+  @_spi(NuveiInternal) public static func localized(_ key: Swift.String) -> Swift.String
+  @_spi(NuveiInternal) public var onlyDigits: Swift.String {
+    @_spi(NuveiInternal) get
   }
 }
-@objc @_Concurrency.MainActor @preconcurrency open class LabeledTextField : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency final public let label: UIKit.UILabel
-  @_Concurrency.MainActor @preconcurrency final public let textField: UIKit.UITextField
-  @_Concurrency.MainActor @preconcurrency final public let errorLabel: UIKit.UILabel
-  @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool) -> ())?
-  @_Concurrency.MainActor @preconcurrency public var textHandler: (any PayService.BaseTextHandler)?
-  @_Concurrency.MainActor @preconcurrency public var input: Swift.String {
-    get
+extension Swift.Collection where Self.Element == Swift.String {
+  @_spi(NuveiInternal) public func containsCaseInsensitive(_ element: Swift.String) -> Swift.Bool
+}
+@_spi(NuveiInternal) @objc @_Concurrency.MainActor @preconcurrency open class LabeledTextField : UIKit.UIView {
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency final public let label: UIKit.UILabel
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency final public let textField: UIKit.UITextField
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency final public let errorLabel: UIKit.UILabel
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var onInputUpdated: ((_ hasFocus: Swift.Bool) -> ())?
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var textHandler: (any PayService.BaseTextHandler)?
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var input: Swift.String {
+    @_spi(NuveiInternal) get
   }
-  @_Concurrency.MainActor @preconcurrency public var error: Swift.String? {
-    get
-    set
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var error: Swift.String? {
+    @_spi(NuveiInternal) get
+    @_spi(NuveiInternal) set
   }
-  @_Concurrency.MainActor @preconcurrency public var fieldName: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var selectedKey: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var maxLength: Swift.Int? {
-    get
-    set
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var fieldName: Swift.String?
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var selectedKey: Swift.String?
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public var maxLength: Swift.Int? {
+    @_spi(NuveiInternal) get
+    @_spi(NuveiInternal) set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String, isNumberOnly: Swift.Bool = false, maxLength: Swift.Int? = nil, pickerValues: [(displayValue: Swift.String, key: Swift.String)]? = nil)
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public init(labelText: Swift.String, placeholder: Swift.String, isNumberOnly: Swift.Bool = false, maxLength: Swift.Int? = nil, pickerValues: [(displayValue: Swift.String, key: Swift.String)]? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func updateInputAndValidate(_ input: Swift.String?)
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public func updateInputAndValidate(_ input: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public func internationalize(labelText: Swift.String?, placeholderText: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @discardableResult
+  @_spi(NuveiInternal) @discardableResult
   @_Concurrency.MainActor @preconcurrency public func configure(customization: Core.NuveiFieldCustomization? = nil) -> PayService.LabeledTextField
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
+  @_spi(NuveiInternal) @_Concurrency.MainActor @preconcurrency public func setCustomization(_ customization: Core.NuveiUICustomization?)
   #endif
-  @objc deinit
+  @_spi(NuveiInternal) @objc deinit
 }
-@_hasMissingDesignatedInitializers public class PersonalIDValidator {
+@_spi(NuveiInternal) @_hasMissingDesignatedInitializers public class PersonalIDValidator {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func isValid(number: Swift.String, for countryCode: Swift.String?) -> Swift.Bool
+  @_spi(NuveiInternal) public static func isValid(number: Swift.String, for countryCode: Swift.String?) -> Swift.Bool
   #endif
-  @objc deinit
+  @_spi(NuveiInternal) @objc deinit
 }
-public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
-  public var number: Swift.String
-  public var expiry: Swift.String
-  public var cvv: Swift.String
-  public var cardHolderName: Swift.String
-  public var installmentType: Swift.Int?
-  public var numberOfInstallments: Swift.Int?
-  public var isNationalIDRequired: Swift.Bool
-  public var countryCode: Swift.String?
-  public var nationalID: Swift.String?
-  public var shouldSaveCard: Swift.Bool?
-  public var indexPath: Foundation.IndexPath?
-  public var parsedInfo: PayService.CreditCardInput.ParsedInfo
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
-  #endif
-  @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
-    public var errors: [Core.InputError]?
-    public var icon: Swift.String?
-    public var cvvLength: Swift.Int?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+@_spi(NuveiInternal) public class CreditCardInput : PayService.InputIndexable, Swift.Codable {
+  @_spi(NuveiInternal) public var number: Swift.String
+  @_spi(NuveiInternal) public var expiry: Swift.String
+  @_spi(NuveiInternal) public var cvv: Swift.String
+  @_spi(NuveiInternal) public var cardHolderName: Swift.String
+  @_spi(NuveiInternal) public var installmentType: Swift.Int?
+  @_spi(NuveiInternal) public var numberOfInstallments: Swift.Int?
+  @_spi(NuveiInternal) public var isNationalIDRequired: Swift.Bool
+  @_spi(NuveiInternal) public var countryCode: Swift.String?
+  @_spi(NuveiInternal) public var nationalID: Swift.String?
+  @_spi(NuveiInternal) public var shouldSaveCard: Swift.Bool?
+  @_spi(NuveiInternal) public var indexPath: Foundation.IndexPath?
+  @_spi(NuveiInternal) public var parsedInfo: PayService.CreditCardInput.ParsedInfo {
+    @_spi(NuveiInternal) get
+    @_spi(NuveiInternal) set
   }
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(NuveiInternal) public init(number: Swift.String = "", expiry: Swift.String = "", cvv: Swift.String = "", cardHolderName: Swift.String = "", installmentType: Swift.Int? = nil, numberOfInstallments: Swift.Int? = nil, isNationalIDRequired: Swift.Bool = false, countryCode: Swift.String? = nil, nationalID: Swift.String? = nil, shouldSaveCard: Swift.Bool? = nil)
+  #endif
+  @_spi(NuveiInternal) @_hasMissingDesignatedInitializers public class ParsedInfo : Swift.Codable {
+    @_spi(NuveiInternal) public var errors: [Core.InputError]? {
+      @_spi(NuveiInternal) get
+      @_spi(NuveiInternal) set
+    }
+    @_spi(NuveiInternal) public var icon: Swift.String?
+    @_spi(NuveiInternal) public var cvvLength: Swift.Int?
+    @_spi(NuveiInternal) @objc deinit
+    @_spi(NuveiInternal) public func encode(to encoder: any Swift.Encoder) throws
+    @_spi(NuveiInternal) required public init(from decoder: any Swift.Decoder) throws
+  }
+  @_spi(NuveiInternal) @objc deinit
+  @_spi(NuveiInternal) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(NuveiInternal) required public init(from decoder: any Swift.Decoder) throws
 }
 public protocol InputIndexable {
   #if compiler(>=5.3) && $NonescapableTypes
   var indexPath: Foundation.IndexPath? { get set }
   #endif
 }
-public class CreditCardFieldViewModel {
-  public static func modelForRN() -> PayService.CreditCardFieldViewModel
-  public init(_ source: Core.SourceApplication)
+@_spi(NuveiInternal) public class CreditCardFieldViewModel {
+  @_spi(NuveiInternal) public static func modelForRN() -> PayService.CreditCardFieldViewModel
+  @_spi(NuveiInternal) public init(_ source: Core.SourceApplication)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func parseCreditCardInfo(input: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, transactionDetails: Core.CheckoutTransactionDetails? = nil, shouldGetCardDetails: Swift.Bool = false, hasCreditCardBlockedError: Swift.Bool = false, completion: ((PayService.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
+  @_spi(NuveiInternal) public func parseCreditCardInfo(ccinput: PayService.CreditCardInput, hasFocus: Swift.Bool = false, ignoreEmpty: Swift.Bool = true, input: Core.NVInput? = nil, shouldGetCardDetails: Swift.Bool = false, hasCreditCardBlockedError: Swift.Bool = false, payButton: UIKit.UIButton?, completion: ((Core.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func createPayment(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
+  @_spi(NuveiInternal) public func createPayment(ccinput: PayService.CreditCardInput, input: Core.NVInput, viewController: UIKit.UIViewController?, forceWebChallenge: Swift.Bool, source: Core.SourceApplication, callback: @escaping (Core.NVCreatePaymentOutput) -> ()) throws
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func tokenize(input: PayService.CreditCardInput, transactionDetails: Core.CheckoutTransactionDetails, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
+  @_spi(NuveiInternal) public func tokenize(ccinput: PayService.CreditCardInput, input: Core.NVInput, callback: @escaping (Swift.String?, Swift.String?) -> ()) throws
   #endif
-  @objc deinit
+  @_spi(NuveiInternal) @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ModelUtils {
-  public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
-  @objc deinit
+@_spi(NuveiInternal) @_hasMissingDesignatedInitializers public class ModelUtils {
+  @_spi(NuveiInternal) public static func isFutureDate(_ month: Swift.Int, _ year: Swift.Int) -> Swift.Bool
+  @_spi(NuveiInternal) @objc deinit
 }
-extension Core.MobileSDKInternal {
+@_spi(NuveiInternal) extension Core.MobileSDKInternal {
   #if compiler(>=5.3) && $NonescapableTypes
-  public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
+  @_spi(NuveiInternal) public func tokenizeCard(input: [Swift.String : Any], ignoreFailure: Swift.Bool = false, callback: @escaping ([Swift.String : Any]?, Core.NVFailure?) -> ())
   #endif
 }
-extension PayService.CardType : Swift.Equatable {}
-extension PayService.CardType : Swift.Hashable {}
-extension PayService.CardType : Swift.RawRepresentable {}
+@_spi(NuveiInternal) extension PayService.CardType : Swift.Equatable {}
+@_spi(NuveiInternal) extension PayService.CardType : Swift.Hashable {}
+@_spi(NuveiInternal) extension PayService.CardType : Swift.RawRepresentable {}
 extension Core.NuveiSimplyConnect.CheckoutCompletionAction : Swift.Equatable {}
 extension Core.NuveiSimplyConnect.CheckoutCompletionAction : Swift.Hashable {}
