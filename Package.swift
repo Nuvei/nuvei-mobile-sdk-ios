@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "nuvei-mobile-simply-connect-ios",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
