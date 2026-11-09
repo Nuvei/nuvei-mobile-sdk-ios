@@ -16,11 +16,7 @@ let package = Package(
 	dependencies: [
 		//.package(path: "./PayServicePackage"), // ✅ Explicitly add PayServicePackage
 		//.package(path: "./CorePackage"), // ✅ Explicitly add CorePackage
-		.package(url: "https://github.com/roberthein/TinyConstraints.git", from: "4.0.0"),
-		.package(url: "https://github.com/airsidemobile/JOSESwift.git", from: "2.4.0"),
-		//.package(url: "https://github.com/SDWebImage/SDWebImage", from: "5.0.0"),
-		
-		//.package(url: "https://github.com/krzyzanowskim/CryptoSwift", from: "1.8.4")
+		.package(url: "https://github.com/roberthein/TinyConstraints.git", from: "4.0.0")
 	],
 	targets: [
 		.binaryTarget(
@@ -48,8 +44,7 @@ let package = Package(
 			dependencies: [
 				"SimplyConnect",
 				"PayServicePackage",
-				"CorePackage",
-				"JOSESwift"
+				"CorePackage"
 			]
 		),
 		.target(
@@ -58,7 +53,6 @@ let package = Package(
 				"Fields",
 				"PayServicePackage",
 				"CorePackage",
-				"JOSESwift",
 				"TinyConstraints"
 			]
 		),
@@ -67,7 +61,6 @@ let package = Package(
 			dependencies: [
 				"ApplePay",
 				"CorePackage",
-				//"JOSESwift",
 				"TinyConstraints"
 			]
 		)

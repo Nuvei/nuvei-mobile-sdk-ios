@@ -14,7 +14,7 @@ Once you have your Swift project set up, adding **NuveiSimplyConnectSDK** as a d
 
 ```swift
 dependencies: [
-	.package(url: "https://github.com/Nuvei/nuvei-mobile-simply-connect-ios.git", .upToNextMajor(from: "2.1.0"))
+	.package(url: "https://github.com/Nuvei/nuvei-mobile-simply-connect-ios.git", .upToNextMajor(from: "2.3.0"))
 ]
 ```
 

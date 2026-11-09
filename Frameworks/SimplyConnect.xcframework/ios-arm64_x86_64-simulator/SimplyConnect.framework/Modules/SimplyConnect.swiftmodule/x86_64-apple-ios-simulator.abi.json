@@ -409,17 +409,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -863,7 +863,7 @@
           {
             "kind": "Function",
             "name": "checkout",
-            "printedName": "checkout(uiOwner:authenticate3dInput:countryCode:additionalParams:installment:i18n:forceWebChallenge:callback:declineFallbackDecision:)",
+            "printedName": "checkout(uiOwner:authenticate3dInput:countryCode:additionalParams:installment:i18n:forceWebChallenge:callback:declineFallbackDecision:onPaymentFormChange:onFormValidated:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1018,11 +1018,135 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, [Swift.String]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, [Swift.String]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, [Swift.String])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput11countryCode16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSSSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAZ_So16UIViewControllerCyAC10PayServiceE0Z16CompletionActionOctcSgtKFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput11countryCode16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecisionyAA9NVUIOwner_p_AA7NVInputVSSSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA21NVCreatePaymentOutputCcyAZ_So16UIViewControllerCyAC10PayServiceE0Z16CompletionActionOctcSgtKFZ",
+            "usr": "s:4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput11countryCode16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecision19onPaymentFormChange0wY9ValidatedyAA9NVUIOwner_p_AA7NVInputVSSSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA08NVCreateX6OutputCcyA0__So16UIViewControllerCyAC10PayServiceE24CheckoutCompletionActionOctcSgySS_S5SSgSbtcSgySb_SaySSGtcSgtKFZ",
+            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E8checkout7uiOwner19authenticate3dInput11countryCode16additionalParams11installment4i18n17forceWebChallenge8callback23declineFallbackDecision19onPaymentFormChange0wY9ValidatedyAA9NVUIOwner_p_AA7NVInputVSSSDySSypGAD11InstallmentVSgAA12CheckoutI18nCSgSbyAA08NVCreateX6OutputCcyA0__So16UIViewControllerCyAC10PayServiceE24CheckoutCompletionActionOctcSgySS_S5SSgSbtcSgySb_SaySSGtcSgtKFZ",
             "moduleName": "SimplyConnect",
             "static": true,
             "declAttributes": [
@@ -1031,56 +1155,6 @@
             ],
             "isFromExtension": true,
             "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "payButton",
-            "printedName": "payButton(enable:message:uiOwner:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NVUIOwner",
-                "printedName": "any Core.NVUIOwner",
-                "usr": "s:4Core9NVUIOwnerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:4Core18NuveiSimplyConnectC0cD0E9payButton6enable7message7uiOwnerySb_SSSgAA9NVUIOwner_ptFZ",
-            "mangledName": "$s4Core18NuveiSimplyConnectC0cD0E9payButton6enable7message7uiOwnerySb_SSSgAA9NVUIOwner_ptFZ",
-            "moduleName": "SimplyConnect",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -1154,7 +1228,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1198,24 +1273,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "FixedWidthInteger",
-            "printedName": "FixedWidthInteger",
-            "usr": "s:s17FixedWidthIntegerP",
-            "mangledName": "$ss17FixedWidthIntegerP"
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
-            "name": "SignedInteger",
-            "printedName": "SignedInteger",
-            "usr": "s:SZ",
-            "mangledName": "$sSZ"
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation18_FormatSpecifiableP",
+            "mangledName": "$s10Foundation18_FormatSpecifiableP"
           },
           {
             "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinIntegerLiteral",
-            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
-            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
-            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+            "name": "AdditiveArithmetic",
+            "printedName": "AdditiveArithmetic",
+            "usr": "s:s18AdditiveArithmeticP",
+            "mangledName": "$ss18AdditiveArithmeticP"
           },
           {
             "kind": "Conformance",
@@ -1241,17 +1331,59 @@
           },
           {
             "kind": "Conformance",
-            "name": "LosslessStringConvertible",
-            "printedName": "LosslessStringConvertible",
-            "usr": "s:s25LosslessStringConvertibleP",
-            "mangledName": "$ss25LosslessStringConvertibleP"
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "SignedNumeric",
-            "printedName": "SignedNumeric",
-            "usr": "s:s13SignedNumericP",
-            "mangledName": "$ss13SignedNumericP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleFromBytes",
+            "printedName": "ConvertibleFromBytes",
+            "usr": "s:s20ConvertibleFromBytesP",
+            "mangledName": "$ss20ConvertibleFromBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",
@@ -1262,54 +1394,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "Numeric",
-            "printedName": "Numeric",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Magnitude",
-                "printedName": "Magnitude",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sj",
-            "mangledName": "$sSj"
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
-            "name": "AdditiveArithmetic",
-            "printedName": "AdditiveArithmetic",
-            "usr": "s:s18AdditiveArithmeticP",
-            "mangledName": "$ss18AdditiveArithmeticP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1335,73 +1444,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Comparable",
-            "printedName": "Comparable",
-            "usr": "s:SL",
-            "mangledName": "$sSL"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CodingKeyRepresentable",
-            "printedName": "CodingKeyRepresentable",
-            "usr": "s:s22CodingKeyRepresentableP",
-            "mangledName": "$ss22CodingKeyRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_CustomPlaygroundQuickLookable",
-            "printedName": "_CustomPlaygroundQuickLookable",
-            "usr": "s:s30_CustomPlaygroundQuickLookableP",
-            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MirrorPath",
-            "printedName": "MirrorPath",
-            "usr": "s:s10MirrorPathP",
-            "mangledName": "$ss10MirrorPathP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "FixedWidthInteger",
+            "printedName": "FixedWidthInteger",
+            "usr": "s:s17FixedWidthIntegerP",
+            "mangledName": "$ss17FixedWidthIntegerP"
           },
           {
             "kind": "Conformance",
@@ -1412,31 +1458,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
           },
           {
             "kind": "Conformance",
-            "name": "_HasCustomAnyHashableRepresentation",
-            "printedName": "_HasCustomAnyHashableRepresentation",
-            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
-            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
+            "name": "Numeric",
+            "printedName": "Numeric",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Magnitude",
+                "printedName": "Magnitude",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sj",
+            "mangledName": "$sSj"
           },
           {
             "kind": "Conformance",
@@ -1540,32 +1594,74 @@
           },
           {
             "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SignedInteger",
+            "printedName": "SignedInteger",
+            "usr": "s:SZ",
+            "mangledName": "$sSZ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SignedNumeric",
+            "printedName": "SignedNumeric",
+            "usr": "s:s13SignedNumericP",
+            "mangledName": "$ss13SignedNumericP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Strideable",
+            "printedName": "Strideable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
+                "name": "Stride",
+                "printedName": "Stride",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int64",
-                    "printedName": "Swift.Int64",
-                    "usr": "s:s5Int64V"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation18_FormatSpecifiableP",
-            "mangledName": "$s10Foundation18_FormatSpecifiableP"
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinIntegerLiteral",
+            "printedName": "_ExpressibleByBuiltinIntegerLiteral",
+            "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
+            "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
           },
           {
             "kind": "Conformance",
@@ -1662,28 +1758,28 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 854,
       "length": 7,
       "value": "\"Title\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
       "kind": "IntegerLiteral",
-      "offset": 1029,
+      "offset": 1083,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
       "kind": "BooleanLiteral",
-      "offset": 1102,
+      "offset": 1156,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/Views\/Dropdown.swift",
       "kind": "BooleanLiteral",
-      "offset": 1310,
+      "offset": 1364,
       "length": 5,
       "value": "false"
     },
@@ -1760,476 +1856,483 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 605,
+      "offset": 862,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1740,
+      "offset": 8842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1936,
+      "offset": 9038,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1975,
+      "offset": 9077,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2133,
+      "offset": 9235,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 2467,
+      "offset": 9569,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2907,
+      "offset": 10009,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20054,
+      "offset": 27458,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26559,
+      "offset": 38939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26840,
+      "offset": 39519,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27599,
+      "offset": 40445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27898,
+      "offset": 40744,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27914,
+      "offset": 40760,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 28049,
+      "offset": 40895,
       "length": 20,
       "value": "\"Checkout\/ListWhite\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28107,
+      "offset": 40953,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28505,
+      "offset": 41351,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28559,
+      "offset": 41405,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28617,
+      "offset": 41463,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28630,
+      "offset": 41476,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28642,
+      "offset": 41488,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28656,
+      "offset": 41502,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29063,
+      "offset": 41909,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29094,
+      "offset": 41940,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29126,
+      "offset": 41972,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29159,
+      "offset": 42005,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29184,
+      "offset": 42030,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 29371,
+      "offset": 42217,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29471,
+      "offset": 42324,
+      "length": 36,
+      "value": "\"CheckoutViewController.checkButton\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 42400,
       "length": 19,
       "value": "\"Checkout\/Checkbox\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29556,
+      "offset": 42485,
       "length": 23,
       "value": "\"checkmark.square.fill\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29840,
+      "offset": 42769,
       "length": 32,
       "value": "\"Save my details for future use\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29987,
+      "offset": 42916,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30132,
+      "offset": 43061,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30176,
+      "offset": 43105,
       "length": 15,
       "value": "\"Checkout\/Lock\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30455,
+      "offset": 43384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30552,
+      "offset": 43481,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 30867,
+      "offset": 43796,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31020,
+      "offset": 43949,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31046,
+      "offset": 43975,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31103,
+      "offset": 44032,
       "length": 17,
       "value": "\"Checkout\/Delete\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31531,
+      "offset": 44460,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31727,
+      "offset": 44656,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 31832,
+      "offset": 44761,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36452,
+      "offset": 49493,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 36627,
+      "offset": 49703,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 36771,
+      "offset": 49847,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37031,
+      "offset": 50107,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37170,
+      "offset": 50246,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37443,
+      "offset": 50519,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37586,
+      "offset": 50662,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37825,
+      "offset": 50901,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 37946,
+      "offset": 51022,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38006,
+      "offset": 51082,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 38061,
+      "offset": 51137,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38555,
+      "offset": 51631,
       "length": 13,
       "value": "\"Personal ID\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38664,
+      "offset": 51740,
       "length": 13,
       "value": "\"Personal ID\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 38705,
+      "offset": 51781,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 48789,
+      "offset": 65182,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50130,
+      "offset": 66523,
       "length": 13,
       "value": "\"Personal ID\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50239,
+      "offset": 66632,
       "length": 13,
       "value": "\"Personal ID\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 50280,
+      "offset": 66673,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50500,
+      "offset": 66893,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50643,
+      "offset": 67036,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50882,
+      "offset": 67275,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51003,
+      "offset": 67396,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 51063,
+      "offset": 67456,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 51118,
+      "offset": 67511,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 71783,
+      "offset": 91399,
       "length": 48,
       "value": "\"https:\/\/devmobile.sccdev-qa.com\/autoclose.html\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 71872,
+      "offset": 91488,
       "length": 74,
       "value": "\"https:\/\/cdn.safecharge.com\/safecharge_resources\/v1\/websdk\/autoclose.html\""
     },
@@ -2285,21 +2388,28 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 689,
+      "offset": 691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3665,
+      "offset": 3667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8787,
+      "offset": 8789,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/SimplyConnect\/SimplyConnect\/ViewModel\/CheckoutViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8854,
       "length": 5,
       "value": "false"
     }

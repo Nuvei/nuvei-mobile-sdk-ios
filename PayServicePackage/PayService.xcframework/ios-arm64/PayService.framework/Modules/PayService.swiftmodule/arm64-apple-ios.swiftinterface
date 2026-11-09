@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayService
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayService
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
 @_exported import Core
 import Foundation
 @_exported import PayService
@@ -13,42 +13,40 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol NVOutputProtocol {
 }
-public struct NVUPOsOutput : Swift.Decodable {
-  public let paymentMethods: [PayService.NVUPOsOutput.PaymentMethod]
-  public struct PaymentMethod : Swift.Decodable, PayService.NVOutputProtocol {
-    public let userPaymentOptionId: Swift.Int
-    public let paymentMethodName: Swift.String
-    public let upoStatus: Swift.String
-    public let upoName: Swift.String
-    public let upoData: PayService.NVUPOsOutput.PaymentMethod.UPOData?
-    public struct UPOData : Swift.Decodable {
-      public let ccCardNumber: Swift.String?
-      public let ccExpMonth: Swift.String?
-      public let ccExpYear: Swift.String?
-      public let brand: Swift.String?
-      public init(from decoder: any Swift.Decoder) throws
+public struct NVUPOsOutput : Swift::Decodable {
+  public let paymentMethods: [PayService::NVUPOsOutput.PayService::PaymentMethod]
+  public struct PaymentMethod : Swift::Decodable, PayService::NVOutputProtocol {
+    public let userPaymentOptionId: Swift::Int
+    public let paymentMethodName: Swift::String
+    public let upoStatus: Swift::String
+    public let upoName: Swift::String
+    public let upoData: PayService::NVUPOsOutput.PayService::PaymentMethod.PayService::UPOData?
+    public struct UPOData : Swift::Decodable {
+      public let ccCardNumber: Swift::String?
+      public let ccExpMonth: Swift::String?
+      public let ccExpYear: Swift::String?
+      public let brand: Swift::String?
+      public init(from decoder: any Swift::Decoder) throws
     }
-    public init(from decoder: any Swift.Decoder) throws
+    public init(from decoder: any Swift::Decoder) throws
   }
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-extension Core.NuveiSimplyConnect {
+extension Core::NuveiSimplyConnect {
   public enum CheckoutCompletionAction {
     case dismiss
     case backToCheckout
-    public static func == (a: Core.NuveiSimplyConnect.CheckoutCompletionAction, b: Core.NuveiSimplyConnect.CheckoutCompletionAction) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
+    public static func == (a: Core::NuveiSimplyConnect.PayService::CheckoutCompletionAction, b: Core::NuveiSimplyConnect.PayService::CheckoutCompletionAction) -> Swift::Bool
+    public func hash(into hasher: inout Swift::Hasher)
+    public var hashValue: Swift::Int {
       get
     }
   }
-  public typealias CheckoutCompletion = (Core.NuveiSimplyConnect.CheckoutCompletionAction) -> ()
-  public typealias DeclineFallbackDecisionCallback = (Core.NVCreatePaymentOutput, UIKit.UIViewController, @escaping Core.NuveiSimplyConnect.CheckoutCompletion) -> ()
+  public typealias CheckoutCompletion = (Core::NuveiSimplyConnect.PayService::CheckoutCompletionAction) -> ()
+  public typealias DeclineFallbackDecisionCallback = (Core::NVCreatePaymentOutput, UIKit::UIViewController, @escaping Core::NuveiSimplyConnect.PayService::CheckoutCompletion) -> ()
 }
 public protocol InputIndexable {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var indexPath: Foundation.IndexPath? { get set }
-  #endif
+  var indexPath: Foundation::IndexPath? { get set }
 }
-extension Core.NuveiSimplyConnect.CheckoutCompletionAction : Swift.Equatable {}
-extension Core.NuveiSimplyConnect.CheckoutCompletionAction : Swift.Hashable {}
+extension Core::NuveiSimplyConnect.PayService::CheckoutCompletionAction : Swift::Equatable {}
+extension Core::NuveiSimplyConnect.PayService::CheckoutCompletionAction : Swift::Hashable {}

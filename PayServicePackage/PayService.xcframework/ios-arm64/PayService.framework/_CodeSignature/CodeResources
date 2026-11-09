@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4g4ZtU8uPmZhCkXLOEd6wqcnBYQ=
+		KhzNBTFeBv85f0vB0GF+ZheW15A=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HkCpFwAfm7V1dgNC+Fl1lghmE+w=
+		5icpXCDNoT8TD2fyqnnvoZO/xAY=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ChS8vcB/11T8/HYq0AvVe43409Y=
+		ALOcWAcS4tinzq+J3DglfFbEL7c=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gMH3tcyjmARkxQyhe2w2PWB9zpA=
+		3BSq3/T1uajx9FkDBT4Lfr96PGc=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		m9AmDr+WTpUtLmXmkUdVjSuJXho=
+		k/ej39OSKX+LL3+CurIBRn8xg4c=
 		</data>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nyeeRkbUlOWLnRGODjpJrlyNCy0=
+		ufj0pMZ7TPzF2/KryTbUxfaP6RM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2NCmwV1omqiXwwWy90aqFs44vYxaGU4CKyIkSZbJqo=
+			pZII420SzFQ/8e0m2Lecs5snggmrY0kZfZAOlyUp9mc=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ewLYEqCf2b1NIlyA/W9L1VZh+xoyC3aeMCjEBn2Fr20=
+			WHkNXxQhELd+iMaEnaz6cAH+Hye+ZhURFyn4kDJtpnA=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YZyVMvv2kNrU0pI/DMinECi5qdmlw1CMFwPA/igIf3E=
+			YBYzE5mbWIzCL1X/zU5GTDtxKnbUPVdcBY9LfmdPW4Q=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1axLUgbV1tBQ3+My2qeRWmzYxrVVA0fY0/ohShkJl5Y=
+			iMRlCmjhqU1fWzmOzUD66HTIDvkS/v7SU9kaRb7q+x0=
 			</data>
 		</dict>
 		<key>Modules/PayService.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TiFih98vyf3HgjLg8QpuyxJOAXwgb4toOEHQ1uxwpuM=
+			eK2z5D7pXzh8Z6YGYCwvAXg5+iiOtpyUEWOwm/dfes8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

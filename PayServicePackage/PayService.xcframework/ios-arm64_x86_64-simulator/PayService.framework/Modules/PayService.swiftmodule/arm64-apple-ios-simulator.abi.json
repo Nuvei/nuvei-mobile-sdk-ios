@@ -470,13 +470,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -488,6 +481,13 @@
                 "printedName": "NVOutputProtocol",
                 "usr": "s:10PayService16NVOutputProtocolP",
                 "mangledName": "$s10PayService16NVOutputProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -866,17 +866,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -1071,17 +1071,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -1324,17 +1324,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -1390,17 +1390,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -2028,17 +2028,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
                     "mangledName": "$sSe"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   }
                 ]
               },
@@ -2086,13 +2086,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -2104,6 +2097,13 @@
                 "printedName": "NVOutputProtocol",
                 "usr": "s:10PayService16NVOutputProtocolP",
                 "mangledName": "$s10PayService16NVOutputProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -2151,17 +2151,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -3377,17 +3377,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3791,38 +3791,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -3833,17 +3805,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -3854,10 +3826,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -3872,6 +3865,13 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -4262,38 +4262,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -4304,17 +4276,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -4325,10 +4297,45 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -4346,17 +4353,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -4737,6 +4737,319 @@
                 "declKind": "Accessor",
                 "usr": "s:10PayService16LabeledTextFieldC14onInputUpdatedySbcSgvM",
                 "mangledName": "$s10PayService16LabeledTextFieldC14onInputUpdatedySbcSgvM",
+                "moduleName": "PayService",
+                "implicit": true,
+                "spi_group_names": [
+                  "NuveiInternal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onPaymentFormChange",
+            "printedName": "onPaymentFormChange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvp",
+            "mangledName": "$s10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvp",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvg",
+                "mangledName": "$s10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvg",
+                "moduleName": "PayService",
+                "implicit": true,
+                "spi_group_names": [
+                  "NuveiInternal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvs",
+                "mangledName": "$s10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvs",
+                "moduleName": "PayService",
+                "implicit": true,
+                "spi_group_names": [
+                  "NuveiInternal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvM",
+                "mangledName": "$s10PayService16LabeledTextFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvM",
                 "moduleName": "PayService",
                 "implicit": true,
                 "spi_group_names": [
@@ -5790,38 +6103,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -5832,17 +6117,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -5853,10 +6138,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -5871,6 +6177,13 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -7897,13 +8210,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -7915,6 +8221,13 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -7993,24 +8306,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "InputIndexable",
             "printedName": "InputIndexable",
             "usr": "s:10PayService14InputIndexableP",
             "mangledName": "$s10PayService14InputIndexableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -8025,6 +8331,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -8285,7 +8598,7 @@
           {
             "kind": "Function",
             "name": "parseCreditCardInfo",
-            "printedName": "parseCreditCardInfo(ccinput:hasFocus:ignoreEmpty:input:shouldGetCardDetails:hasCreditCardBlockedError:payButton:completion:)",
+            "printedName": "parseCreditCardInfo(ccinput:hasFocus:ignoreEmpty:input:shouldGetCardDetails:hasCreditCardBlockedError:forceFetchCardDetails:payButton:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8326,6 +8639,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -8413,8 +8733,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PayService24CreditCardFieldViewModelC05parsecD4Info7ccinput8hasFocus11ignoreEmpty5input09shouldGetD7Details0kcD12BlockedError9payButton10completionyAA0cD5InputC_S2b4Core7NVInputVSgS2bSo8UIButtonCSgyAO06NVCardR6OutputVSg_AO9NVFailureOSgtcSgtF",
-            "mangledName": "$s10PayService24CreditCardFieldViewModelC05parsecD4Info7ccinput8hasFocus11ignoreEmpty5input09shouldGetD7Details0kcD12BlockedError9payButton10completionyAA0cD5InputC_S2b4Core7NVInputVSgS2bSo8UIButtonCSgyAO06NVCardR6OutputVSg_AO9NVFailureOSgtcSgtF",
+            "usr": "s:10PayService24CreditCardFieldViewModelC05parsecD4Info7ccinput8hasFocus11ignoreEmpty5input09shouldGetD7Details0kcD12BlockedError010forceFetchdR09payButton10completionyAA0cD5InputC_S2b4Core7NVInputVSgS3bSo8UIButtonCSgyAP06NVCardR6OutputVSg_AP9NVFailureOSgtcSgtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC05parsecD4Info7ccinput8hasFocus11ignoreEmpty5input09shouldGetD7Details0kcD12BlockedError010forceFetchdR09payButton10completionyAA0cD5InputC_S2b4Core7NVInputVSgS3bSo8UIButtonCSgyAP06NVCardR6OutputVSg_AP9NVFailureOSgtcSgtF",
             "moduleName": "PayService",
             "declAttributes": [
               "AccessControl",
@@ -8587,6 +8907,280 @@
               "NuveiInternal"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "parseAndValidateCreditCardInput",
+            "printedName": "parseAndValidateCreditCardInput(input:ignoreEmpty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CreditCardInput",
+                "printedName": "PayService.CreditCardInput",
+                "usr": "s:10PayService15CreditCardInputC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService24CreditCardFieldViewModelC016parseAndValidatecD5Input5input11ignoreEmptySbAA0cdK0C_SbtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC016parseAndValidatecD5Input5input11ignoreEmptySbAA0cdK0C_SbtF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateHolderName",
+            "printedName": "validateHolderName(input:ignoreEmpty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Core.InputError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputError",
+                    "printedName": "Core.InputError",
+                    "usr": "s:4Core10InputErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CreditCardInput",
+                "printedName": "PayService.CreditCardInput",
+                "usr": "s:10PayService15CreditCardInputC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService24CreditCardFieldViewModelC18validateHolderName5input11ignoreEmpty4Core10InputErrorOSgAA0cdO0C_SbtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC18validateHolderName5input11ignoreEmpty4Core10InputErrorOSgAA0cdO0C_SbtF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateNumber",
+            "printedName": "validateNumber(input:ignoreEmpty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(parsedCard: (number: Swift.String, type: PayService.CardType)?, inputError: Core.InputError?)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(number: Swift.String, type: PayService.CardType)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(number: Swift.String, type: PayService.CardType)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CardType",
+                            "printedName": "PayService.CardType",
+                            "usr": "s:10PayService8CardTypeO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Core.InputError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InputError",
+                        "printedName": "Core.InputError",
+                        "usr": "s:4Core10InputErrorO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CreditCardInput",
+                "printedName": "PayService.CreditCardInput",
+                "usr": "s:10PayService15CreditCardInputC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService24CreditCardFieldViewModelC14validateNumber5input11ignoreEmptySS6number_AA0D4TypeO4typetSg06parsedD0_4Core10InputErrorOSg0jS0tAA0cdR0C_SbtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC14validateNumber5input11ignoreEmptySS6number_AA0D4TypeO4typetSg06parsedD0_4Core10InputErrorOSg0jS0tAA0cdR0C_SbtF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateExpiryDate",
+            "printedName": "validateExpiryDate(input:ignoreEmpty:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Core.InputError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputError",
+                    "printedName": "Core.InputError",
+                    "usr": "s:4Core10InputErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CreditCardInput",
+                "printedName": "PayService.CreditCardInput",
+                "usr": "s:10PayService15CreditCardInputC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService24CreditCardFieldViewModelC18validateExpiryDate5input11ignoreEmpty4Core10InputErrorOSgAA0cdO0C_SbtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC18validateExpiryDate5input11ignoreEmpty4Core10InputErrorOSgAA0cdO0C_SbtF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateCVV",
+            "printedName": "validateCVV(input:ignoreEmpty:parsedCard:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Core.InputError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InputError",
+                    "printedName": "Core.InputError",
+                    "usr": "s:4Core10InputErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CreditCardInput",
+                "printedName": "PayService.CreditCardInput",
+                "usr": "s:10PayService15CreditCardInputC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(number: Swift.String, type: PayService.CardType)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(number: Swift.String, type: PayService.CardType)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardType",
+                        "printedName": "PayService.CardType",
+                        "usr": "s:10PayService8CardTypeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PayService24CreditCardFieldViewModelC11validateCVV5input11ignoreEmpty06parsedD04Core10InputErrorOSgAA0cdO0C_SbSS6number_AA0D4TypeO4typetSgtF",
+            "mangledName": "$s10PayService24CreditCardFieldViewModelC11validateCVV5input11ignoreEmpty06parsedD04Core10InputErrorOSgAA0cdO0C_SbSS6number_AA0D4TypeO4typetSgtF",
+            "moduleName": "PayService",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NuveiInternal"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -8942,17 +9536,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -9173,195 +9767,39 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CodingKeyRepresentable",
-            "printedName": "CodingKeyRepresentable",
-            "usr": "s:s22CodingKeyRepresentableP",
-            "mangledName": "$ss22CodingKeyRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_HasContiguousBytes",
-            "printedName": "_HasContiguousBytes",
-            "usr": "s:s19_HasContiguousBytesP",
-            "mangledName": "$ss19_HasContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_CustomPlaygroundQuickLookable",
-            "printedName": "_CustomPlaygroundQuickLookable",
-            "usr": "s:s30_CustomPlaygroundQuickLookableP",
-            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TextOutputStream",
-            "printedName": "TextOutputStream",
-            "usr": "s:s16TextOutputStreamP",
-            "mangledName": "$ss16TextOutputStreamP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TextOutputStreamable",
-            "printedName": "TextOutputStreamable",
-            "usr": "s:s20TextOutputStreamableP",
-            "mangledName": "$ss20TextOutputStreamableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
-            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
-            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
-            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
-            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
-            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
-            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ExpressibleByBuiltinStringLiteral",
-            "printedName": "_ExpressibleByBuiltinStringLiteral",
-            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
-            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByStringLiteral",
-            "printedName": "ExpressibleByStringLiteral",
+            "name": "Transferable",
+            "printedName": "Transferable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "StringLiteralType",
-                "printedName": "StringLiteralType",
+                "name": "Representation",
+                "printedName": "Representation",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
                   }
                 ]
               }
             ],
-            "usr": "s:s26ExpressibleByStringLiteralP",
-            "mangledName": "$ss26ExpressibleByStringLiteralP"
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           },
           {
             "kind": "Conformance",
-            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ExtendedGraphemeClusterLiteralType",
-                "printedName": "ExtendedGraphemeClusterLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
-            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByUnicodeScalarLiteral",
-            "printedName": "ExpressibleByUnicodeScalarLiteral",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UnicodeScalarLiteralType",
-                "printedName": "UnicodeScalarLiteralType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
-            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -9431,6 +9869,20 @@
             ],
             "usr": "s:SK",
             "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -9516,6 +9968,214 @@
           },
           {
             "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sequence",
             "printedName": "Sequence",
             "children": [
@@ -9548,20 +10208,6 @@
             ],
             "usr": "s:ST",
             "mangledName": "$sST"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Comparable",
-            "printedName": "Comparable",
-            "usr": "s:SL",
-            "mangledName": "$sSL"
           },
           {
             "kind": "Conformance",
@@ -9626,61 +10272,52 @@
           },
           {
             "kind": "Conformance",
-            "name": "ExpressibleByStringInterpolation",
-            "printedName": "ExpressibleByStringInterpolation",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "StringInterpolation",
-                "printedName": "StringInterpolation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DefaultStringInterpolation",
-                    "printedName": "Swift.DefaultStringInterpolation",
-                    "usr": "s:s26DefaultStringInterpolationV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s32ExpressibleByStringInterpolationP",
-            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
           },
           {
             "kind": "Conformance",
-            "name": "LosslessStringConvertible",
-            "printedName": "LosslessStringConvertible",
-            "usr": "s:s25LosslessStringConvertibleP",
-            "mangledName": "$ss25LosslessStringConvertibleP"
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
           },
           {
             "kind": "Conformance",
-            "name": "RangeReplaceableCollection",
-            "printedName": "RangeReplaceableCollection",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "SubSequence",
-                "printedName": "SubSequence",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Substring",
-                    "printedName": "Swift.Substring",
-                    "usr": "s:Ss"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sm",
-            "mangledName": "$sSm"
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
           },
           {
             "kind": "Conformance",
-            "name": "MirrorPath",
-            "printedName": "MirrorPath",
-            "usr": "s:s10MirrorPathP",
-            "mangledName": "$ss10MirrorPathP"
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -9703,42 +10340,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -9993,49 +10594,63 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1610,
+      "offset": 2043,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1679,
+      "offset": 2099,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2141,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "StringLiteral",
-      "offset": 1717,
+      "offset": 2179,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/CreditCardTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1755,
+      "offset": 2217,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 825,
+      "offset": 1193,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 900,
+      "offset": 1255,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1297,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/ExpiryDateTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 943,
+      "offset": 1340,
       "length": 1,
       "value": "4"
     },
@@ -10049,105 +10664,119 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 951,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "IntegerLiteral",
-      "offset": 788,
+      "offset": 955,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "kind": "StringLiteral",
+      "offset": 1440,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1343,
+      "offset": 1539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7674,
+      "offset": 9058,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7715,
+      "offset": 9099,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/Utils\/LabeledTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
-      "offset": 638,
-      "length": 6,
-      "value": "\"HERE\""
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
-      "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 648,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
-      "offset": 734,
+      "offset": 673,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
-      "offset": 756,
+      "offset": 695,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "StringLiteral",
-      "offset": 789,
+      "offset": 728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/Data\/CreditCardInput.swift",
       "kind": "BooleanLiteral",
-      "offset": 897,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 999,
+      "offset": 836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1026,
+      "offset": 1108,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1135,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1084,
+      "offset": 1193,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1125,
+      "offset": 1234,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/PayService\/PayService\/ViewModel\/CreditCardFieldViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
       "length": 5,
       "value": "false"
     },

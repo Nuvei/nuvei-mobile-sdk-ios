@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SimplyConnect
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SimplyConnect
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
 @_exported @_spi(NuveiInternal) import Core
 import Foundation
 import PassKit
@@ -14,36 +14,27 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct Installment {
-  public init(options: [SimplyConnect.InstallmentOption], isNationalIdRequired: Swift.Bool, countryCode: Swift.String)
+  public init(options: [SimplyConnect::InstallmentOption], isNationalIdRequired: Swift::Bool, countryCode: Swift::String)
 }
 public struct InstallmentOption {
-  public init(type: SimplyConnect.InstallmentType, periods: [Swift.Int])
+  public init(type: SimplyConnect::InstallmentType, periods: [Swift::Int])
 }
-public enum InstallmentType : Swift.Int {
+public enum InstallmentType : Swift::Int {
   case SINGLE_PAYMENT
   case DEFERRED_WITH_INTEREST
   case DEFERRED_WITHOUT_INTEREST
   case DEFERRED_WITHOUT_INTEREST_AND_GRACE
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-extension Core.NuveiSimplyConnect {
-  public static func authenticate3d(uiOwner: any Core.NVUIOwner, input: Core.NVInput, additionalParams: [Swift.String : Any] = [:], forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVAuthenticate3dOutput) -> ()) throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func checkout(uiOwner: any Core.NVUIOwner, authenticate3dInput: Core.NVInput, countryCode: Swift.String, additionalParams: [Swift.String : Any] = [:], installment: SimplyConnect.Installment?, i18n: Core.CheckoutI18n? = nil, forceWebChallenge: Swift.Bool = true, callback: @escaping (Core.NVCreatePaymentOutput) -> (), declineFallbackDecision: Core.NuveiSimplyConnect.DeclineFallbackDecisionCallback?) throws
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func payButton(enable: Swift.Bool, message: Swift.String? = nil, uiOwner: any Core.NVUIOwner)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func getCardDetails(uiOwner: any Core.NVUIOwner, callback: @escaping (Core.NVCardDetailsOutput?, Core.NVFailure?) -> Swift.Void)
-  #endif
+extension Core::NuveiSimplyConnect {
+  public static func authenticate3d(uiOwner: any Core::NVUIOwner, input: Core::NVInput, additionalParams: [Swift::String : Any] = [:], forceWebChallenge: Swift::Bool = true, callback: @escaping (Core::NVAuthenticate3dOutput) -> ()) throws
+  public static func checkout(uiOwner: any Core::NVUIOwner, authenticate3dInput: Core::NVInput, countryCode: Swift::String, additionalParams: [Swift::String : Any] = [:], installment: SimplyConnect::Installment?, i18n: Core::CheckoutI18n? = nil, forceWebChallenge: Swift::Bool = true, callback: @escaping (Core::NVCreatePaymentOutput) -> (), declineFallbackDecision: Core::NuveiSimplyConnect.PayService::DeclineFallbackDecisionCallback?, onPaymentFormChange: ((_ pm: Swift::String, _ label: Swift::String, _ action: Swift::String, _ oldValue: Swift::String, _ newValue: Swift::String, _ validation: Swift::String?, _ paste: Swift::Bool) -> ())?, onFormValidated: ((_ isFormValid: Swift::Bool, _ invalidFields: [Swift::String]) -> ())?) throws
+  public static func getCardDetails(uiOwner: any Core::NVUIOwner, callback: @escaping (Core::NVCardDetailsOutput?, Core::NVFailure?) -> Swift::Void)
 }
-extension SimplyConnect.InstallmentType : Swift.Equatable {}
-extension SimplyConnect.InstallmentType : Swift.Hashable {}
-extension SimplyConnect.InstallmentType : Swift.RawRepresentable {}
+extension SimplyConnect::InstallmentType : Swift::Equatable {}
+extension SimplyConnect::InstallmentType : Swift::Hashable {}
+extension SimplyConnect::InstallmentType : Swift::RawRepresentable {}

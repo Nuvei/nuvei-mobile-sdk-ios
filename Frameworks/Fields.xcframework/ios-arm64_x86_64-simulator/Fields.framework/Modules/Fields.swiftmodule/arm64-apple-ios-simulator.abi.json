@@ -568,18 +568,18 @@
           },
           {
             "kind": "Var",
-            "name": "onCardDetailsUpdated",
-            "printedName": "onCardDetailsUpdated",
+            "name": "onPaymentFormChange",
+            "printedName": "onPaymentFormChange",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                    "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -589,35 +589,57 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Core.NVCardDetailsOutput?",
+                            "printedName": "Swift.String?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "NVCardDetailsOutput",
-                                "printedName": "Core.NVCardDetailsOutput",
-                                "usr": "s:4Core19NVCardDetailsOutputV"
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
                               }
                             ],
                             "usr": "s:Sq"
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Core.NVFailure?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "NVFailure",
-                                "printedName": "Core.NVFailure",
-                                "usr": "s:4Core9NVFailureO"
-                              }
-                            ],
-                            "usr": "s:Sq"
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
                           }
                         ]
                       }
@@ -628,8 +650,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvp",
-            "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvp",
+            "usr": "s:6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvp",
+            "mangledName": "$s6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvp",
             "moduleName": "Fields",
             "declAttributes": [
               "HasInitialValue",
@@ -648,12 +670,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                    "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -663,35 +685,57 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
+                            "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "Core.NVCardDetailsOutput?",
+                                "printedName": "Swift.String?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "NVCardDetailsOutput",
-                                    "printedName": "Core.NVCardDetailsOutput",
-                                    "usr": "s:4Core19NVCardDetailsOutputV"
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
                                   }
                                 ],
                                 "usr": "s:Sq"
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Core.NVFailure?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "NVFailure",
-                                    "printedName": "Core.NVFailure",
-                                    "usr": "s:4Core9NVFailureO"
-                                  }
-                                ],
-                                "usr": "s:Sq"
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
                               }
                             ]
                           }
@@ -702,8 +746,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvg",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvg",
+                "usr": "s:6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvg",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvg",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "get"
@@ -721,12 +765,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Core.NVCardDetailsOutput?, Core.NVFailure?) -> ())?",
+                    "printedName": "((Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                        "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -736,35 +780,57 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
+                            "printedName": "(Swift.String, Swift.String, Swift.String, Swift.String, Swift.String, Swift.String?, Swift.Bool)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "Core.NVCardDetailsOutput?",
+                                "printedName": "Swift.String?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "NVCardDetailsOutput",
-                                    "printedName": "Core.NVCardDetailsOutput",
-                                    "usr": "s:4Core19NVCardDetailsOutputV"
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
                                   }
                                 ],
                                 "usr": "s:Sq"
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "Optional",
-                                "printedName": "Core.NVFailure?",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "NVFailure",
-                                    "printedName": "Core.NVFailure",
-                                    "usr": "s:4Core9NVFailureO"
-                                  }
-                                ],
-                                "usr": "s:Sq"
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
                               }
                             ]
                           }
@@ -775,8 +841,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvs",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvs",
+                "usr": "s:6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvs",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvs",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "set"
@@ -793,8 +859,219 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvM",
-                "mangledName": "$s6Fields20NuveiCreditCardFieldC02onD14DetailsUpdatedy4Core06NVCardG6OutputVSg_AE9NVFailureOSgtcSgvM",
+                "usr": "s:6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvM",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC19onPaymentFormChangeySS_S5SSgSbtcSgvM",
+                "moduleName": "Fields",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onFormValidated",
+            "printedName": "onFormValidated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, [Swift.String]) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, [Swift.String]) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, [Swift.String])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvp",
+            "mangledName": "$s6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvp",
+            "moduleName": "Fields",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool, [Swift.String]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool, [Swift.String]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, [Swift.String])",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvg",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvg",
+                "moduleName": "Fields",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool, [Swift.String]) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool, [Swift.String]) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.Bool, [Swift.String])",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvs",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvs",
+                "moduleName": "Fields",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvM",
+                "mangledName": "$s6Fields20NuveiCreditCardFieldC15onFormValidatedySb_SaySSGtcSgvM",
                 "moduleName": "Fields",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1102,6 +1379,75 @@
           },
           {
             "kind": "Function",
+            "name": "getCardDetails",
+            "printedName": "getCardDetails(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Core.NVCardDetailsOutput?, Core.NVFailure?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Core.NVCardDetailsOutput?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NVCardDetailsOutput",
+                            "printedName": "Core.NVCardDetailsOutput",
+                            "usr": "s:4Core19NVCardDetailsOutputV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Core.NVFailure?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NVFailure",
+                            "printedName": "Core.NVFailure",
+                            "usr": "s:4Core9NVFailureO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Fields20NuveiCreditCardFieldC03getD7Details8callbackyy4Core06NVCardG6OutputVSg_AF9NVFailureOSgtc_tF",
+            "mangledName": "$s6Fields20NuveiCreditCardFieldC03getD7Details8callbackyy4Core06NVCardG6OutputVSg_AF9NVFailureOSgtc_tF",
+            "moduleName": "Fields",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "showCardNumberError",
             "printedName": "showCardNumberError(message:)",
             "children": [
@@ -1160,38 +1506,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1202,17 +1520,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -1223,10 +1541,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1241,6 +1580,13 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -1448,38 +1794,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1490,17 +1808,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -1511,10 +1829,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -1529,6 +1868,13 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -1694,7 +2040,7 @@
           {
             "kind": "Function",
             "name": "setup",
-            "printedName": "setup(environment:customization:i18n:input:blockCards:)",
+            "printedName": "setup(environment:customization:i18n:input:blockCards:getCardDetailsEnabled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1772,11 +2118,18 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCardsy4Core0B13SimplyConnectC11EnvironmentO_AJ0B18FieldCustomizationCAJ0A4I18nCSgAJ7NVInputVSgSaySaySSGGSgtKFZ",
-            "mangledName": "$s6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCardsy4Core0B13SimplyConnectC11EnvironmentO_AJ0B18FieldCustomizationCAJ0A4I18nCSgAJ7NVInputVSgSaySaySSGGSgtKFZ",
+            "usr": "s:6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCards21getCardDetailsEnabledy4Core0B13SimplyConnectC11EnvironmentO_AK0B18FieldCustomizationCAK0A4I18nCSgAK7NVInputVSgSaySaySSGGSgSbtKFZ",
+            "mangledName": "$s6Fields05NuveiA0C5setup11environment13customization4i18n5input10blockCards21getCardDetailsEnabledy4Core0B13SimplyConnectC11EnvironmentO_AK0B18FieldCustomizationCAK0A4I18nCSgAK7NVInputVSgSaySaySSGGSgSbtKFZ",
             "moduleName": "Fields",
             "static": true,
             "declAttributes": [
@@ -2047,10 +2400,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -2061,10 +2414,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -2162,52 +2515,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2218,10 +2529,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2232,10 +2564,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2452,17 +2805,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -2544,38 +2897,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2586,17 +2911,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -2607,10 +2932,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -2625,6 +2971,13 @@
             "printedName": "Constrainable",
             "usr": "s:15TinyConstraints13ConstrainableP",
             "mangledName": "$s15TinyConstraints13ConstrainableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -2684,133 +3037,133 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 829,
+      "offset": 1132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 999,
+      "offset": 1395,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1141,
+      "offset": 1537,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1823,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1564,
+      "offset": 1960,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 2259,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 2400,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2269,
+      "offset": 2665,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 2388,
+      "offset": 2784,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2448,
+      "offset": 2844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2899,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2748,
+      "offset": 3144,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2944,
+      "offset": 3340,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2983,
+      "offset": 3379,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 3141,
+      "offset": 3537,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 6163,
+      "offset": 9370,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 7060,
+      "offset": 10437,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7099,
+      "offset": 10476,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 11168,
+      "offset": 15863,
       "length": 5,
       "value": "false"
     },
@@ -2914,15 +3267,22 @@
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
+      "kind": "BooleanLiteral",
+      "offset": 608,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "Dictionary",
-      "offset": 1619,
+      "offset": 1707,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/nuvei-mobile-simply-connect-source-ios\/Sources\/Fields\/Fields\/NuveiFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 1652,
+      "offset": 1740,
       "length": 4,
       "value": "true"
     }
